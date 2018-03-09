@@ -10,13 +10,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass-loader">
+@import './assets/reset.scss';
+@import './assets/variables.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $gray;
+}
+body {
+    background-color: $yellow;
 }
 </style>
