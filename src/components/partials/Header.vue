@@ -1,10 +1,7 @@
 <template>
   <div class="header__wrapper">
-    <div class="header">
-      <div class="header__logo"><img src="../../assets/cropped_collage.png" alt="logo"/></div>
-      <div class="header__name h1-size">{{ name }}</div>
-    </div>
-    <nav-component></nav-component>
+    <div class="header__logo"><img src="../../assets/cropped_collage.png" alt="logo"/></div>
+    <div class="header__name h1-size">{{ name }}</div>
   </div>
 </template>
 <script>
@@ -13,8 +10,7 @@ export default {
   name: 'Header',
   data () {
     return {
-      name: 'Naomi Mine',
-      navContent: ['Web', 'Art', 'CV', 'Inspiration']
+      name: 'Naomi Mine'
     }
   },
   components: {
@@ -26,13 +22,11 @@ export default {
   @import '../../assets/variables.scss';
 
   .header {
-    color: $gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0 50px;
     &__wrapper {
-      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px 40px 50px;
+      align-items: flex-end;
     }
     &__logo {
       height: 150px;

@@ -1,8 +1,14 @@
 <template>
-  <div>{{ msg }}</div>
+  <div class="art-section__wrapper">
+      <div>some content<br><br><br><br></div>
+  </div>
 </template>
 <script>
 export default {
+  beforeMount () {
+    this.$store.commit('alterNavColor', '#FDB632')
+    this.$store.commit('toggleHomeView', false)
+  },
   name: 'Art',
   data () {
     return {
@@ -11,6 +17,14 @@ export default {
   }
 }
 </script>
-<style lang="sass" scoped>
+<style lang="sass-loader" scoped>
+@import '../assets/variables.scss';
+
+.art-section {
+  &__wrapper {
+    background-color: $yellow;
+    color: white;
+  }
+}
 
 </style>
