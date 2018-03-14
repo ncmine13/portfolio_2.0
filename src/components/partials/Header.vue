@@ -1,7 +1,7 @@
 <template>
   <div class="header__wrapper">
-    <div class="header__logo"><img src="../../assets/cropped_collage.png" alt="logo"/></div>
-    <div class="header__name h1-size">{{ name }}</div>
+    <div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div>
+    <!-- <div class="header__name h1-size">{{ name }}</div> -->
   </div>
 </template>
 <script>
@@ -19,18 +19,17 @@ export default {
 }
 </script>
 <style lang="sass-loader">
-  @import '../../assets/variables.scss';
+  @import '../../assets/styles/variables.scss';
 
   .header {
     &__wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       padding: 20px 50px 40px 50px;
-      align-items: flex-end;
+      /* align-items: flex-end; */
     }
     &__logo {
-      height: 150px;
-      width: 150px;
+      height: 105px;
       img {
         width: auto;
         height: 100%;

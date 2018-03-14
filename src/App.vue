@@ -28,8 +28,8 @@ export default {
 </script>
 
 <style lang="sass-loader">
-@import './assets/reset.scss';
-@import './assets/variables.scss';
+@import './assets/styles/reset.scss';
+@import './assets/styles/main.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

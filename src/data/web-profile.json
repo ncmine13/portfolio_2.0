@@ -1,0 +1,98 @@
+[
+  {
+    "current": [
+      {
+        "id": 1,
+        "headline": "Unsuitable for children",
+        "description_intro": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
+        "description_extension": "I did this because blah blah and blah blah, and I'd like to go here with it.",
+        "stack": [
+          "python",
+          "javascript",
+          "threejs"
+        ],
+        "github_link": "a link",
+        "view_link": "another link",
+        "img_path": "/whatever"
+      },
+      {
+        "id": 2,
+        "headline": "Moodey app",
+        "description_intro": "This was made as an extension of an earlier project with this new stack",
+        "description_extension": "I'm super excited to go way further with it and can't wait till it can do x, y, and z.",
+        "stack": [
+          "Vue.js",
+          "Node",
+          "Express",
+          "Sequelize",
+          "sqlite3"
+        ],
+        "github_link": "a link",
+        "view_link": "another link",
+        "img_path": "/whatever"
+      }
+    ]
+  },
+  {
+    "past_ga": [
+      {
+        "intro": "Back in the day, I did these shittier things but I learned a lot.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "Drawing Game",
+            "image_path": "/apath",
+            "stack": [
+              "javascript",
+              "css",
+              "html"
+            ],
+            "description": "I was inspired by this and did that."
+          },
+          {
+            "id": 2,
+            "title": "Coffee App",
+            "image_path": "/apath",
+            "stack": [
+              "JavaScript",
+              "Node.js",
+              "Express"
+            ],
+            "description": "I was a barista and it kind of sucked."
+          },
+          {
+            "id": 3,
+            "title": "Mood App",
+            "image_path": "/apath",
+            "stack": [
+              "React",
+              "css",
+              "html",
+              "Sinatra/ActiveRecord"
+            ],
+            "description": "I like talking about feelings and I think everyone else should, too."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "content_blocks": [
+      {
+        "id" : 1,
+        "title" : "Where I am now",
+        "blurb": "Where I am right now, I am want to learn this, that, and that. What I'm most interested in is this and I can't wait to have a mentor to actually show me how."
+      },
+      {
+        "id" : 2,
+        "title" : "Integrating me work",
+        "blurb": "I love to link interesting things and love tech because it lets me think about all sorts of shit. I love software development for its craft, which is related to me being an artist."
+      },
+      {
+        "id" : 3,
+        "title" : "Where I want to be down the line",
+        "blurb": "I'm pretty young and new to the industry, and i want to keep learning. With my nontraditional path, I am so excited to learn about formal things."
+      }
+    ]
+  }
+]

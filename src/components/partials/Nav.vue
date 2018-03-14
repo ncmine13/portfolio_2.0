@@ -1,7 +1,7 @@
 <template>
   <div class="nav__wrapper" v-bind:style="{backgroundColor: activeBgColor}">
     <nav>
-      <div><router-link :key="item.id" v-for="item in navElements" :to="item.route">{{ item.title }}</router-link></div>
+      <div :key="item.id" v-for="item in navElements"><router-link :to="item.route">{{ item.title }}</router-link></div>
     </nav>
   </div>
 </template>
@@ -51,11 +51,12 @@ export default {
 }
 </script>
 <style lang='sass-loader'>
-@import '../../assets/variables.scss';
+@import '../../assets/styles/main.scss';
 
 .nav {
   &__wrapper {
-    /* background-color: $yellow; */
+    padding-top: 20px;
+    box-shadow: rgb(15, 15, 15) 0px 1px 10px 1px;
     display: flex;
     justify-content: center;
     nav {

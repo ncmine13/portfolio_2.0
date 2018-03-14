@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <style lang="sass-loader" scoped>
-@import '../assets/variables.scss';
+@import '../assets/styles/variables.scss';
 
 .art-section {
   &__wrapper {
