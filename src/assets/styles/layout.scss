@@ -2,3 +2,12 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
+.stack {
+  @include flexbox_standard;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  & > div {
+    margin-right: 10px;
+  }
+}

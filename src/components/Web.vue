@@ -1,14 +1,17 @@
 <template>
   <div class="web-section__wrapper">
     <div class="web-section__content-wrapper site-width">
-      <div class="blurb h2-size"> {{ blurbs[0].blurb }} </div>
+      <div  v-bind:style="[{textAlign: 'right'}, {marginLeft: '15%'}]" class="blurb h3-size"> {{ blurbs[0].blurb }} </div>
       <current-component :current="currentProjects"></current-component>
+      <div class="blurb h3-size"> {{ blurbs[1].blurb }} </div>
+      <past-component :past="pastProjects"></past-component>
     </div>
   </div>
 </template>
 <script>
 import webCopy from '../data/web-profile.json'
 import currentComponent from './Web_Current'
+import pastComponent from './Web_Past'
 export default {
   beforeMount () {
     this.$store.commit('alterNavColor', '#027878')
@@ -27,10 +30,14 @@ export default {
     },
     currentProjects () {
       return this.copy.find(item => item.hasOwnProperty('current'))['current']
+    },
+    pastProjects () {
+      return this.copy.find(item => item.hasOwnProperty('past_ga'))['past_ga']
     }
   },
   components: {
-    currentComponent
+    currentComponent,
+    pastComponent
   }
 }
 </script>
@@ -44,9 +51,7 @@ export default {
     padding: 20px;
     .blurb {
       width: 85%;
-      margin: 0 auto;
       padding: 2rem 0;
-      text-align: center;
     }
   }
 }

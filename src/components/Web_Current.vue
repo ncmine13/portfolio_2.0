@@ -1,20 +1,20 @@
 <template>
   <div class="current__wrapper">
-      <div class="h3-size">Current Projects</div>
+      <!-- <div class="h2-size">Current Projects</div> -->
       <div class="current__projects-wrapper">
       <div class="project" v-for="project in current" :key="project.id">
-        <div class="current__two-up">
-          <h2>{{ project.headline }}</h2>
+        <div class="current__two-up" v-bind:class="{reorder: project.id % 2 === 0}">
+          <div class="h2-size">{{ project.headline }}</div>
+          <div class="stack"><div class="text" v-for="tech in project['stack']" :key="tech.id"> {{ tech }} </div></div>
           <p> {{ project.description_intro }} <span> {{ project.description_extension }} </span></p>
           <div>read more...</div>
+          <div class="links">
+            <a class="external-link" href="#">See on github</a>
+            <a class="external-link" href="#">View demo</a>
+          </div>
         </div>
         <div class="current__two-up">
-          <div class="stack"><div class="text" v-for="tech in project['stack']" :key="tech.id"> {{ tech }} </div></div>
           <div class="visual"><img src="../assets/mock_diagram.png"/></div>
-          <div class="links">
-            <a href="#">See code github</a>
-            <a href="#">View demo</a>
-          </div>
         </div>
       </div>
       </div>
@@ -35,11 +35,14 @@ export default {
 
 <style lang="sass-loader" scoped>
 @import '../assets/styles/main.scss';
-
+.reorder {
+  order: 2
+}
 .current {
   &__projects-wrapper {
     .project {
       display: flex;
+      margin: 40px 0 120px 0;
     }
     .visual {
       width: 100%;
@@ -51,12 +54,17 @@ export default {
   &__two-up {
     width: calc(50% - 30px);
     margin-right: 30px;
-    .stack {
-      display: flex;
-      flex-wrap: wrap;
-      text-transform: uppercase;
-      & > div {
-        margin-right: 10px;
+    p {
+      padding: 15px 0;
+    }
+    .links {
+      @include flexbox_standard;
+      justify-content: flex-start;
+      padding-top: 20px;
+      a {
+        font-size: 14px;
+        color: white;
+        margin-right: 40px;
       }
     }
   }

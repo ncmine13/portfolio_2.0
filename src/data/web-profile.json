@@ -3,7 +3,7 @@
     "current": [
       {
         "id": 1,
-        "headline": "Unsuitable for children",
+        "headline": "Indelicate Scraping",
         "description_intro": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
         "description_extension": "I did this because blah blah and blah blah, and I'd like to go here with it.",
         "stack": [
@@ -17,7 +17,7 @@
       },
       {
         "id": 2,
-        "headline": "Moodey app",
+        "headline": "Mood Revamp",
         "description_intro": "This was made as an extension of an earlier project with this new stack",
         "description_extension": "I'm super excited to go way further with it and can't wait till it can do x, y, and z.",
         "stack": [
@@ -34,47 +34,68 @@
     ]
   },
   {
-    "past_ga": [
+    "multiple" :[
       {
-        "intro": "Back in the day, I did these shittier things but I learned a lot.",
+        "id": 1,
+        "name" : "cusp"
+      },
+      {
+        "id": 2,
+        "name" : "essex"
+      },
+      {
+        "id": 3,
+        "name" : "jcr"
+      }
+    ]
+  },
+  {
+    "past_ga":
+      {
+        "intro": "Back in the day, I did these shittier things but I learned a lot. Little blurb about GA.",
         "projects": [
           {
             "id": 1,
+            "name" : "drawing",
+            "nav_color": "#801638",
             "title": "Drawing Game",
-            "image_path": "/apath",
+            "image_path": "DrawTrivia",
             "stack": [
               "javascript",
               "css",
               "html"
             ],
-            "description": "I was inspired by this and did that."
+            "description": "I was inspired by this and did that. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
           },
           {
             "id": 2,
+            "name" : "coffee",
+            "nav_color": "#C22326",
             "title": "Coffee App",
-            "image_path": "/apath",
+            "image_path": "Coffee",
             "stack": [
               "JavaScript",
               "Node.js",
               "Express"
             ],
-            "description": "I was a barista and it kind of sucked."
+            "description": "I was a barista and it kind of sucked. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
           },
           {
             "id": 3,
+            "name" : "mood",
+            "nav_color": "#FDB632",
             "title": "Mood App",
-            "image_path": "/apath",
+            "image_path": "Mood",
             "stack": [
               "React",
               "css",
               "html",
               "Sinatra/ActiveRecord"
             ],
-            "description": "I like talking about feelings and I think everyone else should, too."
+            "description": "I like talking about feelings and I think everyone else should, too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
           }
         ]
       }
-    ]
   },
   {
     "content_blocks": [

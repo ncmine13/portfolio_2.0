@@ -6,12 +6,16 @@
     </div>
     <nav-component></nav-component>
     <router-view/>
+    <footer-component></footer-component>
+
   </div>
 </template>
 
 <script>
 import navComponent from './components/partials/Nav'
 import headerComponent from './components/partials/Header'
+import footerComponent from './components/partials/Footer'
+
 export default {
   name: 'App',
   computed: {
@@ -22,7 +26,8 @@ export default {
   },
   components: {
     navComponent,
-    headerComponent
+    headerComponent,
+    footerComponent
   }
 }
 </script>
