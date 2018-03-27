@@ -56,7 +56,7 @@ export default {
 .nav {
   &__wrapper {
     padding-top: 20px;
-    box-shadow: rgb(15, 15, 15) 0px 1px 10px 1px;
+    /* box-shadow: rgb(15, 15, 15) 0px 1px 10px 1px; */
     display: flex;
     justify-content: center;
     nav {

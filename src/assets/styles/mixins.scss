@@ -1,6 +1,11 @@
 // expand to pass in flex rules
 @mixin flexbox_standard() {
   display: flex;
-  // justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@mixin flexbox_aligned() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

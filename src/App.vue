@@ -36,7 +36,7 @@ export default {
 @import './assets/styles/reset.scss';
 @import './assets/styles/main.scss';
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Imprima', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $gray;

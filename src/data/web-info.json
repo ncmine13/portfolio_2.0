@@ -1,0 +1,117 @@
+[
+  {
+    "projects" : [
+      {
+        "id": 1,
+        "title": "Indelicate Scraping",
+        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word and pattern possibilities.",
+        "stack": [ "python", "javascript" ],
+        "github_link": "a link",
+        "view_link": "another link",
+        "image_path": "pythonImg",
+        "project_details": [
+          "I wanted to learn python, or rather a language besides javascript to get a better understanding of methods and patterns offered by a traditional backend language.",
+          "I learned how to xyz. Some more filler info right here, you're welcome. More things right now, more writing always and forever more. Code code code is love.",
+          "I plan to do this other thing next. Filler is the best, now, isn't it? Only time will tell and we will all rule together with Vlad as our king and princeling."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Mood Revamp",
+        "description": "This was made as an extension of an earlier project with this new stack.",
+        "stack": [ "Vue.js", "Node", "Express", "Sequelize", "sqlite3" ],
+        "github_link": "a link",
+        "view_link": "another link",
+        "image_path": "Mood",
+        "project_details": [
+          "I wanted to learn python, or rather a language besides javascript to get a better understanding of methods and patterns offered by a traditional backend language.",
+          "I learned how to xyz. Some more filler info right here, you're welcome. More things right now, more writing always and forever more. Code code code is love.",
+          "I plan to do this other thing next. Filler is the best, now, isn't it? Only time will tell and we will all rule together with Vlad as our king and princeling."
+        ]
+      }
+    ],
+    "name" : "current",
+    "color" : "#F37338",
+    "banner_intro": "I entered development as an artsy creative who wanted to make things. As I continue my education (both self-teaching and from work), I have fallen in love with the craft aspect, and I only want to get better."
+  },
+  {
+    "projects" : [
+      {
+        "id": 1,
+        "title" : "cusp",
+        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
+        "stack": [ "python", "javascript", "threejs" ],
+        "img_path": "/whatever",
+
+        "image_path": "Coffee"
+      },
+      {
+        "id": 2,
+        "title" : "essex",
+        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
+        "stack": [ "python", "javascript", "threejs" ],
+        "img_path": "/whatever",
+        "image_path": "Mood"
+
+      },
+      {
+        "id": 3,
+        "title" : "jcr",
+        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
+        "stack": [ "python", "javascript", "threejs" ],
+        "img_path": "/whatever",
+        "image_path": "DrawTrivia"
+      }
+    ],
+    "name" : "multiple",
+    "color" : "#801638",
+    "banner_intro": "In my free time, I work on things I care about."
+  },
+  {
+    "projects" : [
+      {
+        "id": 1,
+        "title": "Drawing Game",
+        "name" : "drawing",
+        "nav_color": "#801638",
+        "image_path": "DrawTrivia",
+        "stack": [
+          "javascript",
+          "css",
+          "html"
+        ],
+        "description": "I was inspired by this and did that. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
+      },
+      {
+        "id": 2,
+        "title": "Coffee App",
+        "name" : "coffee",
+        "nav_color": "#C22326",
+        "image_path": "Coffee",
+        "stack": [
+          "JavaScript",
+          "Node.js",
+          "Express"
+        ],
+        "description": "I was a barista and it kind of sucked. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
+      },
+      {
+        "id": 3,
+        "title": "Mood App",
+        "name" : "mood",
+        "nav_color": "#FDB632",
+        "image_path": "Mood",
+        "stack": [
+          "React",
+          "css",
+          "html",
+          "Sinatra/ActiveRecord"
+        ],
+        "description": "I like talking about feelings and I think everyone else should, too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
+      }
+    ],
+    "name" : "past",
+    "color" : "#C22326",
+    "banner_intro": "In my free time, I work on things I care about."
+  }
+]

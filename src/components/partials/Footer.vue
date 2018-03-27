@@ -9,7 +9,7 @@ export default {
   name: 'Footer',
   data () {
     return {
-      text: 'It\'s been a crazy year, but I have done other stuff in my life...'
+      text: 'I\'ve only been web developing for a year, but I\'ve been making things for a lifetime...'
     }
   }
 }
