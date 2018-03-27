@@ -10,7 +10,7 @@
 <script>
 import navComponent from './partials/Nav'
 import headerComponent from './partials/Header'
-import artComponent from './Art'
+import artComponent from './art/Art'
 import webComponent from './Web'
 import inspComponent from './Insp'
 

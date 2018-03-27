@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Art from '%/components/Art'
+import Art from '%/components/art/Art'
 import Web from '%/components/Web'
 import Insp from '%/components/Insp'
 

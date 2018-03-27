@@ -6,7 +6,7 @@
 
 <script>
 import webContent from '../data/web-info.json'
-import webTabComponent from './partials/Web_Tabs'
+import webTabComponent from './web/Web_Tabs'
 export default {
   beforeMount () {
     this.$store.commit('alterNavColor', '#027878')
