@@ -21,7 +21,7 @@
         </div>
         <div class="web-tabs__project-plans">
           <div v-for="text in project.project_details" :key="text.id">
-            <div class="icons">&#x2714</div>
+            <div class="icons">&#x2714;</div>
             <div>{{text}}</div>
           </div>
         </div>

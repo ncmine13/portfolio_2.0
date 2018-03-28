@@ -1,8 +1,9 @@
 <template>
   <div class="nav__wrapper" v-bind:style="{backgroundColor: activeBgColor}">
-    <nav>
+    <nav class="site-width">
       <div :key="item.id" v-for="item in navElements"><router-link :to="item.route">{{ item.title }}</router-link></div>
     </nav>
+
   </div>
 </template>
 
@@ -55,14 +56,20 @@ export default {
 
 .nav {
   &__wrapper {
-    padding-top: 20px;
-    /* box-shadow: rgb(15, 15, 15) 0px 1px 10px 1px; */
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    &.fixed {
+      position: fixed;
+      top: 0;
+      z-index: 3;
+    }
     nav {
       display: flex;
-      justify-content: space-between;
-      width: 450px;
+      width: 100%;
+      /* justify-content: space-between; */
       a {
         padding: 0 10px;
         text-transform: uppercase;

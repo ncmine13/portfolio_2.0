@@ -4,7 +4,7 @@
 }
 
 .stack {
-  @include flexbox_standard;
+  // @include flexbox_standard;
   text-transform: uppercase;
   padding-bottom: 10px;
   & > div {

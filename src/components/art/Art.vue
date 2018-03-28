@@ -27,18 +27,18 @@ export default {
       copy: artCopy
     }
   },
-  computed : {
+  computed: {
     statement () {
       return this.copy.statement
     },
     themes () {
       return this.copy.themes
-    },
+    }
   },
   methods: {
     getBgImage (image) {
       let path = require('../../assets/' + image.img)
-      let src = "url(" + path + ")"
+      let src = 'url(' + path + ')'
       return { backgroundImage: src }
     }
   }
