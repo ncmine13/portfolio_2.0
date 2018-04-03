@@ -1,9 +1,8 @@
 <template>
-  <div class="nav__wrapper" v-bind:style="{backgroundColor: activeBgColor}">
+  <div class="nav__wrapper wrapper-pad" v-bind:style="{ backgroundColor: activeBgColor }">
     <nav class="site-width">
       <div :key="item.id" v-for="item in navElements"><router-link :to="item.route">{{ item.title }}</router-link></div>
     </nav>
-
   </div>
 </template>
 
@@ -37,16 +36,9 @@ export default {
       ]
     }
   },
-  watch: {
-    $route (to, from) {
-      if (this.$route.fullPath === '/') {
-        this.$store.commit('alterNavColor', '#FDB632')
-      }
-    }
-  },
   computed: {
     activeBgColor: function () {
-      return this.$store.state.navBgColor
+      return this.$store.state.navStuck ? this.$store.state.activeColorScheme.navFixed : this.$store.state.activeColorScheme.background
     }
   }
 }
@@ -56,7 +48,6 @@ export default {
 
 .nav {
   &__wrapper {
-    padding: 20px 0;
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -69,7 +60,6 @@ export default {
     nav {
       display: flex;
       width: 100%;
-      /* justify-content: space-between; */
       a {
         padding: 0 10px;
         text-transform: uppercase;

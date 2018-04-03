@@ -3,30 +3,30 @@
     "projects" : [
       {
         "id": 1,
+        "title": "Mood App Revamp",
+        "description": "Still in progress, this app is an extension of one of my first projects. The purpose of the app is twofold; I aim to provide users with a hassle-free platform to practice mindfulness by consistently answering a set of customizable questions, and to track their mood trends over time. Using technology to reduce the stress surrounding consistent mindfulness-oriented journaling is important to me.",
+        "stack": [ "vue.js", "quasar", "node.js", "Express", "Sequelize", "sqlite3" ],
+        "github_link": "a link",
+        "view_link": "another link",
+        "image_path": "Mood",
+        "project_details": [
+          "I wanted to expand upon the previous iteration and implement a wider range of features using a mobile UI framework. Because my day job was more front-end heavy, I endeavored to keep honing my skills up and down the stack.",
+          "This is a slightly different stack from what I'd worked with, and I've enjoyed mapping my database schemas, using Quasar's built-in components for clarity, and structuring the project in a practical way.",
+          "This project is in the very early phases. As I continue, I plan to switch from sqlite to postgres because of the latter's superior datatype support, implement database schemas, and focus on building out routes before getting fixated on UI nitty-gritty."
+        ]
+      },
+      {
+        "id": 2,
         "title": "Indelicate Scraping",
-        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word and pattern possibilities.",
+        "description": "I wanted to play with python and interact with an existing dataset. Though it be uncouth, I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut.",
         "stack": [ "python", "javascript" ],
         "github_link": "a link",
         "view_link": "another link",
         "image_path": "pythonImg",
         "project_details": [
-          "I wanted to learn python, or rather a language besides javascript to get a better understanding of methods and patterns offered by a traditional backend language.",
-          "I learned how to xyz. Some more filler info right here, you're welcome. More things right now, more writing always and forever more. Code code code is love.",
-          "I plan to do this other thing next. Filler is the best, now, isn't it? Only time will tell and we will all rule together with Vlad as our king and princeling."
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Mood Revamp",
-        "description": "This was made as an extension of an earlier project with this new stack.",
-        "stack": [ "Vue.js", "Node", "Express", "Sequelize", "sqlite3" ],
-        "github_link": "a link",
-        "view_link": "another link",
-        "image_path": "Mood",
-        "project_details": [
-          "I wanted to learn python, or rather a language besides javascript to get a better understanding of methods and patterns offered by a traditional backend language.",
-          "I learned how to xyz. Some more filler info right here, you're welcome. More things right now, more writing always and forever more. Code code code is love.",
-          "I plan to do this other thing next. Filler is the best, now, isn't it? Only time will tell and we will all rule together with Vlad as our king and princeling."
+          "I wanted to learn Python, or rather a language other than JavaScript/Node, to get a better understanding of methods and patterns offered by a traditional backend language.",
+          "I learned about parsing html, gained a better understanding of how quick and easy it is to grab web content, and I've been enjoying learning about structuring modular code in Python.",
+          "There are two directions I want to take this project: a) I'd like to track any trends in word patterns and frequency over time and b) I want to artfully and interactively display the text in WebGL."
         ]
       }
     ],
@@ -39,33 +39,28 @@
       {
         "id": 1,
         "title" : "cusp",
-        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
-        "stack": [ "python", "javascript", "threejs" ],
-        "img_path": "/whatever",
-
+        "description": "I spent the first large chunk of time with Multiple Inc. working on this internal website commemorating the ten-year anniversary of their annual design conference hosted at the Museum of Contemporary Art in Chicago. When I began working on the site, I expanded on inherited code relying on jQuery to manipulate the UI on a front-end data filter. After a company-driven site redesign, I elected to use a JavaScript framework for a more efficient and organized solution to a DOM-manipulation heavy problemspace. Because I'd been hearing good things about Vue, I decided to give it a try.I thoroughly enjoyed learning and practicing a state-management pattern, and am very happy with the fluidity of the UI. ",
+        "stack": [ "vue.js", "javascript", "webpack", "d3.js" ],
         "image_path": "Coffee"
       },
       {
         "id": 2,
         "title" : "essex",
-        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
-        "stack": [ "python", "javascript", "threejs" ],
-        "img_path": "/whatever",
+        "description": "In addition to structuring and styling a website in Craft's Twig, I enjoyed implementing a Craft plugin allowing the real-estate client to select properties from their database to showcase on their homepage.",
+        "stack": [ "ES6", "PHP", "Craft CMS", "Twig" ],
         "image_path": "Mood"
-
       },
       {
         "id": 3,
         "title" : "jcr",
-        "description": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
-        "stack": [ "python", "javascript", "threejs" ],
-        "img_path": "/whatever",
+        "description": "Before leaving multiple, I was excited to have the opportunity to design a Rails API for a hospital tracer tool. Having not worked with Rails before, I enjoyed learning to write migrations and plan SQL tables.",
+        "stack": [ "Rails API", "Ruby", "Postgresql" ],
         "image_path": "DrawTrivia"
       }
     ],
     "name" : "multiple",
     "color" : "#801638",
-    "banner_intro": "In my free time, I work on things I care about."
+    "banner_intro": "Art my first development job, I had the opportunity to explore a variety of technologies, work on internal and client projects, and improve my craft."
   },
   {
     "projects" : [
@@ -75,12 +70,8 @@
         "name" : "drawing",
         "nav_color": "#801638",
         "image_path": "DrawTrivia",
-        "stack": [
-          "javascript",
-          "css",
-          "html"
-        ],
-        "description": "I was inspired by this and did that. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
+        "stack": [ "JavaScript", "CSS", "HTML5", "HTML Canvas" ],
+        "description": "For my first project in General Assembly's Web Development Immersive, I created an educational trivia game. Upon correctly answering trivia questions, the user sees an increased propertion of an svg rendered by randmomly generated filler circles. This allowed em to practice constructors and to learn to sync markup, styles, and scripts."
       },
       {
         "id": 2,
@@ -88,12 +79,8 @@
         "name" : "coffee",
         "nav_color": "#C22326",
         "image_path": "Coffee",
-        "stack": [
-          "JavaScript",
-          "Node.js",
-          "Express"
-        ],
-        "description": "I was a barista and it kind of sucked. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
+        "stack": [ "JavaScript", "Node", "Express", "CSS/Less" ],
+        "description": "For this pair-programmed project."
       },
       {
         "id": 3,
@@ -101,12 +88,7 @@
         "name" : "mood",
         "nav_color": "#FDB632",
         "image_path": "Mood",
-        "stack": [
-          "React",
-          "css",
-          "html",
-          "Sinatra/ActiveRecord"
-        ],
+        "stack": [ "React", "CSS/Less", "HTML5", "Sinatra/ActiveRecord" ],
         "description": "I like talking about feelings and I think everyone else should, too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
       }
     ],

@@ -5,9 +5,7 @@
       <div class="art__themes">
         <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id">
           <div class="art__theme" v-bind:style=" getBgImage(theme.pieces[0])"></div>
-          <div class="art__theme-overlay">
-            <div class="overlay-text">{{ theme.name }}</div>
-          </div>
+          <router-link :to="'/artwork/' + theme.route" v-on:click.native="activateTheme(theme)"><div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div></router-link>
         </div>
       </div>
     </div>
@@ -18,7 +16,6 @@
 import artCopy from '../../data/art-info.json'
 export default {
   beforeMount () {
-    this.$store.commit('alterNavColor', '#FDB632')
     this.$store.commit('toggleHomeView', false)
   },
   name: 'Art',
@@ -40,6 +37,9 @@ export default {
       let path = require('../../assets/' + image.img)
       let src = 'url(' + path + ')'
       return { backgroundImage: src }
+    },
+    activateTheme (theme) {
+      this.$store.commit('activateArtTheme', theme)
     }
   }
 }

@@ -43,7 +43,7 @@ export default {
       let stickBool = true
       if (window.pageYOffset <= this.headerHeight) { stickBool = false }
 
-      this.$store.commit('toggleNavStick', stickBool)
+      this.$store.dispatch('handleStickyState', { value: stickBool })
     },
     resizeHandler () {
       console.log('resizing')

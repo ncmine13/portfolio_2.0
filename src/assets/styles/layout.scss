@@ -1,10 +1,15 @@
-.site-width {
-  max-width: 1000px;
-  margin: 0 auto;
+.wrapper-pad {
+  padding: 20px 0;
+}
+
+.intro-pad {
+  padding: 60px 40px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .stack {
-  // @include flexbox_standard;
+  display: flex;
   text-transform: uppercase;
   padding-bottom: 10px;
   & > div {

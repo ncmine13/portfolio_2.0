@@ -3,20 +3,26 @@
     <div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div>
     <div class="header__contact--wrapper">
       <div class="header__contact">
-        <img src="../../assets/icons/linkedin.png" />
-        <img src="../../assets/icons/github.svg" />
-        <img src="../../assets/icons/email.png" />
+        <svgicon icon="gmail" width="22" height="18" :color="getIconColor"></svgicon>
+        <svgicon icon="github_logo" width="22" height="18" :color="getIconColor"></svgicon>
+        <svgicon icon="linkedin" width="22" height="18" :color="getIconColor"></svgicon>
       </div>
     </div>
   </div>
 </template>
 <script>
 import navComponent from './Nav'
+import '../../compiled-icons/index'
 export default {
   name: 'Header',
   data () {
     return {
       name: 'Naomi Mine'
+    }
+  },
+  computed: {
+    getIconColor () {
+      return this.$store.state.iconColor
     }
   },
   components: {
@@ -45,9 +51,9 @@ export default {
       align-items: center;
       position: fixed;
       z-index: 4;
-      img {
-        height: 24px;
-        margin-left: 30px;
+      /* right: 40px; */
+      svg {
+        margin-left: 20px;
       }
       &--wrapper {
         display: flex;

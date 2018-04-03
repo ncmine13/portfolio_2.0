@@ -25,3 +25,21 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+state holds active page
+update active page when rerouting
+have json file with correct color schemes
+
+scheme:
+-nav background color
+-fixed nav bg color
+-accent color
+-footer background color
+-footer text
+-contact svg colors
+
+UI moves:
+-make nav stick
+-arrange menu and header to incorporate contact info
+-turn scss variables into javascript variables

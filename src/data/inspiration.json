@@ -1,60 +1,70 @@
-[
+
   {
     "header": "No one exists in a vacuum. These are just a few of the things that I think about, that have informed my worldview, that continue to innervate me.",
     "items": [
       {
-        "caption": "aubrey beardsley"
+        "caption": "aubrey beardsley",
+        "img_path" : "beardsley.jpg"
       },
       {
-        "caption": "tamora pierce/lady knight, squire, trickster's choice"
+        "caption": "tamora pierce/lady knight, squire, trickster's choice",
+        "img_path": "Lady_Knight.jpg"
       },
       {
-        "caption": "paul feyerabend"
+        "caption": "paul feyerabend",
+        "img_path": "feyerabend.jpg"
       },
       {
-        "caption": "the mind body problem"
+        "caption": "the mind body problem",
+        "img_path": "mindbodyproblem.jpeg"
       },
       {
-        "caption": "the blazing world"
+        "caption": "the blazing world",
+        "img_path": "blazing_world.jpeg"
       },
       {
         "caption": "hempel/hanson"
       },
       {
-        "caption": "bloody mary"
+        "caption": "bloody mary",
+        "img_path" : "bloody_mary.jpeg"
       },
       {
         "caption": "renaissance clothing"
       },
       {
-        "caption": "ivan albright's dorian gray"
+        "caption": "ivan albright's dorian gray",
+        "img_path": "albright.jpg"
       },
       {
-        "caption": "toulousse lautrec painting"
+        "caption": "toulousse lautrec painting",
+        "img_path": "toulouse_lautrec.jpg"
       },
       {
-        "caption": "I capture the castle"
+        "caption": "I capture the castle",
+        "img_path" : "capture_the_castle.jpg"
       },
       {
-        "caption": "An intimate history of Humanity"
+        "caption": "An intimate history of Humanity",
+        "img_path": "zeldin.jpeg"
       },
       {
-        "caption": "Sheep may safely graze"
+        "caption": "Sheep may safely graze",
+        "img_path": "sheep.jpeg"
       },
       {
-        "caption": "Martin Bernstein's studio at bridgeport art center"
+        "caption": "Martin Bernstein's studio at bridgeport art center",
+        "img_path": "bernstein.jpg"
       },
       {
-        "caption": "Corinna Button"
+        "caption": "Corinna Button",
+        "img_path": "corinna_button.jpeg"
       },
       {
         "caption": "Asturias/Gijon"
       },
       {
         "caption": "Fabrics"
-      },
-      {
-        "caption": "Siamese twins"
       },
       {
         "caption": "eternal sunshine"
@@ -66,35 +76,34 @@
         "caption": "Chopin"
       },
       {
-        "caption": "Discipline and punish"
+        "caption": "Discipline and punish",
+        "img_path" : "michel-foucault-discipline-punish.jpg"
       },
       {
-        "caption": "Playmobil"
+        "caption": "Eichmann in Jerusalem",
+        "img_path" : "arendt.jpg"
       },
       {
-        "caption": "Leaves"
+        "caption": "Playmobil",
+        "img_path" : "playmobil.jpg"
+      },
+      {
+        "caption": "Gingko leaves",
+        "img_path" : "gingko.jpg"
       },
       {
         "caption": "The time traveller's wife"
       },
       {
-        "caption": "A history of love"
+        "caption": "A history of love",
+        "img_path" : "history_of_love.jpg"
       },
       {
-        "caption": "A hundred years of solitude"
+        "caption": "One hundred years of solitude",
+        "img_path" : "garcia_marquez.jpg"
       },
       {
         "caption": "this is colossal"
-      },
-      {
-        "caption": "I like thinking in JSON."
-      },
-      {
-        "caption": "Div dreams"
-      },
-      {
-        "caption": ""
       }
     ]
   }
-]

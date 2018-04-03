@@ -1,18 +1,40 @@
 {
-  "statement": "Working at Allstate appeals to me because of your company’s ability to preserve a close and collaborative company environment while maintaining a prominent national presence. As a driven, organized, and thorough thinker, I strongly desire to work in an agile environment to develop an understanding of the full life cycle of a set of highly utilized products. Furthermore, I am excited to pair-program and can think of no better way to learn best practices and test-driven development than in a collaborative and supportive environment of similarly enthusiastic individuals. The mentorship and team structure at Allstate comes highly recommended by my close friend in the Actuarial department, and I’ve always been impressed by the dedication to community-building and volunteer work that Allstate fosters.",
+  "statement": "Working at Allstate appeals to me because of your company’s ability to preserve a close and collaborative company environment while maintaining a prominent national presence. As a driven, organized, and thorough thinker, I strongly desire to work in an agile environment to develop an understanding of the full life cycle of a set of highly utilized products. Furthermore, I am excited to pair-program and can think of no better way to learn best practices and test-driven development than in a collaborative and supportive environment of similarly enthusiastic indivrouteuals. The mentorship and team structure at Allstate comes highly recommended by my close friend in the Actuarial department, and I’ve always been impressed by the dedication to community-building and volunteer work that Allstate fosters.",
   "themes": [
     {
       "name": "Collecting, Recycling, Attachment",
+      "route": "collecting",
       "pieces": [
         {
           "title": "",
           "materials": "",
           "img": "Assemblage2.jpg"
+        },
+        {
+          "title": "Untitled",
+          "materials": "Fabric, sea shells",
+          "img": "fabric_collage.jpg"
+        },
+        {
+          "title": "",
+          "materials": "",
+          "img": "plant_collage.jpg"
+        },
+        {
+          "title": "",
+          "materials": "",
+          "img": "collecting_wall.jpg"
+        },
+        {
+          "title": "",
+          "materials": "",
+          "img": "alterity.jpg"
         }
       ]
     },
     {
       "name": "Ladies, Sex & Labor",
+      "route": "ladies",
       "pieces": [
         {
           "title": "",
@@ -23,6 +45,7 @@
     },
     {
       "name": "SpaceMaking, World Creation",
+      "route": "spacemaking",
       "pieces": [
         {
           "title": "",
@@ -33,6 +56,7 @@
     },
     {
       "name": "I Practice and I'm Proud of it",
+      "route": "miscellaneous",
       "pieces": [
         {
           "title": "",

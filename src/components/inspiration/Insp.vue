@@ -1,0 +1,59 @@
+<template>
+  <div class="insp-section__wrapper">
+    <div class="h2-size intro-pad">{{inspiration.header}}</div>
+    <div class="insp-section__item-wrapper site-width">
+      <img class="insp-section__item" v-for="item in inspiration.items" :key="item.id" :src="getBgImage(item)"/>
+    </div>
+  </div>
+</template>
+<script>
+import inspiration from '../../data/inspiration.json'
+import Packery from 'packery'
+
+export default {
+  beforeMount () {
+    this.$store.commit('toggleHomeView', false)
+  },
+  mounted () {
+    window.setTimeout(function () {
+      var elem = document.querySelector('.insp-section__item-wrapper')
+      var pckry = new Packery(elem, {
+        itemSelector: '.insp-section__item',
+        gutter: 10
+      })
+    }, 500)
+  },
+  name: 'Insp',
+  data () {
+    return {
+      msg: 'Inspiration',
+      inspiration: inspiration
+    }
+  },
+  methods: {
+    getBgImage (item) {
+      if (item['img_path']) {
+        let path = require('../../assets/images/inspiration/' + item['img_path'])
+        return path
+      }
+    }
+  }
+}
+</script>
+<style lang="sass-loader" scoped>
+  @import '../../assets/styles/variables.scss';
+  .insp-section {
+    &__wrapper {
+      background-color: $red;
+      color: white;
+      text-align: center;
+    }
+    &__item {
+      width: calc(100%/3 - 40px);
+      height: auto;
+    }
+    &__item-wrapper {
+      padding: 0 40px;
+    }
+  }
+</style>
