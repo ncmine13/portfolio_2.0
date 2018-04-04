@@ -10,6 +10,13 @@
   align-items: center;
 }
 
+@mixin makeSquare() {
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
 @mixin breakpoint($point) {
   $bp-site-width: "(max-width: 1040px)";
 

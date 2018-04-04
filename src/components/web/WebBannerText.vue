@@ -1,5 +1,6 @@
 <template>
-  <div class="h2-size intro intro-pad" v-bind:style="{ backgroundColor: bgColor}">{{ intro }}</div>
+  <div class="h2-size intro intro-pad">{{ intro }}</div>
+  <!-- <div class="h2-size intro intro-pad" v-bind:style="{ backgroundColor: bgColor}">{{ intro }}</div> -->
 </template>
 
 <script>
@@ -7,7 +8,7 @@ export default {
   name: 'WebBannerText',
   computed: {
     bgColor () {
-      return this.$store.state.activeColorScheme.accent
+      // return this.$store.state.activeColorScheme.accent
     }
   },
   props: ['intro']

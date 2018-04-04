@@ -1,12 +1,14 @@
 <template>
-  <div class="web-section__wrapper wrapper-pad" v-bind:style="{ backgroundColor: colorScheme.background }">
-    <web-tab-component :content="section" :key="section.id" v-for="section in copy"></web-tab-component>
+  <div class="web-section__wrapper" v-bind:style="{ backgroundColor: colorScheme.background }">
+    <!-- <web-tab-component :content="section" :key="section.id" v-for="section in copy"></web-tab-component> -->
+    <web-project></web-project>
   </div>
 </template>
 
 <script>
 import webContent from '%/data/web-info.json'
-import webTabComponent from './WebTabs'
+// import webTabComponent from './WebTabs'
+import webProject from './WebProject'
 export default {
   beforeMount () {
     this.$store.commit('toggleHomeView', false)
@@ -20,7 +22,8 @@ export default {
     }
   },
   components: {
-    webTabComponent
+    // webTabComponent,
+    webProject
   }
 }
 </script>
