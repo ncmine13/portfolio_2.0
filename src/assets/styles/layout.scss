@@ -2,6 +2,15 @@
   padding: 20px 0;
 }
 
+.double-wrapper-pad {
+  padding: 40px 0;
+}
+
+.two-by-two {
+  width: calc(100%/2 - 40px);
+  padding-right: 40px;
+}
+
 .intro-pad {
   padding: 60px 40px;
   margin-bottom: 40px;
@@ -10,8 +19,8 @@
 
 .stack {
   display: flex;
+  flex-wrap: wrap;
   text-transform: uppercase;
-  padding-bottom: 10px;
   & > div {
     margin-right: 10px;
   }

@@ -25,10 +25,10 @@ export default {
 
 .footer {
   &__wrapper {
-    /* background-color: $yellow; */
     height: 20vh;
     display: flex;
     align-items: center;
+    color: white;
   }
   &__content {
     font-weight: 600;

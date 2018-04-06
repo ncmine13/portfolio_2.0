@@ -6,7 +6,7 @@
     </div>
     <nav-component></nav-component>
     <router-view/>
-    <footer-component></footer-component>
+    <footer-component v-if="!hpActive"></footer-component>
   </div>
 </template>
 

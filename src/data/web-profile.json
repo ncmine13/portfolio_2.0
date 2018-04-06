@@ -1,119 +1,49 @@
 [
   {
-    "current": [
+    "id": 1,
+    "name": "Passion.",
+    "intro": "I've been developing for a year, and am always eager to learn more! Here is a sample of what I've been working on lately in my free time.",
+    "projects": [
       {
         "id": 1,
-        "headline": "Indelicate Scraping",
-        "description_intro": "This is my first python program and i wanted to scrape a porn API because of the interesting word possibilities.",
-        "description_extension": "I did this because blah blah and blah blah, and I'd like to go here with it.",
-        "stack": [
-          "python",
-          "javascript",
-          "threejs"
-        ],
-        "github_link": "a link",
-        "view_link": "another link",
-        "img_path": "/whatever"
+        "title": "Mood App Revamp",
+        "stack": [ "vue.js", "quasar", "node.js", "Express", "Sequelize", "sqlite3" ],
+        "img_path": "pythonImg.png",
+        "description": "The purpose of this app is twofold; I aim to provide users with a hassle-free platform to practice mindfulness by consistently answering a set of customizable questions, and to track their mood trends over time."
       },
       {
         "id": 2,
-        "headline": "Mood Revamp",
-        "description_intro": "This was made as an extension of an earlier project with this new stack",
-        "description_extension": "I'm super excited to go way further with it and can't wait till it can do x, y, and z.",
-        "stack": [
-          "Vue.js",
-          "Node",
-          "Express",
-          "Sequelize",
-          "sqlite3"
-        ],
-        "github_link": "a link",
-        "view_link": "another link",
-        "img_path": "/whatever"
+        "title": "Indelicate Scraping",
+        "stack": [ "python", "javascript"],
+        "img_path": "mock_diagram.png",
+        "description": "Though it be uncouth, I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with python and interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
       }
+
+    ],
+    "secondary": "Though I entered web development because I believed my interest in art could bridge the gap between design and development, I've become far more interested in the logic necessary to craft effective code. Though I love a clean user interface, my interests are veering further back in the stack."
+  },
+  {
+    "id": 2,
+    "name": "Experience.",
+    "intro": "After a three-month stretch with General Assembly's Web Development Immersive in Chicago and a two-month stint of job applications, coding challenges, and hacked freelance projects, I entered the workforce with wide eyes and an expanding conceptual framework. Before working for nearly 3/4 of a year as a developer at the design agency Multiple, Inc., I never would have imagined I'd...",
+    "accomplishments": [
+      "work with UI libraries including GSAP, ScrollMagic, and Packery to create fluid interactions",
+      "teach myself the flux-like Vue-Vuex state management pattern, pioneering use of this technology at my firm",
+      "develop an understanding of our virtual machine environments",
+      "design and construct a plugin in Craft CMS (PHP/JavaScript)",
+      "design a complex Rails API for a medical research survey tool",
+      "learn Webpack",
+      "construct legible and well organized stylesheets using a modular BEM technology",
+      "be able to articulate why Middleman and Gulp were no longer useful in our evolving development environments"
     ]
   },
   {
-    "multiple" :[
-      {
-        "id": 1,
-        "name" : "cusp"
-      },
-      {
-        "id": 2,
-        "name" : "essex"
-      },
-      {
-        "id": 3,
-        "name" : "jc"
-      }
-    ]
-  },
-  {
-    "past_ga":
-      {
-        "intro": "Back in the day, I did these shittier things but I learned a lot. Little blurb about GA.",
-        "projects": [
-          {
-            "id": 1,
-            "name" : "drawing",
-            "nav_color": "#801638",
-            "title": "Drawing Game",
-            "image_path": "DrawTrivia",
-            "stack": [
-              "javascript",
-              "css",
-              "html"
-            ],
-            "description": "I was inspired by this and did that. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
-          },
-          {
-            "id": 2,
-            "name" : "coffee",
-            "nav_color": "#C22326",
-            "title": "Coffee App",
-            "image_path": "Coffee",
-            "stack": [
-              "JavaScript",
-              "Node.js",
-              "Express"
-            ],
-            "description": "I was a barista and it kind of sucked. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
-          },
-          {
-            "id": 3,
-            "name" : "mood",
-            "nav_color": "#FDB632",
-            "title": "Mood App",
-            "image_path": "Mood",
-            "stack": [
-              "React",
-              "css",
-              "html",
-              "Sinatra/ActiveRecord"
-            ],
-            "description": "I like talking about feelings and I think everyone else should, too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat sequi, aperiam corporis minima, nisi saepe quod, soluta incidunt illum omnis. Eaque veritatis maxime maiores similique aliquid molestiae perferendis. Expedita."
-          }
-        ]
-      }
-  },
-  {
-    "content_blocks": [
-      {
-        "id" : 1,
-        "title" : "Where I am now",
-        "blurb": "Where I am right now, I am want to learn this, that, and that. What I'm most interested in is this and I can't wait to have a mentor to actually show me how."
-      },
-      {
-        "id" : 2,
-        "title" : "Integrating me work",
-        "blurb": "I love to link interesting things and love tech because it lets me think about all sorts of shit. I love software development for its craft, which is related to me being an artist."
-      },
-      {
-        "id" : 3,
-        "title" : "Where I want to be down the line",
-        "blurb": "I'm pretty young and new to the industry, and i want to keep learning. With my nontraditional path, I am so excited to learn about formal things."
-      }
-    ]
+    "id": 3,
+    "name": "Skills.",
+    "intro": "I began my journey at General Assembly and have continued to rigorously self-teach since graduating. At GA, the stack we practiced consisted of:",
+    "stack": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
+    "secondary": "Since completing GA, I have taught myself (to varying degrees of thoroughness):",
+    "stack2": ["ES6 syntax", "Python", "Webpack", "Vue-Vuex", "Rails", "Laravel Homestead", "PHP", "SCSS with BEM", "Craft CMS/Twig"],
+    "tertiary": "Furthermore, I've been working hard to understand a variety of computer science concepts and applications in order to further improve my programmatic decision-making."
   }
 ]

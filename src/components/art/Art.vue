@@ -4,8 +4,10 @@
       <div class="art__statement">{{ statement }}</div>
       <div class="art__themes">
         <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id">
-          <div class="art__theme" v-bind:style=" getBgImage(theme.pieces[0])"></div>
-          <router-link :to="'/artwork/' + theme.route" v-on:click.native="activateTheme(theme)"><div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div></router-link>
+          <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
+          <router-link :to="theme.route">
+            <div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -33,14 +35,14 @@ export default {
     }
   },
   methods: {
-    getBgImage (image) {
-      let path = require('../../assets/' + image.img)
+    getBgImage (theme) {
+      let path = require('../../assets/images/art' + theme.subroute + '/' + theme.pieces[0].img)
       let src = 'url(' + path + ')'
       return { backgroundImage: src }
-    },
-    activateTheme (theme) {
-      this.$store.commit('activateArtTheme', theme)
     }
+    // activateTheme (theme) {
+    //   this.$store.commit('activateArtTheme', theme)
+    // }
   }
 }
 </script>

@@ -19,6 +19,7 @@ export const store = new Vuex.Store({
       state.homeView = active
     },
     alterColorScheme (state, route) {
+      console.log('scheme')
       if (state.colorSchema.find(schema => schema.page === route)) {
         let scheme = state.colorSchema.find(schema => schema.page === route).colors
         state.activeColorScheme = scheme
@@ -34,7 +35,6 @@ export const store = new Vuex.Store({
       let navWrapper = document.querySelector('.nav__wrapper')
       let nextComponent = navWrapper.nextElementSibling
       let navHeight = document.querySelector('.nav__wrapper').clientHeight
-      // find bg color for fixed state
       if (sticky) {
         state.navStuck = true
         navWrapper.classList.add('fixed')

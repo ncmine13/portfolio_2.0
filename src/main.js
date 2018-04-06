@@ -10,9 +10,14 @@ Vue.config.productionTip = false
 Vue.use(VueSVGIcon)
 
 router.beforeEach((to, from, next) => {
-  // activateArtTheme
-  let path = to.fullPath
-  store.commit('alterColorScheme', path)
+  if (to.fullPath === '/') {
+    store.commit('toggleHomeView', true)
+    // store.commit('alterColorScheme', path)
+  } else {
+    let path = to.fullPath
+    store.commit('toggleHomeView', false)
+    store.commit('alterColorScheme', path)
+  }
   next()
 })
 

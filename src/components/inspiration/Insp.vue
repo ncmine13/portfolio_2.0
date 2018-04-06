@@ -19,7 +19,7 @@ export default {
       var elem = document.querySelector('.insp-section__item-wrapper')
       var pckry = new Packery(elem, {
         itemSelector: '.insp-section__item',
-        gutter: 10
+        gutter: 20
       })
     }, 500)
   },

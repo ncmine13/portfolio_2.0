@@ -1,7 +1,7 @@
 [
   {
     "page" : "/web",
-    "colors" : { "background" : "#027878", "navFixed" : "#013a3a", "accent" : "rgb(179, 72, 23)", "footer" : "#FDB632" }
+    "colors" : { "background" : "#027878", "overlay": "rgba(0, 31, 31, 0.7)", "navFixed" : "#013a3a", "accent" : "rgb(179, 72, 23)", "footer" : "#FDB632" }
   },
   {
     "page" : "/artwork",
@@ -19,5 +19,21 @@
   {
     "page" : "/",
     "colors": { "background" : "#FDB632"}
+  },
+  {
+    "page" : "/artwork/collecting",
+    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
+  },
+  {
+    "page" : "/artwork/ladies",
+    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
+  },
+  {
+    "page" : "/artwork/spacemaking",
+    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
+  },
+  {
+    "page" : "/artwork/miscellaneous",
+    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
   }
 ]

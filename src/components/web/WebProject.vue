@@ -1,89 +1,75 @@
 <template>
-  <div class="web-project__wrapper">
-    <div class="web-project__cover">
-      <div class="web-project__overlay" v-bind:style="{ backgroundColor: colorScheme.overlay }">
-        <div class="intro"> {{ intro }} </div>
+  <div class="project__projects-wrapper wrapper-pad">
+    <div class="project__project-wrapper two-by-two" v-for="project in projects" :key="project.id">
+      <div class="project__project-image" v-bind:style="{ backgroundImage: getBgImage(project) }">
+        <div class="project__image-overlay">
+          <div class="project__title h3-size wrapper-pad"> {{ project.title }} </div>
+          <div class="stack wrapper-pad">
+            <div v-for="item in project.stack" :key="item.id">{{item}}</div>
+          </div>
+          <div class="wrapper-pad">
+            <div class="button">view on github</div>
+          </div>
+        </div>
       </div>
+      <div class="project__description"> {{ project.description }} </div>
     </div>
-    <div class="h2-size site-width wrapper-pad">{{ text1 }}</div>
-    <div class="web-project__segment-wrapper site-width">
-      <div v-for="segment in webCopy" :key="segment.id" class="segment__name" v-on:click="activateSection(segment)">{{ segment.name }}</div>
-    </div>
-    <web-segment v-for="segment in webCopy" :key="segment.id" :class="{ active: isSegmentActive(segment) }" :segment="segment"></web-segment>
-    <div class="h2-size site-width wrapper-pad" style="textAlign: right">{{ text2 }}</div>
   </div>
 </template>
 
 <script>
-import webProfile from '../../data/web-profile.json'
-import webSegment from './WebSegment'
-
 export default {
   name: 'WebProject',
-  mounted () {
-    this.activeSegment = this.webCopy[0]
-  },
-  data () {
-    return {
-      colorScheme: this.$store.state.activeColorScheme,
-      intro: "I'm Naomi, and I'm dedicated to being a lifelong learner.",
-      webCopy: webProfile,
-      text1: "I've got...",
-      text2: "...and I want more.",
-      activeSegment: ''
-    }
-  },
-  computed: {
-
-  },
+  props: [
+    'projects'
+  ],
   methods: {
-    activateSection (segment) {
-      this.activeSegment = segment
-    },
-    isSegmentActive (segment) {
-      if (this.activeSegment === segment) {
-        return true
-      }
+    getBgImage (project) {
+      let path = require('../../assets/' + project.img_path)
+      let image = 'url(' + path + ')'
+      return image
     }
-  },
-  props: ['project'],
-  components: {
-    webSegment
   }
 }
 </script>
 
 <style lang="sass-loader" scoped>
-@import '../../assets/styles/main.scss';
-
-.web-project {
-  &__wrapper {
-  }
-  &__cover {
-    height: 50vh;
-    background-image: url('../../assets/peter_sis.jpg');
-    background-size: cover;
-    position: relative;
-  }
-  &__overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .intro {
-      font-size: 35px;
-      padding: 0 40px;
-      text-align: center;
-      letter-spacing: 1.5px;
+  @import "../../assets/styles/main.scss";
+  .project {
+    &__projects-wrapper {
+      display: flex;
+    }
+    &__project-image {
+      height: 50vh;
+      position: relative;
+    }
+    &__image-overlay {
+      position: absolute;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      .button {
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 3px;
+        z-index: 0;
+        padding: 10px 30px;
+        width: max-content;
+        transition: 0.2s all;
+        &:hover {
+          background-color: $orange;
+        }
+      }
+      &:hover {
+        .button {
+          transform: translate(10px);
+        }
+      }
+    }
+    &__description {
+      padding: 20px;
+      line-height: 1.4;
     }
   }
-  &__segment-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-}
-
 </style>

@@ -13,12 +13,12 @@ const router = new Router({
   routes: [
     {
       path: '/artwork',
-      name: 'Art',
       component: Art
     },
     {
-      path: '/artwork/:route',
-      component: ArtProject
+      path: '/artwork/collecting',
+      component: ArtProject,
+      alias: ['/artwork/ladies', '/artwork/spacemaking', '/artwork/miscellaneous', '/artwork/plants']
     },
     {
       path: '/web',

@@ -3,38 +3,39 @@
   "themes": [
     {
       "name": "Collecting, Recycling, Attachment",
-      "route": "collecting",
+      "route": "/artwork/collecting",
+      "subroute" : "/collecting",
       "pieces": [
         {
-          "title": "",
-          "materials": "",
-          "img": "Assemblage2.jpg"
-        },
-        {
           "title": "Untitled",
-          "materials": "Fabric, sea shells",
+          "materials": "Fabric, sea shells, beads",
+          "year": "2013",
           "img": "fabric_collage.jpg"
         },
         {
           "title": "",
-          "materials": "",
-          "img": "plant_collage.jpg"
+          "materials": "Dried plants, fabric, ply, paper maché",
+          "year": "2016",
+          "img": "plant_assemblage.jpg"
         },
         {
-          "title": "",
-          "materials": "",
+          "title": "Basement",
+          "year": "2015",
+          "materials": "Paper mache, acrylic, sawdust, beads",
           "img": "collecting_wall.jpg"
         },
         {
-          "title": "",
-          "materials": "",
+          "title": "Alterity",
+          "materials": "Cardboard, acrylic paint, beads, found objects",
+          "year": "2016",
           "img": "alterity.jpg"
         }
       ]
     },
     {
       "name": "Ladies, Sex & Labor",
-      "route": "ladies",
+      "route": "/artwork/ladies",
+      "subroute" : "/ladies",
       "pieces": [
         {
           "title": "",
@@ -45,7 +46,8 @@
     },
     {
       "name": "SpaceMaking, World Creation",
-      "route": "spacemaking",
+      "route": "/artwork/spacemaking",
+      "subroute" : "/spacemaking",
       "pieces": [
         {
           "title": "",
@@ -55,13 +57,26 @@
       ]
     },
     {
+      "name": "Plantmaking",
+      "route" : "/artwork/plants",
+      "subroute" : "/plants",
+      "pieces" : [
+        {
+          "title": "",
+          "materials": "",
+          "img": "Wood.jpg"
+        }
+      ]
+    },
+    {
       "name": "I Practice and I'm Proud of it",
-      "route": "miscellaneous",
+      "route": "/artwork/miscellaneous",
+      "subroute" : "/miscellaneous",
       "pieces": [
         {
           "title": "",
           "materials": "",
-          "img": "Cezanne.jpg"
+          "img": "IMG_1023.jpg"
         }
       ]
     }

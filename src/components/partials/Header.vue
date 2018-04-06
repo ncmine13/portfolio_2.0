@@ -1,6 +1,6 @@
 <template>
   <div class="header__wrapper site-width">
-    <div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div>
+    <router-link :to="'/'"><div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div></router-link>
     <div class="header__contact--wrapper">
       <div class="header__contact">
         <svgicon icon="gmail" width="22" height="18" :color="getIconColor"></svgicon>
