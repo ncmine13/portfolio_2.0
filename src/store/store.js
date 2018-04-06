@@ -52,6 +52,10 @@ export const store = new Vuex.Store({
         context.commit('toggleNavStick', sticky.value)
         context.commit('toggleIconColor', sticky.value)
       }
+    },
+    changePage (context, payload) {
+      context.commit('toggleHomeView', payload.showHomeView)
+      context.commit('alterColorScheme', payload.path)
     }
   }
 })

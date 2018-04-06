@@ -1,7 +1,7 @@
 <template>
   <div class="insp-section__wrapper">
     <div class="h2-size intro-pad">{{inspiration.header}}</div>
-    <div class="insp-section__item-wrapper site-width">
+    <div class="insp-section__item-wrapper site-width double-wrapper-pad">
       <img class="insp-section__item" v-for="item in inspiration.items" :key="item.id" :src="getBgImage(item)"/>
     </div>
   </div>
@@ -51,9 +51,6 @@ export default {
     &__item {
       width: calc(100%/3 - 40px);
       height: auto;
-    }
-    &__item-wrapper {
-      padding: 0 40px;
     }
   }
 </style>

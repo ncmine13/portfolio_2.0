@@ -1,10 +1,11 @@
 {
-  "statement": "Working at Allstate appeals to me because of your company’s ability to preserve a close and collaborative company environment while maintaining a prominent national presence. As a driven, organized, and thorough thinker, I strongly desire to work in an agile environment to develop an understanding of the full life cycle of a set of highly utilized products. Furthermore, I am excited to pair-program and can think of no better way to learn best practices and test-driven development than in a collaborative and supportive environment of similarly enthusiastic indivrouteuals. The mentorship and team structure at Allstate comes highly recommended by my close friend in the Actuarial department, and I’ve always been impressed by the dedication to community-building and volunteer work that Allstate fosters.",
+  "statement": "My central goal in artmaking involves experiencing and conveying sentiment. Textures, spatial composition, material associations — I believe that the coalescence of these variables to form a space with personality, fantasy, and baggage can imitate the most poignant aspects of lived experience.",
   "themes": [
     {
       "name": "Collecting, Recycling, Attachment",
       "route": "/artwork/collecting",
       "subroute" : "/collecting",
+      "thumbnail" : "fabric_collage.jpg",
       "pieces": [
         {
           "title": "Untitled",
@@ -36,11 +37,25 @@
       "name": "Ladies, Sex & Labor",
       "route": "/artwork/ladies",
       "subroute" : "/ladies",
+      "thumbnail" : "Drawing.jpg",
       "pieces": [
         {
-          "title": "",
-          "materials": "",
+          "title": "Assembly",
+          "materials": "Powdered graphite, ink, pastel",
+          "year": "2015",
           "img": "Drawing.jpg"
+        },
+        {
+          "title": "Blossoming",
+          "materials": "Oil pastel",
+          "year": "2016",
+          "img": "Fruit.jpg"
+        },
+        {
+          "title": "Psycho",
+          "materials": "Painting in oil",
+          "year": "2014",
+          "img": "Psycho.jpg"
         }
       ]
     },
@@ -48,11 +63,31 @@
       "name": "SpaceMaking, World Creation",
       "route": "/artwork/spacemaking",
       "subroute" : "/spacemaking",
+      "thumbnail" : "Collage4.jpg",
       "pieces": [
         {
-          "title": "",
-          "materials": "",
+          "title": "Untitled",
+          "materials": "Paper collage",
+          "year": "2017",
           "img": "Collage4.jpg"
+        },
+        {
+          "title": "Abyss",
+          "materials": "Paper collage",
+          "year": "2017",
+          "img": "Abyss.jpg"
+        },
+        {
+          "title": "Cocoon",
+          "materials": "Lace, paper maché, wood scrap",
+          "year": "2017",
+          "img": "Cocoon.jpg"
+        },
+        {
+          "title": "Dwelling",
+          "materials": "Painting Oil",
+          "year": "2017",
+          "img": "Painting.jpg"
         }
       ]
     },
@@ -60,11 +95,31 @@
       "name": "Plantmaking",
       "route" : "/artwork/plants",
       "subroute" : "/plants",
+      "thumbnail" : "Wood.jpg",
       "pieces" : [
         {
-          "title": "",
-          "materials": "",
+          "title": "The Meeting in the Wood",
+          "materials": "Plywood, galvanized steel",
+          "year": "2014",
           "img": "Wood.jpg"
+        },
+        {
+          "title": "Flower 1",
+          "materials": "Dried plant matter, fabric",
+          "year": "2016",
+          "img": "Flower1.jpg"
+        },
+        {
+          "title": "Flower 2",
+          "materials": "Dried plant matter, fabric",
+          "year": "2016",
+          "img": "Flower2.jpg"
+        },
+        {
+          "title": "Forest",
+          "materials": "Cardboard, dried plant matter, fabric flowers",
+          "year": "2014",
+          "img": "Forest1.jpg"
         }
       ]
     },
@@ -72,11 +127,31 @@
       "name": "I Practice and I'm Proud of it",
       "route": "/artwork/miscellaneous",
       "subroute" : "/miscellaneous",
+      "thumbnail" : "IMG_1023.jpg",
       "pieces": [
         {
-          "title": "",
-          "materials": "",
+          "title": "Still with Jars",
+          "materials": "Painting in oil",
+          "year": "2017",
           "img": "IMG_1023.jpg"
+        },
+        {
+          "title": "Still with Spools",
+          "materials": "Painting in oil",
+          "year": "2017",
+          "img": "spools.jpg"
+        },
+        {
+          "title": "Moon and Curtains",
+          "materials": "Photoshop",
+          "year": "2016",
+          "img": "Moon_n_curtains.png"
+        },
+        {
+          "title": "Textiles",
+          "materials": "Photoshop",
+          "year": "2016",
+          "img": "Textile_Composite.png"
         }
       ]
     }

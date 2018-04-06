@@ -10,14 +10,10 @@ Vue.config.productionTip = false
 Vue.use(VueSVGIcon)
 
 router.beforeEach((to, from, next) => {
-  if (to.fullPath === '/') {
-    store.commit('toggleHomeView', true)
-    // store.commit('alterColorScheme', path)
-  } else {
-    let path = to.fullPath
-    store.commit('toggleHomeView', false)
-    store.commit('alterColorScheme', path)
-  }
+  let path = to.fullPath
+  let showHomeView = true
+  if (path !== '/') { showHomeView = false }
+  store.dispatch('changePage', {showHomeView: showHomeView, path: path})
   next()
 })
 

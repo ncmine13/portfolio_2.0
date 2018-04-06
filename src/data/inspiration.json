@@ -16,18 +16,18 @@
       },
       {
         "caption": "the mind body problem",
-        "img_path": "mindbodyproblem.jpeg"
+        "img_path": "mindbodyproblem.jpg"
       },
       {
         "caption": "the blazing world",
-        "img_path": "blazing_world.jpeg"
+        "img_path": "blazing_world.jpg"
       },
       {
         "caption": "hempel/hanson"
       },
       {
         "caption": "bloody mary",
-        "img_path" : "bloody_mary.jpeg"
+        "img_path" : "bloody_mary.jpg"
       },
       {
         "caption": "renaissance clothing"
@@ -64,10 +64,10 @@
         "caption": "Asturias/Gijon"
       },
       {
-        "caption": "Fabrics"
+        "caption" : "maple leaf"
       },
       {
-        "caption": "eternal sunshine"
+        "caption": "Fabrics"
       },
       {
         "caption": "Tudorian headress"
@@ -92,7 +92,8 @@
         "img_path" : "gingko.jpg"
       },
       {
-        "caption": "The time traveller's wife"
+        "caption": "The time traveller's wife",
+        "img_path": "the-time-travelers-wife.jpg"
       },
       {
         "caption": "A history of love",
@@ -101,9 +102,6 @@
       {
         "caption": "One hundred years of solitude",
         "img_path" : "garcia_marquez.jpg"
-      },
-      {
-        "caption": "this is colossal"
       }
     ]
   }

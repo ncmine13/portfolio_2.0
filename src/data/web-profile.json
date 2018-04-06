@@ -41,9 +41,11 @@
     "id": 3,
     "name": "Skills.",
     "intro": "I began my journey at General Assembly and have continued to rigorously self-teach since graduating. At GA, the stack we practiced consisted of:",
-    "stack": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
+    "stack": {
+      "ga": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
+      "additional": ["ES6 syntax", "Python", "Webpack", "Vue-Vuex", "Rails", "Laravel Homestead", "PHP", "SCSS with BEM", "Craft CMS/Twig"]
+    },
     "secondary": "Since completing GA, I have taught myself (to varying degrees of thoroughness):",
-    "stack2": ["ES6 syntax", "Python", "Webpack", "Vue-Vuex", "Rails", "Laravel Homestead", "PHP", "SCSS with BEM", "Craft CMS/Twig"],
     "tertiary": "Furthermore, I've been working hard to understand a variety of computer science concepts and applications in order to further improve my programmatic decision-making."
   }
 ]

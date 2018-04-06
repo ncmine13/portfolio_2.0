@@ -2,12 +2,10 @@
   <div class="art__wrapper">
     <div class="site-width">
       <div class="art__statement">{{ statement }}</div>
-      <div class="art__themes">
+      <div class="art__themes double-wrapper-pad">
         <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id">
           <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
-          <router-link :to="theme.route">
-            <div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div>
-          </router-link>
+          <router-link :to="theme.route"><div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div></router-link>
         </div>
       </div>
     </div>
@@ -36,13 +34,10 @@ export default {
   },
   methods: {
     getBgImage (theme) {
-      let path = require('../../assets/images/art' + theme.subroute + '/' + theme.pieces[0].img)
+      let path = require('../../assets/images/art/thumbnails/' + theme.thumbnail)
       let src = 'url(' + path + ')'
       return { backgroundImage: src }
     }
-    // activateTheme (theme) {
-    //   this.$store.commit('activateArtTheme', theme)
-    // }
   }
 }
 </script>
@@ -62,27 +57,29 @@ export default {
   }
   &__themes {
     @include flexbox_standard;
-    width: calc(100vh + 20px);
-    margin: 0 auto;
   }
   &__theme-wrapper {
-    margin: 0px 10px 10px 0;
     position: relative;
+    margin: 10px 10px 0px 0;
+    width: calc(100% / 3 - 10px);
+    a {
+      color: white;
+    }
   }
   &__theme {
     background-size: cover;
-  }
-  &__theme, &__theme-overlay {
-    height: calc(50vh);
-    width: calc(50vh);
+    @include makeSquare;
   }
   &__theme-overlay {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
     position: absolute;
     top: 0;
     opacity: 0;
-    display: flex;
+    @include flexbox_aligned();
     justify-content: center;
-    align-items: center;
+    text-align: center;
     transition: 0.2s background-color;
     transition: 0.2s opacity;
     &:hover {
@@ -91,6 +88,9 @@ export default {
       opacity: 1;
       .overlay-text {
         font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
       }
     }
   }

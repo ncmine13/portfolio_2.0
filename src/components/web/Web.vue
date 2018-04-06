@@ -13,27 +13,27 @@
 </template>
 
 <script>
-import webContent from "%/data/web-profile.json";
+import webContent from '%/data/web-profile.json'
 import webSegment from './WebSegment'
 
 export default {
-  beforeMount() {
-    this.$store.commit("toggleHomeView", false);
+  beforeMount () {
+    this.$store.commit('toggleHomeView', false)
   },
   mounted () {
     this.activeSegment = this.webCopy[0]
   },
-  name: "Web",
-  data() {
+  name: 'Web',
+  data () {
     return {
-      msg: "Web",
+      msg: 'Web',
       webCopy: webContent,
       colorScheme: this.$store.state.activeColorScheme,
-      intro: 'I\'m Naomi...here\s some shiite.',
+      intro: 'I\'m Naomi...here\'s some shiite.',
       text1: 'I\'ve got...',
       text2: '...and I want more.',
       activeSegment: ''
-    };
+    }
   },
   methods: {
     activateSection (segment) {
