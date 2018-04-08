@@ -11,17 +11,16 @@
   padding-right: 40px;
 }
 
-.intro-pad {
-  padding: 60px 40px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
 .stack {
   display: flex;
   flex-wrap: wrap;
   text-transform: uppercase;
   & > div {
     margin-right: 10px;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 2px #2e2b26;
   }
 }

@@ -1,20 +1,24 @@
 <template>
   <div class="footer__wrapper" v-bind:style="{ backgroundColor: activeFooterColor }">
-    <div class="footer__content site-width">{{ text }}<span>&#8594;</span></div>
+    <div class="footer__content site-width">
+      {{ activeText }}
+      <router-link :to="activeLink"><span>&#8594;</span></router-link>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Footer',
-  data () {
-    return {
-      text: 'I\'ve only been web developing for a year, but I\'ve been making things for a lifetime...'
-    }
-  },
   computed: {
     activeFooterColor () {
       return this.$store.state.activeColorScheme.footer
+    },
+    activeText () {
+      return this.$store.state.activeFooterCopy
+    },
+    activeLink () {
+      return this.$store.state.internalLink
     }
   }
 }
@@ -37,6 +41,7 @@ export default {
     span {
       font-size: 40px;
       margin-left: 20px;
+      color: white;
     }
   }
 }

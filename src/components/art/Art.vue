@@ -1,14 +1,16 @@
 <template>
   <div class="art__wrapper">
-    <div class="site-width">
-      <div class="art__statement">{{ statement }}</div>
-      <div class="art__themes double-wrapper-pad">
+    <!-- <div class="site-width"> -->
+      <div class="art__statement-wrapper">
+        <div v-html="statement" class="art__statement site-width"></div>
+      </div>
+      <div class="art__themes double-wrapper-pad site-width">
         <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id">
           <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
           <router-link :to="theme.route"><div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div></router-link>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -49,11 +51,15 @@ export default {
     background-color: $yellow;
     color: white;
   }
+  &__statement-wrapper {
+    background-color: white;
+    color: $gray;
+    font-family: Georgia;
+  }
   &__statement {
     padding: 60px 0;
     line-height: 1.5;
     letter-spacing: 0.7px;
-    text-align: center;
   }
   &__themes {
     @include flexbox_standard;

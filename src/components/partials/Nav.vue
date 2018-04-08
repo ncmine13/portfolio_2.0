@@ -1,5 +1,5 @@
 <template>
-  <div class="nav__wrapper wrapper-pad" v-bind:style="{ backgroundColor: activeBgColor }">
+  <div class="nav__wrapper wrapper-pad" v-bind:class="{home: home}" v-bind:style="{ backgroundColor: activeBgColor }">
     <nav class="site-width">
       <div :key="item.id" v-for="item in navElements"><router-link :to="item.route">{{ item.title }}</router-link></div>
     </nav>
@@ -37,9 +37,12 @@ export default {
     }
   },
   computed: {
-    activeBgColor: function () {
+    activeBgColor () {
       return this.$store.state.navStuck ? this.$store.state.activeColorScheme.navFixed : this.$store.state.activeColorScheme.background
-    }
+    },
+    home () {
+      return this.$store.state.homeView
+    },
   }
 }
 </script>
@@ -52,6 +55,13 @@ export default {
     justify-content: flex-start;
     width: 100%;
     position: relative;
+    &.home {
+      justify-content: center;
+      nav {
+        width: 450px;
+        justify-content: space-between;
+      }
+    }
     &.fixed {
       position: fixed;
       top: 0;

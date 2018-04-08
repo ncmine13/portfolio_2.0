@@ -1,5 +1,5 @@
 {
-  "statement": "My central goal in artmaking involves experiencing and conveying sentiment. Textures, spatial composition, material associations — I believe that the coalescence of these variables to form a space with personality, fantasy, and baggage can imitate the most poignant aspects of lived experience.",
+  "statement": "My central goal in artmaking involves experiencing and conveying sentiment. Textures, spatial composition, material associations — I believe that the coalescence of these variables to form a space with personality, fantasy, and baggage can imitate the most poignant aspects of lived experience.<br><br>Having grown up surrounded by a lot of cool stuff, I endeavor to incorporate found objects and to recycle materials, and in so doing bring out their most striking qualities. It’s a maximalist approach, emphasizing both the idiosyncrasies of a piece’s elements and making an emotional statement with the entity they come to form.",
   "themes": [
     {
       "name": "Collecting, Recycling, Attachment",
@@ -127,13 +127,13 @@
       "name": "I Practice and I'm Proud of it",
       "route": "/artwork/miscellaneous",
       "subroute" : "/miscellaneous",
-      "thumbnail" : "IMG_1023.jpg",
+      "thumbnail" : "Jars.jpg",
       "pieces": [
         {
           "title": "Still with Jars",
           "materials": "Painting in oil",
           "year": "2017",
-          "img": "IMG_1023.jpg"
+          "img": "Jars.jpg"
         },
         {
           "title": "Still with Spools",
