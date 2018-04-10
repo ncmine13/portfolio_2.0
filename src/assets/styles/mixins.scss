@@ -18,12 +18,9 @@
   }
 }
 @mixin breakpoint($point) {
-  $bp-site-width: "(max-width: 1040px)";
+  $bp-site-width: "(max-width: 1030px)";
 
   @if $point == site-width {
     @media only screen and #{$bp-site-width} { @content; }
   }
-  // @else if $point == big-desktop {
-  //     @media only screen and #{$bp-large-desktop} { @content; }
-  // }
 }

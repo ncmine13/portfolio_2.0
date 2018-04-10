@@ -46,11 +46,11 @@
       },
       {
         "caption": "An intimate history of Humanity",
-        "img_path": "zeldin.jpeg"
+        "img_path": "zeldin.jpg"
       },
       {
         "caption": "Sheep may safely graze",
-        "img_path": "sheep.jpeg"
+        "img_path": "sheep.png"
       },
       {
         "caption": "Martin Bernstein's studio at bridgeport art center",
@@ -58,22 +58,23 @@
       },
       {
         "caption": "Corinna Button",
-        "img_path": "corinna_button.jpeg"
+        "img_path": "corinna_button.jpg"
       },
       {
-        "caption": "Asturias/Gijon"
+        "caption": "Toledo",
+        "img_path": "toledo.jpg"
       },
       {
-        "caption" : "maple leaf"
+        "caption": "Fabrics",
+        "img_path": "fabrics.jpg"
       },
       {
-        "caption": "Fabrics"
+        "caption": "Tudorian headresses",
+        "img_path": "tudorian.jpg"
       },
       {
-        "caption": "Tudorian headress"
-      },
-      {
-        "caption": "Chopin"
+        "caption": "Chopin",
+        "img_path": "chopin.jpg"
       },
       {
         "caption": "Discipline and punish",

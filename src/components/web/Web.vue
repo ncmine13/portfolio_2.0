@@ -3,9 +3,11 @@
     <div class="web-section__cover">
       <div class="web-section__overlay" v-bind:style="{ backgroundColor: colorScheme.overlay }"><div class="intro"> {{ intro }} </div></div>
     </div>
-    <div class="h2-size site-width double-wrapper-pad">{{ text1 }}</div>
-    <div class="web-section__segment-wrapper site-width">
-      <div :class="{ active: isSegmentActive(segment) }" v-for="segment in webCopy" :key="segment.id" class="web-section__name" v-on:click="activateSection(segment)">{{ segment.name }}</div>
+    <div class="h2-size site-width double-wrapper-pad">
+      <span>{{ text1 }}</span>
+      <div :class="{ active: isSegmentActive(segment) }" v-for="segment in webCopy" :key="segment.id" class="web-section__name" v-on:click="activateSection(segment)">
+        <span class="name">{{ segment.name }}</span><span v-if="segment.id !== webCopy.length" class="comma">{{comma}}</span>
+      </div><span>{{ ellipses }}</span>
     </div>
     <web-segment v-for="segment in webCopy" :key="segment.id" :class="{ active: isSegmentActive(segment) }" :segment="segment"></web-segment>
     <div class="h2-size site-width double-wrapper-pad" style="textAlign: right">{{ text2 }}</div>
@@ -30,9 +32,11 @@ export default {
       webCopy: webContent,
       colorScheme: this.$store.state.activeColorScheme,
       intro: 'I\'m Naomi...here\'s some shiite.',
-      text1: 'I\'ve got...',
+      text1: 'I\'ve got',
       text2: '...and I want more.',
-      activeSegment: ''
+      activeSegment: '',
+      ellipses: "...",
+      comma: ", "
     }
   },
   methods: {
@@ -87,10 +91,12 @@ export default {
     width: calc(100%/3);
     cursor: pointer;
     text-align: center;
-    padding-bottom: 5px;
-    font-size: 24px;
+    padding-bottom: 2px;
+    display: inline;
     &.active {
-      border-bottom: 1px solid white;
+      .name {
+        border-bottom: 1px solid white;
+      }
     }
   }
 }

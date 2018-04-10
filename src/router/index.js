@@ -17,11 +17,6 @@ const router = new Router({
       component: Art
     },
     {
-      path: '/artwork/collecting',
-      component: ArtProject,
-      alias: ['/artwork/ladies', '/artwork/spacemaking', '/artwork/miscellaneous', '/artwork/plants']
-    },
-    {
       path: '/web',
       name: 'Web',
       component: Web

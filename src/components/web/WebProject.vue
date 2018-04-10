@@ -68,7 +68,7 @@ export default {
       }
     }
     &__description {
-      padding: 20px;
+      padding: 20px 0;
       line-height: 1.4;
     }
   }

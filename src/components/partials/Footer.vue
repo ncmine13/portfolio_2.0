@@ -38,6 +38,8 @@ export default {
     font-weight: 600;
     display: flex;
     align-items: center;
+    font-size: 20px;
+    letter-spacing: 0.5px;
     span {
       font-size: 40px;
       margin-left: 20px;

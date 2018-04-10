@@ -1,7 +1,7 @@
 <template>
   <div class="segment__wrapper site-width wrapper-pad">
     <div class="segment__intro h3-size">{{ segment.intro }}</div>
-    <div v-if="segment.accomplishments">
+    <div v-if="segment.accomplishments" class="segment__accomplishments">
       <li v-for="accomplishment in segment.accomplishments" :key="accomplishment.id"> {{accomplishment}} </li>
     </div>
     <div class="stack" v-if="segment.stack">
@@ -19,11 +19,6 @@
 import webProject from './WebProject'
 export default {
   name: 'WebSegment',
-  methods: {
-    activateSection () {
-      console.log('active')
-    }
-  },
   components: {
     webProject
   },
@@ -36,12 +31,24 @@ export default {
   .segment {
     &__wrapper {
       display: none;
+      max-width: 800px;
       &.active {
         display: block;
       }
     }
     &__name {
       cursor: pointer;
+    }
+    &__accomplishments {
+      max-width: 700px;
+      margin: 0 auto;
+      li {
+        list-style-type: circle;
+        padding: 10px 0;
+        list-style-position: inside;
+        line-height: 1.5;
+        text-indent: -1.4em;
+      }
     }
     &__intro {
       padding: 20px 0;
