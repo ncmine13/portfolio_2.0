@@ -14,7 +14,7 @@
           "img": "fabric_collage.jpg"
         },
         {
-          "title": "",
+          "title": "Planted",
           "materials": "Dried plants, fabric, ply, paper maché",
           "year": "2016",
           "img": "plant_assemblage.jpg"
@@ -30,6 +30,12 @@
           "materials": "Cardboard, acrylic paint, beads, found objects",
           "year": "2016",
           "img": "alterity.jpg"
+        },
+        {
+          "title": "Viscous",
+          "materials": "Wood scraps, fabric, sawdust, paper maché",
+          "year": "2016",
+          "img": "Viscous.jpg"
         }
       ]
     },
@@ -50,6 +56,12 @@
           "materials": "Oil pastel",
           "year": "2016",
           "img": "Fruit.jpg"
+        },
+        {
+          "title": "Untitled",
+          "materials": "Paper collage",
+          "year": "2017",
+          "img": "P1030098.jpg"
         },
         {
           "title": "Psycho",
@@ -84,6 +96,18 @@
           "img": "Cocoon.jpg"
         },
         {
+          "title": "Cocoon",
+          "materials": "Lace, paper maché, wood scrap",
+          "year": "2017",
+          "img": "Coccoon2.jpg"
+        },
+        {
+          "title": "Beach",
+          "materials": "Paper collage",
+          "year": "2017",
+          "img": "beach.jpg"
+        },
+        {
           "title": "Dwelling",
           "materials": "Painting Oil",
           "year": "2017",
@@ -116,6 +140,18 @@
           "img": "Flower2.jpg"
         },
         {
+          "title": "Flower 3",
+          "materials": "Dried plant matter, fabric",
+          "year": "2016",
+          "img": "Flower3.jpg"
+        },
+        {
+          "title": "Flower 4",
+          "materials": "Dried plant matter, fabric",
+          "year": "2016",
+          "img": "Flower4.jpg"
+        },
+        {
           "title": "Forest",
           "materials": "Cardboard, dried plant matter, fabric flowers",
           "year": "2014",
@@ -146,6 +182,12 @@
           "materials": "Photoshop",
           "year": "2016",
           "img": "Moon_n_curtains.png"
+        },
+        {
+          "title": "Cezanne reproduction",
+          "materials": "Oil painting",
+          "year": "2016",
+          "img": "Cezanne.jpg"
         },
         {
           "title": "Textiles",

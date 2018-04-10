@@ -1,7 +1,7 @@
 <template>
   <div class="art__wrapper">
     <div class="art__modal-mask" v-on:click="closeModal()" v-bind:class="{ active: artCatSelected }"></div>
-    <art-modal v-if="artCatSelected"></art-modal>
+    <art-modal v-if="artCatSelected" :theme="selectedTheme"></art-modal>
     <div class="art__statement-wrapper">
       <div v-html="statement" class="art__statement site-width"></div>
     </div>
@@ -26,7 +26,8 @@ export default {
   data () {
     return {
       copy: artCopy,
-      artCatSelected: false
+      artCatSelected: false,
+      selectedTheme: ''
     }
   },
   computed: {
@@ -44,7 +45,7 @@ export default {
       return { backgroundImage: src }
     },
     selectArtCategory (theme) {
-      console.log(theme)
+      this.selectedTheme = theme
       this.artCatSelected = true
       let body = document.querySelector('body')
       body.style.overflow = 'hidden'
@@ -100,7 +101,7 @@ export default {
     z-index: 4;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(187, 135, 39, 0.7);
     &.active {
       display: block;
     }
