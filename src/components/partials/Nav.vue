@@ -1,7 +1,7 @@
 <template>
   <div class="nav__wrapper wrapper-pad" v-bind:class="{home: home}" v-bind:style="{ backgroundColor: activeBgColor }">
     <nav class="site-width">
-      <div :key="item.id" v-for="item in navElements"><router-link :to="item.route">{{ item.title }}</router-link></div>
+      <div :key="item.id" v-for="item in navElements" class="nav__elem"><router-link :to="item.route">{{ item.title }}</router-link></div>
     </nav>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
         },
         {
           title: 'CV',
-          route: '#',
+          route: '/cv',
           color: 'black'
         },
         {
@@ -56,10 +56,17 @@ export default {
     width: 100%;
     position: relative;
     &.home {
-      justify-content: center;
+      width: auto;
+      float: left;
+      padding-left: 40px;
       nav {
-        width: 450px;
-        justify-content: space-between;
+        display: block;
+        .nav__elem {
+          padding: 10px 0;
+        }
+        a {
+          padding: 10px 0;
+        }
       }
     }
     &.fixed {
@@ -71,7 +78,7 @@ export default {
       display: flex;
       width: 100%;
       a {
-        padding: 0 10px;
+        padding-right: 20px;
         text-transform: uppercase;
         font-weight: bold;
         color: white;

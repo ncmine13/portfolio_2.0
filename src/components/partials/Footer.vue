@@ -35,7 +35,6 @@ export default {
     color: white;
   }
   &__content {
-    font-weight: 600;
     display: flex;
     align-items: center;
     font-size: 20px;

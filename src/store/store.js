@@ -54,7 +54,7 @@ export const store = new Vuex.Store({
       }
     },
     changePage (context, payload) {
-      // scroll to the top
+      window.scrollTo(0, 0)
       context.commit('toggleHomeView', payload.showHomeView)
       context.commit('alterColorScheme', payload.path)
     }

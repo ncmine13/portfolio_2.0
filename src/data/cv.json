@@ -1,33 +1,91 @@
 [
   {
-    "work" : [
-      "Multiple, Inc.",
-      "Karpowicz Studios",
-      "Boys and Girls Club of San Francisco"
+    "name": "Work",
+    "experiences" : [
+      {
+        "name": "Multiple, Inc.",
+        "date": "July 2017 - Apr. 2018",
+        "position": "Web Developer",
+        "location": "Chicago, IL"
+      },
+      {
+        "name": "Karpowicz Studios",
+        "date": "Sept. 2015 - Jan. 2017",
+        "position": "Studio Assistant",
+        "location": "Chicago, IL"        
+      },
+      {
+        "name": "Boys and Girls Club of San Francisco",
+        "date": "June - Aug. 2015",
+        "position": "Office Manager",
+        "location": "Mendocino County, CA"        
+      }
     ]
   },
   {
-    "volunteering": [
-      "CodeNow Chicago",
-      "Woman Made Gallery",
-      "Civic Knowledge Project's Winning Words",
-      "Neighborhood Schools Program"
+    "name": "Volunteering",    
+    "experiences": [
+      {
+        "name":"CodeNow Chicago",
+        "date": "June, Nov. 2017",
+        "position": "Instructor",
+        "location": "Chicago, IL"        
+      },
+      {
+        "name": "Woman Made Gallery",
+        "date": "June - Aug. 2016",
+        "position": "Administrative Intern",
+        "location": "Chicago, IL"        
+      },
+      {
+        "name":"Civic Knowledge Project's Winning Words",
+        "date": "Sept. 2012 - Dec. 2014",
+        "position": "Instructor",
+        "location": "Chicago, IL"        
+      }
     ]
   },
   {
-    "education": [
-      "General Assembly Web Development Immersive",
-      "The University of Chicago",
-      "Loyola University Chicago",
-      "Fundación de Ortega y Gasset"
+    "name": "Education",    
+    "experiences": [
+      {
+        "name":"General Assembly",
+        "position": "Web Development Immersive Student",
+        "date": "Jan - Apr. 2017",
+        "location": "Chicago, IL"        
+      },
+      {
+        "name": "The University of Chicago",
+        "position": "Bachelor of Arts in Interdisciplinary Studies in the Humanities",
+        "date": "Sept. 2011 - June 2015",
+        "location": "Chicago, IL"                
+      },
+      {
+        "name":"Loyola University Chicago",
+        "position": "Student of Graphic Design and Painting",
+        "date": "June - Aug. 2014",
+        "location": "Chicago, IL"        
+      },
+      {
+        "name":"Fundación de Ortega y Gasset",
+        "position": "Spanish Language Immersion Student",
+        "date": "Sept. - Dec. 2013",
+        "location": "Toledo, Spain"        
+      }
     ]
   },
   {
-    "bragging": [
-      "National Merit",
-      "Rogers Park Round Trip",
-      "Graduated with special honors and Dean's List throughout college",
-      "Naomi Mine Explosion"
+    "name": "Bragging",    
+    "experiences": [
+      {
+        "name":"National Merit"
+      },
+      {
+        "name":"Rogers Park Round Trip"
+      },
+      {
+        "name":"Graduated with special honors and Dean's List throughout college"
+      }
     ]
   }
 ]

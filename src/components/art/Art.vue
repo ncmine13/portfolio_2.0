@@ -3,12 +3,13 @@
     <div class="art__modal-mask" v-on:click="closeModal()" v-bind:class="{ active: artCatSelected }"></div>
     <art-modal v-if="artCatSelected" :theme="selectedTheme"></art-modal>
     <div class="art__statement-wrapper">
+      <div class="h2-size site-width">Statement</div>
       <div v-html="statement" class="art__statement site-width"></div>
     </div>
     <div class="art__themes double-wrapper-pad site-width">
       <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id" v-on:click="selectArtCategory(theme)">
         <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
-        <div>{{ theme.name }}</div>
+        <div class="art__theme--name">{{ theme.name }}</div>
       </div>
     </div>
   </div>
@@ -73,9 +74,10 @@ export default {
     background-color: white;
     color: $gray;
     font-family: Georgia;
+    padding: 60px;
   }
   &__statement {
-    padding: 60px 0;
+    padding-top: 20px;
     line-height: 1.5;
     letter-spacing: 0.7px;
   }
@@ -93,6 +95,10 @@ export default {
   &__theme {
     background-size: cover;
     @include makeSquare;
+    &--name {
+      font-size: 20px;
+      padding: 10px 0;
+    }
   }
   &__modal-mask {
     display: none;

@@ -1,9 +1,10 @@
 <template>
   <div id="app" v-bind:class="{ homeView: hpActive }">
     <div class="header">
-      <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner4.png'/></div>
+      <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner5.png'/></div>
       <header-component v-else></header-component>
     </div>
+    <div v-if="hpActive" class="entry__name">Naomi Mine</div>
     <nav-component></nav-component>
     <router-view/>
     <footer-component v-if="!hpActive"></footer-component>
@@ -57,24 +58,27 @@ export default {
 @import './assets/styles/reset.scss';
 @import './assets/styles/main.scss';
 #app {
-  font-family: 'Imprima', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $gray;
-  height: 100vh;
   &.homeView {
-    background-color: $yellow;
+    background-color: rgb(253, 182, 50);
+    padding: 40px;
+    height: calc(100vh - 80px);
   }
 }
 .entry {
   &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
+    float: left;
     img {
-      width: 450px;
+      height: calc(100vh - 80px);
     }
+  }
+  &__name {
+    font-size: 60px;
+    float: left;
+    padding-left: 40px;
+    font-family: 'Baskerville', Georgia, serif;
   }
 }
 

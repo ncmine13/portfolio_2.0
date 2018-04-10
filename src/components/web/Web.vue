@@ -31,7 +31,7 @@ export default {
       msg: 'Web',
       webCopy: webContent,
       colorScheme: this.$store.state.activeColorScheme,
-      intro: 'I\'m Naomi...here\'s some shiite.',
+      intro: 'I\'m Naomi, a fullstack developer and artist.',
       text1: 'I\'ve got',
       text2: '...and I want more.',
       activeSegment: '',
