@@ -1,13 +1,13 @@
 [
   {
     "page" : "/web",
-    "colors" : { "background" : "#027878", "overlay": "rgba(0, 31, 31, 0.7)", "navFixed" : "#013a3a", "accent" : "rgb(179, 72, 23)", "footer" : "#FDB632" },
+    "colors" : { "background" : "rgb(69, 140, 140)", "overlay": "rgba(0, 31, 31, 0.7)", "navFixed" : "#013a3a", "accent" : "rgb(179, 72, 23)", "footer" : "#FDB632" },
     "footer_text" : "I've only been programming for a year, but I've been making things for a lifetime.",
     "link" : "/artwork"
   },
   {
     "page" : "/artwork",
-    "colors" : { "background" : "#FDB632", "navFixed" : "#bb8727", "accent" : "", "footer" : "#801638" },
+    "colors" : { "background" : "#dbb570", "navFixed" : "#bb8727", "accent" : "", "footer" : "#801638" },
     "footer_text" : "The things I read, see, hear, and feel inform what I make.",
     "link" : "/inspiration"
   },
@@ -26,21 +26,5 @@
   {
     "page" : "/",
     "colors": { "background" : "#FDB632"}
-  },
-  {
-    "page" : "/artwork/collecting",
-    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
-  },
-  {
-    "page" : "/artwork/ladies",
-    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
-  },
-  {
-    "page" : "/artwork/spacemaking",
-    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
-  },
-  {
-    "page" : "/artwork/miscellaneous",
-    "colors": { "background" : "#2f3236", "footer": "#656b74", "navFixed" : "#232528"}
   }
 ]

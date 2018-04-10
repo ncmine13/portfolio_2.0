@@ -1,6 +1,5 @@
 <template>
   <div class="art-project__wrapper site-width">
-    <router-link :to="'/artwork'"><div>back</div></router-link>
     <div class="art-project__selected">
       <div class="art-project__selected-image" v-bind:style="{backgroundImage: getBgImage()}"></div>
       <div class="art-project__selected-description">

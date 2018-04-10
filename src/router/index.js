@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Art from '%/components/art/Art'
 import Web from '%/components/web/Web'
 import Insp from '%/components/inspiration/Insp'
-import ArtProject from '%/components/art/ArtProject'
 import CV from '%/components/cv/CV'
 
 Vue.use(Router)

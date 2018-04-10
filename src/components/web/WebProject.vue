@@ -48,7 +48,12 @@ export default {
       width: calc(100% - 40px);
       height: calc(100% - 40px);
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(1, 58, 58, 0.8);
+      .stack {
+        & > div {
+          background-color: rgb(187, 135, 39);
+        }
+      }
       .button {
         cursor: pointer;
         border: 1px solid white;

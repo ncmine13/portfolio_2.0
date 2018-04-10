@@ -1,21 +1,23 @@
 <template>
   <div class="art__wrapper">
-    <!-- <div class="site-width"> -->
-      <div class="art__statement-wrapper">
-        <div v-html="statement" class="art__statement site-width"></div>
+    <div class="art__modal-mask" v-on:click="closeModal()" v-bind:class="{ active: artCatSelected }"></div>
+    <art-modal v-if="artCatSelected"></art-modal>
+    <div class="art__statement-wrapper">
+      <div v-html="statement" class="art__statement site-width"></div>
+    </div>
+    <div class="art__themes double-wrapper-pad site-width">
+      <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id" v-on:click="selectArtCategory(theme)">
+        <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
+        <div>{{ theme.name }}</div>
       </div>
-      <div class="art__themes double-wrapper-pad site-width">
-        <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id">
-          <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
-          <router-link :to="theme.route"><div class="art__theme-overlay"><div class="overlay-text">{{ theme.name }}</div></div></router-link>
-        </div>
-      </div>
-    <!-- </div> -->
+    </div>
   </div>
 </template>
 
 <script>
 import artCopy from '../../data/art-info.json'
+import artModal from './ArtModal'
+
 export default {
   beforeMount () {
     this.$store.commit('toggleHomeView', false)
@@ -23,7 +25,8 @@ export default {
   name: 'Art',
   data () {
     return {
-      copy: artCopy
+      copy: artCopy,
+      artCatSelected: false
     }
   },
   computed: {
@@ -39,7 +42,21 @@ export default {
       let path = require('../../assets/images/art/thumbnails/' + theme.thumbnail)
       let src = 'url(' + path + ')'
       return { backgroundImage: src }
+    },
+    selectArtCategory (theme) {
+      console.log(theme)
+      this.artCatSelected = true
+      let body = document.querySelector('body')
+      body.style.overflow = 'hidden'
+    },
+    closeModal () {
+      this.artCatSelected = false
+      let body = document.querySelector('body')
+      body.style.overflow = 'auto'
     }
+  },
+  components: {
+    artModal
   }
 }
 </script>
@@ -66,7 +83,7 @@ export default {
   }
   &__theme-wrapper {
     position: relative;
-    margin: 10px 10px 0px 0;
+    margin: 10px 10px 30px 0;
     width: calc(100% / 3 - 10px);
     a {
       color: white;
@@ -76,28 +93,16 @@ export default {
     background-size: cover;
     @include makeSquare;
   }
-  &__theme-overlay {
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    padding: 20px;
-    position: absolute;
+  &__modal-mask {
+    display: none;
+    position: fixed;
     top: 0;
-    opacity: 0;
-    @include flexbox_aligned();
-    justify-content: center;
-    text-align: center;
-    transition: 0.2s background-color;
-    transition: 0.2s opacity;
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-      cursor: pointer;
-      opacity: 1;
-      .overlay-text {
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-      }
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    &.active {
+      display: block;
     }
   }
 }

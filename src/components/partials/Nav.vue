@@ -42,7 +42,7 @@ export default {
     },
     home () {
       return this.$store.state.homeView
-    },
+    }
   }
 }
 </script>

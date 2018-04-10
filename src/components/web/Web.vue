@@ -35,8 +35,8 @@ export default {
       text1: 'I\'ve got',
       text2: '...and I want more.',
       activeSegment: '',
-      ellipses: "...",
-      comma: ", "
+      ellipses: '...',
+      comma: ', '
     }
   },
   methods: {
