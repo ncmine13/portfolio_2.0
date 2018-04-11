@@ -9,6 +9,7 @@
         "title": "Mood App Revamp",
         "stack": [ "vue.js", "quasar", "node.js", "Express", "Sequelize", "sqlite3" ],
         "img_path": "mood.png",
+        "link": "https://github.com/ncmine13/moodey-hybrid",
         "description": "The purpose of this app is twofold; I aim to provide users with a hassle-free platform to practice mindfulness by consistently answering a set of customizable questions, and to track their mood trends over time."
       },
       {
@@ -16,6 +17,7 @@
         "title": "Indelicate Scraping",
         "stack": [ "python", "javascript"],
         "img_path": "pythonImg.png",
+        "link": "https://github.com/ncmine13/indelicate_scraping",
         "description": "Though it be uncouth, I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with python and interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
       }
 
@@ -27,13 +29,13 @@
     "name": "experience",
     "intro": "After a three-month stretch with General Assembly's Web Development Immersive in Chicago and a two-month stint of job applications, coding challenges, and hacked freelance projects, I entered the workforce with wide eyes and an expanding conceptual framework. Before working for nearly 3/4 of a year as a developer at the design agency Multiple, Inc., I never would have imagined I'd...",
     "accomplishments": [
-      "work with UI libraries including GSAP, ScrollMagic, and Packery to create fluid interactions",
       "teach myself the flux-like Vue-Vuex state management pattern, pioneering use of this technology at my firm",
+      "work with UI libraries including GSAP, ScrollMagic, and Packery to create fluid interactions",
       "develop an understanding of our virtual machine environments",
       "design and construct a plugin in Craft CMS (PHP/JavaScript)",
-      "design a complex Rails API for a medical research survey tool",
+      "design a complex Rails API for a research survey tool",
       "learn Webpack",
-      "construct legible and well organized stylesheets using a modular BEM technology",
+      "construct logical and well organized stylesheets using a modular BEM strategy",
       "be able to articulate why Middleman and Gulp were no longer useful in our evolving development environments"
     ]
   },
@@ -45,7 +47,7 @@
       "ga": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "React", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
       "additional": ["ES6 syntax", "Python", "Webpack", "Vue-Vuex", "Rails", "Laravel Homestead", "PHP", "SCSS with BEM", "Craft CMS/Twig"]
     },
-    "secondary": "Since completing GA, I have taught myself (to varying degrees of thoroughness):",
-    "tertiary": "Furthermore, I've been working hard to understand a variety of computer science concepts and applications in order to further improve my programmatic decision-making."
+    "secondary": "Since completing GA, I have learned:",
+    "tertiary": "Furthermore, I'm always working hard to understand a variety of computer science concepts and applications in order to further improve my programmatic decision-making."
   }
 ]

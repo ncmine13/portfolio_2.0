@@ -3,7 +3,8 @@
     <div class="h2-size double-wrapper-pad site-width">{{inspiration.header}}</div>
     <div class="insp-section__item-wrapper site-width double-wrapper-pad">
       <div class="insp-section__item" v-for="item in inspiration.items" :key="item.id">
-        <img :src="getBgImage(item)"/>
+        <a v-if="item.link" target="_blank" :href="item.link"><img :src="getBgImage(item)"/></a>
+        <img v-else :src="getBgImage(item)"/>
         <div class="caption">{{ item.caption }}</div>
       </div>
     </div>
@@ -44,7 +45,7 @@ export default {
 }
 </script>
 <style lang="sass-loader" scoped>
-  @import '../../assets/styles/variables.scss';
+  @import '../../assets/styles/main.scss';
   .insp-section {
     &__wrapper {
       background-color: $red;
@@ -59,6 +60,11 @@ export default {
       }
       .caption {
         font-size: 16px;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      &__item {
+        width: calc(100%/2 - 20px);
       }
     }
   }

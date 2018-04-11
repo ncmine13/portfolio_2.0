@@ -8,7 +8,7 @@
             <div v-for="item in project.stack" :key="item.id">{{item}}</div>
           </div>
           <div class="wrapper-pad">
-            <div class="button">view on github</div>
+            <a :href="project.link" target="_blank"><div class="button">view on github</div></a>
           </div>
         </div>
       </div>
@@ -53,6 +53,9 @@ export default {
         & > div {
           background-color: rgb(187, 135, 39);
         }
+      }
+      a {
+        color: white;
       }
       .button {
         cursor: pointer;

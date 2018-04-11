@@ -4,14 +4,15 @@
     <div v-if="segment.accomplishments" class="segment__accomplishments">
       <li v-for="accomplishment in segment.accomplishments" :key="accomplishment.id"> {{accomplishment}} </li>
     </div>
-    <div class="stack" v-if="segment.stack">
+    <div class="segment__stack stack" v-if="segment.stack">
       <div v-for="tech in segment.stack.ga" :key="tech.id"> {{ tech }}</div>
     </div>
     <web-project v-if="segment.projects" :projects="segment.projects"></web-project>
     <div class="segment__intro h3-size" v-if="segment.secondary"> {{ segment.secondary }} </div>
-    <div class="stack" v-if="segment.stack">
+    <div class="segment__stack stack" v-if="segment.stack">
       <div v-for="tech in segment.stack.additional" :key="tech.id"> {{ tech }}</div>
     </div>
+    <div class="segment__intro h3-size" v-if="segment.tertiary">{{ segment.tertiary }}</div>
   </div>
 </template>
 
@@ -39,8 +40,12 @@ export default {
     &__name {
       cursor: pointer;
     }
+    &__stack {
+      padding-bottom: 40px;
+    }
     &__accomplishments {
       padding-left: 80px;
+      padding-right: 40px;
       li {
         list-style-type: circle;
         padding: 10px 0;
