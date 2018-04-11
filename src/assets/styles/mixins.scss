@@ -10,6 +10,13 @@
   align-items: center;
 }
 
+@mixin flexbox($direction, $justification, $alignment) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justification;
+  align-items: $alignment;
+}
+
 @mixin makeSquare() {
   &:before {
     content: "";
@@ -19,8 +26,20 @@
 }
 @mixin breakpoint($point) {
   $bp-site-width: "(max-width: 1030px)";
+  $bp-tablet-landscape: "(max-width: 900px)";
+  $bp-tablet-portrait: "(max-width: 750px)";
+  $bp-mobile: "(max-width: 550px)";
 
   @if $point == site-width {
     @media only screen and #{$bp-site-width} { @content; }
+  }
+  @else if $point == tablet-landscape {
+    @media only screen and #{$bp-tablet-landscape} { @content; }
+  }
+  @else if $point == tablet-portrait {
+    @media only screen and #{$bp-tablet-portrait} { @content; }
+  }
+  @else if $point == mobile {
+    @media only screen and #{$bp-mobile} { @content; }
   }
 }

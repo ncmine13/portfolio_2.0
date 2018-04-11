@@ -39,10 +39,10 @@ export const store = new Vuex.Store({
 
       if (sticky) {
         navWrapper.classList.add('fixed')
-        navWrapper.nextElementSibling.style.paddingTop = navWrapper.clientHeight + 'px'
+        // navWrapper.nextElementSibling.style.paddingTop = navWrapper.clientHeight + 'px'
       } else {
         navWrapper.classList.remove('fixed')
-        navWrapper.nextElementSibling.style.paddingTop = '0px'
+        // navWrapper.nextElementSibling.style.paddingTop = '0px'
       }
     }
   },

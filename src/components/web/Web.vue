@@ -52,7 +52,7 @@ export default {
   components: {
     webSegment
   }
-};
+}
 </script>
 
 <style lang="sass-loader" scoped>

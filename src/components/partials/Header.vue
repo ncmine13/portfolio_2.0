@@ -51,7 +51,6 @@ export default {
       align-items: center;
       position: fixed;
       z-index: 4;
-      /* right: 40px; */
       svg {
         margin-left: 20px;
       }

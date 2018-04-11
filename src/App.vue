@@ -1,11 +1,14 @@
 <template>
   <div id="app" v-bind:class="{ homeView: hpActive }">
-    <div class="header">
+    <div class="headers">
       <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner5.png'/></div>
       <header-component v-else></header-component>
+      <div v-if="hpActive" class="entry__type-wrapper">
+        <div class="entry__name">Naomi Mine</div>
+        <nav-component></nav-component>
+      </div>
+      <nav-component v-else></nav-component>
     </div>
-    <div v-if="hpActive" class="entry__name">Naomi Mine</div>
-    <nav-component></nav-component>
     <router-view/>
     <footer-component v-if="!hpActive"></footer-component>
   </div>
@@ -31,7 +34,7 @@ export default {
       return this.$store.state.homeView
     },
     headerHeight () {
-      return document.querySelector('.header').clientHeight
+      return document.querySelector('.header__wrapper').clientHeight
     }
   },
   components: {
@@ -61,24 +64,71 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  &.homeView {
-    background-color: rgb(253, 182, 50);
-    padding: 40px;
-    height: calc(100vh - 80px);
+}
+
+.homeView {
+  padding: 40px;
+  background-color: rgb(253, 182, 50);
+  height: calc(100vh - 80px);
+  .headers {
+    height: 100%;
+    @include flexbox(row, null, center);
+
+    @include breakpoint(tablet-portrait) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include breakpoint(mobile) {
+    }
+  }
+  @include breakpoint(mobile) {
+    padding: 20px;
+    height: calc(100vh - 40px);
   }
 }
+
 .entry {
   &__wrapper {
-    float: left;
     img {
-      height: calc(100vh - 80px);
+      width: 100%;
     }
   }
   &__name {
-    font-size: 60px;
-    float: left;
-    padding-left: 40px;
+    font-size: 70px;
     font-family: 'Baskerville', Georgia, serif;
+  }
+  &__wrapper, &__type-wrapper {
+    width: calc(100% / 2 - 40px);
+  }
+  &__type-wrapper {
+    padding-left: 80px;
+    @include flexbox(column, center, null);
+  }
+  @include breakpoint(tablet-landscape) {
+    &__name{
+      font-size: 55px;
+    }
+    &__type-wrapper {
+      padding-left: 40px;
+    }
+  }
+  @include breakpoint(tablet-portrait) {
+    &__wrapper, &__type-wrapper {
+      width: 60%;
+      margin: 0 auto;
+    }
+    &__type-wrapper {
+      padding-left: 0;
+    }
+  }
+  @include breakpoint(mobile) {
+    &__name {
+      font-size: 50px;
+    }
+    &__wrapper, &__type-wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
 

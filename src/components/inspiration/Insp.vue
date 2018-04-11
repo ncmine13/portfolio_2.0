@@ -3,6 +3,7 @@
     <div class="h2-size double-wrapper-pad site-width">{{inspiration.header}}</div>
     <div class="insp-section__item-wrapper site-width double-wrapper-pad">
       <img class="insp-section__item" v-for="item in inspiration.items" :key="item.id" :src="getBgImage(item)"/>
+      <!-- <div v-for="item in inspiration.items" :key="item.id">{{ item.caption }}</div> -->
     </div>
   </div>
 </template>

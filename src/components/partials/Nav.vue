@@ -56,11 +56,9 @@ export default {
     width: 100%;
     position: relative;
     &.home {
-      width: auto;
-      float: left;
-      padding-left: 40px;
       nav {
         display: block;
+        margin: 0;
         .nav__elem {
           padding: 10px 0;
         }
@@ -84,6 +82,14 @@ export default {
         color: white;
         letter-spacing: 2px;
         text-decoration: none;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      &.home {
+        nav {
+          display: flex;
+          justify-content: space-between;
+        }
       }
     }
   }

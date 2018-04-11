@@ -74,7 +74,7 @@ export default {
     background-color: white;
     color: $gray;
     font-family: Georgia;
-    padding: 60px;
+    padding: 60px 0;
   }
   &__statement {
     padding-top: 20px;
@@ -86,8 +86,8 @@ export default {
   }
   &__theme-wrapper {
     position: relative;
-    margin: 10px 10px 30px 0;
-    width: calc(100% / 3 - 10px);
+    margin: 10px 20px 30px 0;
+    width: calc(100% / 3 - 20px);
     a {
       color: white;
     }
@@ -110,6 +110,16 @@ export default {
     background-color: rgba(187, 135, 39, 0.7);
     &.active {
       display: block;
+    }
+  }
+  @include breakpoint(tablet-landscape) {
+    &__theme-wrapper {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  @include breakpoint(mobile) {
+    &__theme-wrapper {
+      width: 100%;
     }
   }
 }

@@ -1,10 +1,10 @@
 <template>
   <div class="resume__wrapper">
-    <div class="site-width download">download full pdf</div>
-    <div v-for="entry in cv" class="resume__category site-width">
+    <div class="site-width download"><a :href="resumePdf()" download="NaomiMine_Resume">download full pdf</a></div>
+    <div v-for="entry in cv" :key="entry.id" class="resume__category site-width">
       <div class="resume__category-name h3-size">{{entry.name}}</div>
       <div class="resume__experiences-wrapper">
-        <div v-for="experience in entry.experiences"><span v-if="experience.position">{{ experience.position }}, </span> {{experience.name}}<span v-if="experience.date">, {{experience.date}} </span></div>
+        <div v-for="experience in entry.experiences" :key="experience.id"><span v-if="experience.position">{{ experience.position }}, </span> {{experience.name}}<span v-if="experience.date">, {{experience.date}} </span></div>
       </div>
     </div>
   </div>
@@ -17,6 +17,11 @@ export default {
   data () {
     return {
       cv: cvData
+    }
+  },
+  methods: {
+    resumePdf () {
+      return require('../../assets/Naomi_Mine_Resume.pdf')
     }
   }
 }
@@ -32,7 +37,9 @@ export default {
     padding-bottom: 100px;
     .download {
       text-decoration: underline;
-      cursor: pointer;
+      a {
+        color: white;
+      }
     }
   }
   &__category {

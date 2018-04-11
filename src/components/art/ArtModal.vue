@@ -23,6 +23,10 @@ export default {
   name: 'ArtModal',
   mounted () {
     this.centerModal()
+    window.addEventListener('resize', this.centerModal)
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.centerModal)
   },
   data () {
     return {
@@ -39,7 +43,8 @@ export default {
   },
   methods: {
     centerModal () {
-      let modalHeight = this.$refs.modalWrapperDOM.offsetHeight;
+      let modalHeight = this.$refs.modalWrapperDOM.offsetHeight
+      console.log(modalHeight, 'height')
       this.$refs.modalWrapperDOM.style.marginTop = 'calc((100vh - ' + modalHeight + 'px) / 2)'
     },
     getBgImage () {
@@ -72,8 +77,8 @@ export default {
       max-height: 90vh;
       overflow: scroll;
       left: 0;
-      width: 90%;
-      margin: 5%;
+      width: 90vw;
+      margin: 5vh 5vw;
       padding: 5% 0;
       z-index: 4;
     }
@@ -87,15 +92,15 @@ export default {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right top;
-      width: calc(100% / 2 - 40px);
+      /* width: calc(100% / 2 - 40px); */
       margin: 0 20px;
       @include makeSquare;
     }
     &__close-modal {
       height: 15px;
       width: 15px;
-      position: fixed;
-      right: 5%;
+      position: absolute;
+      right: 0;
       padding: 20px;
       z-index: 5;
       img {
@@ -124,6 +129,21 @@ export default {
         margin-right: 20px;
         @include makeSquare;
         cursor: pointer;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      &__container {
+        flex-direction: column;
+      }
+      &__active-image {
+        margin: 0 auto;
+        background-position: center;
+        margin-top: 20px;
+      }
+      &__info {
+        &--thumbnail {
+          width: calc(100% / 2 - 20px);
+        }
       }
     }
   }

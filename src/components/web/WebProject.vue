@@ -76,5 +76,10 @@ export default {
       padding: 20px 0;
       line-height: 1.4;
     }
+    @include breakpoint(tablet-portrait) {
+      &__projects-wrapper {
+        flex-direction: column;
+      }
+    }
   }
 </style>
