@@ -2,7 +2,7 @@
   <div class="art__wrapper">
     <div class="art__modal-mask" v-on:click="closeModal()" v-bind:class="{ active: artCatSelected }"></div>
     <art-modal v-if="artCatSelected" :theme="selectedTheme"></art-modal>
-    <div class="art__statement-wrapper">
+    <div class="art__statement-wrapper serif">
       <div class="h2-size site-width">Statement</div>
       <div v-html="statement" class="art__statement site-width"></div>
     </div>
@@ -72,8 +72,7 @@ export default {
   }
   &__statement-wrapper {
     background-color: white;
-    color: $gray;
-    font-family: Georgia;
+    color: $dark-gray;
     padding: 60px 0;
   }
   &__statement {

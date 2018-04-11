@@ -8,14 +8,14 @@
         "id": 1,
         "title": "Mood App Revamp",
         "stack": [ "vue.js", "quasar", "node.js", "Express", "Sequelize", "sqlite3" ],
-        "img_path": "mood.png",        
+        "img_path": "mood.png",
         "description": "The purpose of this app is twofold; I aim to provide users with a hassle-free platform to practice mindfulness by consistently answering a set of customizable questions, and to track their mood trends over time."
       },
       {
         "id": 2,
         "title": "Indelicate Scraping",
         "stack": [ "python", "javascript"],
-        "img_path": "pythonImg.png",        
+        "img_path": "pythonImg.png",
         "description": "Though it be uncouth, I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with python and interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
       }
 
@@ -42,7 +42,7 @@
     "name": "skills",
     "intro": "I began my journey at General Assembly and have continued to rigorously self-teach since graduating. At GA, the stack we practiced consisted of:",
     "stack": {
-      "ga": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
+      "ga": ["HTML5/CSS3/Less", "JavaScript", "jQuery", "React", "Ruby", "Node", "Gulp", "Express.js w/ Handlebars", "Sinatra/ActiveRecord", "MongoDB", "Ruby", "Postgresql"],
       "additional": ["ES6 syntax", "Python", "Webpack", "Vue-Vuex", "Rails", "Laravel Homestead", "PHP", "SCSS with BEM", "Craft CMS/Twig"]
     },
     "secondary": "Since completing GA, I have taught myself (to varying degrees of thoroughness):",

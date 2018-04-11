@@ -3,69 +3,66 @@
     "header": "No one exists in a vacuum. These are just a few of the things that I think about, that have informed my worldview, that continue to innervate me.",
     "items": [
       {
-        "caption": "aubrey beardsley",
+        "caption": "Aubrey Beardsley",
         "img_path" : "beardsley.jpg"
       },
       {
-        "caption": "tamora pierce/lady knight, squire, trickster's choice",
+        "caption": "Young adult author Tamora Pierce",
         "img_path": "Lady_Knight.jpg"
       },
       {
-        "caption": "paul feyerabend",
+        "caption": "Paul Feyerabend's Against Method",
         "img_path": "feyerabend.jpg"
       },
       {
-        "caption": "the mind body problem",
+        "caption": "Rebecca Goldstein's The Mind-Body Problem",
         "img_path": "mindbodyproblem.jpg"
       },
       {
-        "caption": "the blazing world",
+        "caption": "The Blazing World by Siri Hustvedt",
         "img_path": "blazing_world.jpg"
       },
       {
-        "caption": "hempel/hanson"
-      },
-      {
-        "caption": "bloody mary",
+        "caption": "Young adult book Mary, Bloody Mary by Carolyn Meyer",
         "img_path" : "bloody_mary.jpg"
       },
       {
-        "caption": "renaissance clothing"
-      },
-      {
-        "caption": "ivan albright's dorian gray",
+        "caption": "Ivan Albright's 'Picture of Dorian Gray'",
         "img_path": "albright.jpg"
       },
       {
-        "caption": "toulousse lautrec painting",
+        "caption": "'At the Moulin Rouge' by Henri de Toulouse-Lautrec",
         "img_path": "toulouse_lautrec.jpg"
       },
       {
-        "caption": "I capture the castle",
+        "caption": "I Capture the Castle by Dodie Smith",
         "img_path" : "capture_the_castle.jpg"
       },
       {
-        "caption": "An intimate history of Humanity",
+        "caption": "An Intimate History of Humanity by Theodore Zeldin",
         "img_path": "zeldin.jpg"
       },
       {
-        "caption": "Sheep may safely graze",
-        "img_path": "sheep.png"
+        "caption": "Bach's Sheep May Safely Graze",
+        "img_path": "sheep.png",
+        "link": ""
       },
       {
-        "caption": "Martin Bernstein's studio at bridgeport art center",
-        "img_path": "bernstein.jpg"
+        "caption": "Artist Martin Bernstein",
+        "img_path": "bernstein.jpg",
+        "link": ""
       },
       {
-        "caption": "Corinna Button",
-        "img_path": "corinna_button.jpg"
+        "caption": "Artist Corinna Button",
+        "img_path": "corinna_button.jpg",
+        "link": ""
       },
       {
-        "caption": "Toledo",
+        "caption": "The view from my homestay's roof in Toledo, Spain",
         "img_path": "toledo.jpg"
       },
       {
-        "caption": "Fabrics",
+        "caption": "Some of my favorite fabric scraps",
         "img_path": "fabrics.jpg"
       },
       {
@@ -73,19 +70,20 @@
         "img_path": "tudorian.jpg"
       },
       {
-        "caption": "Chopin",
-        "img_path": "chopin.jpg"
+        "caption": "Chopin's preludes",
+        "img_path": "chopin.jpg",
+        "link": ""
       },
       {
-        "caption": "Discipline and punish",
+        "caption": "Discipline and Punish by Michel Foucault",
         "img_path" : "michel-foucault-discipline-punish.jpg"
       },
       {
-        "caption": "Eichmann in Jerusalem",
+        "caption": "Eichmann in Jerusalem by Hannah Arendt",
         "img_path" : "arendt.jpg"
       },
       {
-        "caption": "Playmobil",
+        "caption": "Playmobil EVERYTHING",
         "img_path" : "playmobil.jpg"
       },
       {
@@ -93,15 +91,15 @@
         "img_path" : "gingko.jpg"
       },
       {
-        "caption": "The time traveller's wife",
+        "caption": "The Time Traveller's Wife by Audrey Niffenegger",
         "img_path": "the-time-travelers-wife.jpg"
       },
       {
-        "caption": "A history of love",
+        "caption": "A History of Love by Nicole Krauss",
         "img_path" : "history_of_love.jpg"
       },
       {
-        "caption": "One hundred years of solitude",
+        "caption": "One Hundred Years of Solitude by Gabriel García Márquez",
         "img_path" : "garcia_marquez.jpg"
       }
     ]

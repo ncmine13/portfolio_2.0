@@ -3,9 +3,9 @@
     <router-link :to="'/'"><div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div></router-link>
     <div class="header__contact--wrapper">
       <div class="header__contact">
-        <svgicon icon="gmail" width="22" height="18" :color="getIconColor"></svgicon>
-        <svgicon icon="github_logo" width="22" height="18" :color="getIconColor"></svgicon>
-        <svgicon icon="linkedin" width="22" height="18" :color="getIconColor"></svgicon>
+        <a href="mailto:naomi.mine@gmail.com"><svgicon icon="gmail" width="22" height="18" :color="getIconColor"></svgicon></a>
+        <a href="https://github.com/ncmine13" target="_blank"><svgicon icon="github_logo" width="22" height="18" :color="getIconColor"></svgicon></a>
+        <a href="https://www.linkedin.com/in/naomi-mine/" target="_blank"><svgicon icon="linkedin" width="22" height="18" :color="getIconColor"></svgicon></a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 <style lang="sass-loader">
-  @import '../../assets/styles/variables.scss';
+  @import '../../assets/styles/main.scss';
 
   .header {
     &__wrapper {
@@ -57,6 +57,17 @@ export default {
       &--wrapper {
         display: flex;
         justify-content: flex-end;
+      }
+    }
+    @include breakpoint(mobile) {
+      &__logo {
+        height: 75px;
+      }
+      &__contact {
+        svg {
+          margin-left: 10px;
+          width: 15px !important;
+        }
       }
     }
   }

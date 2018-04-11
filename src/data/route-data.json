@@ -13,13 +13,13 @@
   },
   {
     "page" : "/cv",
-    "colors" : { "background" : "rgb(248, 147, 100)", "navFixed" : "#b95628", "accent" : "", "footer" : "#013a3a"},
+    "colors" : { "background" : "#828389", "navFixed" : "#3e3e40", "accent" : "", "footer" : "#013a3a"},
     "footer_text" : "I am lucky to get to create things through my work.",
     "link" : "/web"
   },
   {
     "page" : "/inspiration",
-    "colors" : { "background" : "#7d334b", "navFixed" : "#480d20", "accent" : "", "footer" : "#b95628"},
+    "colors" : { "background" : "#7d334b", "navFixed" : "#480d20", "accent" : "", "footer" : "#3e3e40"},
     "footer_text" : "I turn my interests into experiences.",
     "link" : "/cv"
   },

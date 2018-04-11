@@ -131,19 +131,21 @@ export default {
         cursor: pointer;
       }
     }
+    @include breakpoint(tablet-landscape) {
+      &__info {
+        &--thumbnail {
+          width: calc(100% / 2 - 20px);
+        }
+      }
+    }
     @include breakpoint(tablet-portrait) {
       &__container {
         flex-direction: column;
       }
       &__active-image {
         margin: 0 auto;
-        background-position: center;
+        background-position: left;
         margin-top: 20px;
-      }
-      &__info {
-        &--thumbnail {
-          width: calc(100% / 2 - 20px);
-        }
       }
     }
   }

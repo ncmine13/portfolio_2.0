@@ -93,9 +93,20 @@ export default {
     text-align: center;
     padding-bottom: 2px;
     display: inline;
+    .name {
+      color: rgb(140, 211, 211);
+    }
     &.active {
       .name {
         border-bottom: 1px solid white;
+        color: white;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    &__overlay {
+      .intro {
+        font-size: 35px;
       }
     }
   }

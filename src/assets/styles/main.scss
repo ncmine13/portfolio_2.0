@@ -10,6 +10,9 @@
   @include breakpoint(site-width) {
     margin: 0 40px;
   }
+  @include breakpoint(mobile) {
+    margin: 0 20px;
+  }
 }
 
 .two-by-two {
@@ -18,4 +21,31 @@
     padding-right: 0;
     margin: 0 auto;
   }
+}
+
+.double-wrapper-pad {
+  padding: 40px 0;
+  @include breakpoint(mobile) {
+    padding: 20px 0;
+  }
+}
+
+.h2-size {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  @include breakpoint(tablet-portrait) {
+    font-size: 20px;
+  }
+}
+
+.h3-size {
+  font-size: 20px;
+  @include breakpoint(tablet-portrait) {
+    font-size: 16px;
+  }
+}
+
+.serif {
+  font-family: 'Baskerville', Georgia, serif;
 }

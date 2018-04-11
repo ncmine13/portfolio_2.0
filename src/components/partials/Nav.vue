@@ -85,10 +85,22 @@ export default {
       }
     }
     @include breakpoint(tablet-portrait) {
+      font-size: 14px;
       &.home {
         nav {
           display: flex;
           justify-content: space-between;
+          a {
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+    @include breakpoint(mobile) {
+      font-size: 12px;
+      nav {
+        a {
+          padding-right: 10px;
         }
       }
     }

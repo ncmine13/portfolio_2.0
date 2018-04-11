@@ -29,20 +29,28 @@ export default {
 
 .footer {
   &__wrapper {
-    height: 20vh;
-    display: flex;
-    align-items: center;
+    @include flexbox(row, left, center)
     color: white;
   }
   &__content {
-    display: flex;
-    align-items: center;
+    @include flexbox(row, null, center)
+    padding: 20px 0;
     font-size: 20px;
     letter-spacing: 0.5px;
     span {
       font-size: 40px;
       margin-left: 20px;
       color: white;
+    }
+  }
+  @include breakpoint(tablet-portrait) {
+    &__content {
+      font-size: 16px;
+    }
+  }
+  @include breakpoint(mobile) {
+    &__wrapper {
+      height: 15vh;
     }
   }
 }

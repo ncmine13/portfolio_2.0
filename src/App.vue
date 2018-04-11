@@ -4,13 +4,14 @@
       <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner5.png'/></div>
       <header-component v-else></header-component>
       <div v-if="hpActive" class="entry__type-wrapper">
-        <div class="entry__name">Naomi Mine</div>
+        <div class="entry__name serif">Naomi Mine</div>
         <nav-component></nav-component>
       </div>
       <nav-component v-else></nav-component>
     </div>
     <router-view/>
     <footer-component v-if="!hpActive"></footer-component>
+    <contact-component v-if="!hpActive"></contact-component>
   </div>
 </template>
 
@@ -18,6 +19,7 @@
 import navComponent from './components/partials/Nav'
 import headerComponent from './components/partials/Header'
 import footerComponent from './components/partials/Footer'
+import contactComponent from './components/partials/Email'
 
 export default {
   mounted () {
@@ -40,7 +42,8 @@ export default {
   components: {
     navComponent,
     headerComponent,
-    footerComponent
+    footerComponent,
+    contactComponent
   },
   methods: {
     handleNavDisplay () {
@@ -95,7 +98,6 @@ export default {
   }
   &__name {
     font-size: 70px;
-    font-family: 'Baskerville', Georgia, serif;
   }
   &__wrapper, &__type-wrapper {
     width: calc(100% / 2 - 40px);

@@ -80,6 +80,9 @@ export default {
       &__projects-wrapper {
         flex-direction: column;
       }
+      &__project-wrapper {
+        width: 100%;
+      }
     }
   }
 </style>

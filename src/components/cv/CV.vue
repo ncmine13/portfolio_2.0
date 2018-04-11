@@ -32,7 +32,7 @@ export default {
 
 .resume {
   &__wrapper {
-    background-color: $orange;
+    background-color: $gray;
     color: white;
     padding-bottom: 100px;
     .download {
