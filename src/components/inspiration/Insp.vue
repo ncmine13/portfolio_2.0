@@ -13,19 +13,20 @@
 <script>
 import inspiration from '../../data/inspiration.json'
 import Packery from 'packery'
-
+import imagesLoaded from 'imagesloaded'
 export default {
   beforeMount () {
     this.$store.commit('toggleHomeView', false)
   },
   mounted () {
-    window.setTimeout(function () {
+    let imgContainer = document.querySelector('.insp-section__item-wrapper')
+    imagesLoaded(imgContainer, { background: true}, function() {
       var elem = document.querySelector('.insp-section__item-wrapper')
       var pckry = new Packery(elem, {
         itemSelector: '.insp-section__item',
         gutter: 20
       })
-    }, 500)
+    })
   },
   name: 'Insp',
   data () {
