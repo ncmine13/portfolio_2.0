@@ -1,7 +1,10 @@
 <template>
   <div class="nav__wrapper wrapper-pad" v-bind:class="{home: home}" v-bind:style="{ backgroundColor: activeBgColor }">
     <nav class="site-width">
-      <div :key="item.id" v-for="item in navElements" class="nav__elem"><router-link :to="item.route">{{ item.title }}</router-link></div>
+      <div :key="item.id" v-for="item in navElements" class="nav__elem">
+        <router-link v-if="!showShortTitle(item)" :to="item.route">{{ item.title }}</router-link>
+        <router-link v-else :to="item.route">{{ item.shortTitle }}</router-link>
+      </div>
     </nav>
   </div>
 </template>
@@ -14,8 +17,9 @@ export default {
       name: 'Naomi Mine',
       navElements: [
         {
-          title: 'Web',
-          route: '/web',
+          title: 'Development',
+          shortTitle: 'Dev',
+          route: '/development',
           color: '#027878'
         },
         {
@@ -42,6 +46,13 @@ export default {
     },
     home () {
       return this.$store.state.homeView
+    }
+  },
+  methods: {
+    showShortTitle (item) {
+      if (item.title === 'Development') {
+        return this.$store.state.showShortenedNav
+      }
     }
   }
 }

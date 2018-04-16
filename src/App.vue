@@ -25,6 +25,7 @@ export default {
   mounted () {
     window.addEventListener('scroll', this.handleNavDisplay, false)
     window.addEventListener('resize', this.resizeHandler, false)
+    this.$store.commit('checkForShortNav')
   },
   name: 'App',
   data () {
@@ -53,8 +54,7 @@ export default {
       this.$store.dispatch('handleStickyState', { value: stickBool })
     },
     resizeHandler () {
-      console.log('resizing')
-      // reset distance from top
+      this.$store.commit('checkForShortNav')
     }
   }
 }

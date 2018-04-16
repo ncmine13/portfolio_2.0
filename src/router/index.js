@@ -16,7 +16,7 @@ const router = new Router({
       component: Art
     },
     {
-      path: '/web',
+      path: '/development',
       name: 'Web',
       component: Web
     },

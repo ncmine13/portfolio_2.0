@@ -1,30 +1,53 @@
 [
   {
-    "page" : "/web",
-    "colors" : { "background" : "rgb(69, 140, 140)", "overlay": "rgba(0, 31, 31, 0.7)", "navFixed" : "#013a3a", "accent" : "rgb(179, 72, 23)", "footer" : "rgb(187, 135, 39)" },
-    "footer_text" : "I've only been programming for a year, but I've been making things for a lifetime.",
-    "link" : "/artwork"
+    "page": "/development",
+    "colors": {
+      "background": "rgb(69, 140, 140)",
+      "overlay": "rgba(0, 31, 31, 0.7)",
+      "navFixed": "#013a3a",
+      "accent": "rgb(179, 72, 23)",
+      "footer": "rgb(187, 135, 39)"
+    },
+    "footer_text": "I've only been programming for a year, but I've been making things for a lifetime.",
+    "link": "/artwork"
   },
   {
-    "page" : "/artwork",
-    "colors" : { "background" : "#dbb570", "navFixed" : "#bb8727", "accent" : "", "footer" : "rgb(72, 13, 32)" },
-    "footer_text" : "The things I read, see, hear, and feel inform what I make.",
-    "link" : "/inspiration"
+    "page": "/artwork",
+    "colors": {
+      "background": "#dbb570",
+      "navFixed": "#bb8727",
+      "accent": "",
+      "footer": "rgb(72, 13, 32)"
+    },
+    "footer_text": "The things I read, see, hear, and feel inform what I make.",
+    "link": "/inspiration"
   },
   {
-    "page" : "/cv",
-    "colors" : { "background" : "#828389", "navFixed" : "#3e3e40", "accent" : "", "footer" : "#013a3a"},
-    "footer_text" : "I am lucky to get to create things through my work.",
-    "link" : "/web"
+    "page": "/cv",
+    "colors": {
+      "background": "#828389",
+      "navFixed": "#3e3e40",
+      "accent": "",
+      "footer": "#013a3a"
+    },
+    "footer_text": "I am lucky to get to create things through my work.",
+    "link": "/development"
   },
   {
-    "page" : "/inspiration",
-    "colors" : { "background" : "#7d334b", "navFixed" : "#480d20", "accent" : "", "footer" : "#3e3e40"},
-    "footer_text" : "I turn my interests into experiences.",
-    "link" : "/cv"
+    "page": "/inspiration",
+    "colors": {
+      "background": "#7d334b",
+      "navFixed": "#480d20",
+      "accent": "",
+      "footer": "#3e3e40"
+    },
+    "footer_text": "I turn my interests into experiences.",
+    "link": "/cv"
   },
   {
-    "page" : "/",
-    "colors": { "background" : "#FDB632"}
+    "page": "/",
+    "colors": {
+      "background": "#FDB632"
+    }
   }
 ]

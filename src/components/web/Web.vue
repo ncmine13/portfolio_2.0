@@ -28,10 +28,9 @@ export default {
   name: 'Web',
   data () {
     return {
-      msg: 'Web',
       webCopy: webContent,
       colorScheme: this.$store.state.activeColorScheme,
-      intro: 'I\'m Naomi, a fullstack developer and artist.',
+      intro: 'I\'m Naomi, a full stack developer and artist.',
       text1: 'I\'ve got',
       text2: '...and I can\'t wait to do more.',
       activeSegment: '',

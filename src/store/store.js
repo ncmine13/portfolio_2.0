@@ -13,7 +13,8 @@ export const store = new Vuex.Store({
     activeColorScheme: '',
     activeFooterCopy: '',
     internalLink: '',
-    activeArtTheme: ''
+    activeArtTheme: '',
+    showShortenedNav: false
   },
   mutations: {
     toggleHomeView (state, active) {
@@ -21,6 +22,9 @@ export const store = new Vuex.Store({
     },
     activateArtTheme (state, theme) {
       state.activeArtTheme = theme
+    },
+    checkForShortNav(state) {
+      state.showShortenedNav = window.innerWidth <= 500
     },
     alterColorScheme (state, route) {
       if (state.routeData.find(schema => schema.page === route)) {
