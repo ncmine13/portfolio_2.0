@@ -52,6 +52,9 @@ export default {
     &__wrapper {
       height: 15vh;
     }
+    &__content {
+      font-size: 12px;
+    }
   }
 }
 

@@ -113,6 +113,9 @@ export default {
         }
       }
     }
+    @include breakpoint(tiny-mobile) {
+      font-size: 10px;
+    }
   }
 }
 </style>

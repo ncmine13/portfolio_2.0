@@ -1,7 +1,9 @@
+import Es6Promise from 'es6-promise'
 import Vue from 'vue'
 import Vuex from 'vuex'
 import routeData from '../data/route-data.json'
 
+Es6Promise.polyfill()
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({

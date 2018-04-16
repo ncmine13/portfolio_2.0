@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "passion",
-    "intro": "I've been developing for a year, and am always eager to learn more! Here is a sample of what I've been working on lately in my free time.",
+    "intro": "I love what I do, and am always hungering to learn more! Here is a sample of what I've been working on lately in my free time.",
     "projects": [
       {
         "id": 1,
@@ -18,11 +18,11 @@
         "stack": [ "python", "javascript"],
         "img_path": "pythonImg.png",
         "link": "https://github.com/ncmine13/indelicate_scraping",
-        "description": "Though it be uncouth, I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with python and interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
+        "description": "I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with Python and to interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
       }
 
     ],
-    "secondary": "Though I entered web development because I believed my interest in art could bridge the gap between design and development, I've become far more interested in the logic necessary to craft effective code. Though I love a clean user interface, my interests are veering further back in the stack."
+    "secondary": "I entered web development because I believed my interest in art could bridge the gap between design and development, but I've fallen in love with the logical processes essential to crafting effective code. While I love a clean user interface, my interests are veering further back in the stack."
   },
   {
     "id": 2,

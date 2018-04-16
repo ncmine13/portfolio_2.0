@@ -3,7 +3,7 @@
     <div class="web-section__cover">
       <div class="web-section__overlay" v-bind:style="{ backgroundColor: colorScheme.overlay }"><div class="intro"> {{ intro }} </div></div>
     </div>
-    <div class="h2-size site-width double-wrapper-pad">
+    <div class="h2-size site-width double-wrapper-pad web-section__intro-text-wrapper">
       <span>{{ text1 }}</span>
       <div :class="{ active: isSegmentActive(segment) }" v-for="segment in webCopy" :key="segment.id" class="web-section__name" v-on:click="activateSection(segment)">
         <span class="name">{{ segment.name }}</span><span v-if="segment.id !== webCopy.length" class="comma">{{comma}}</span>
@@ -105,7 +105,17 @@ export default {
   @include breakpoint(mobile) {
     &__overlay {
       .intro {
-        font-size: 35px;
+        font-size: 28px;
+      }
+    }
+    &__intro-text-wrapper {
+      padding-bottom: 0;
+    }
+    &__name {
+      &.active {
+        .name {
+          border-bottom: 1px dashed white;
+        }
       }
     }
   }

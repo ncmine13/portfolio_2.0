@@ -41,16 +41,22 @@ export default {
   },
   methods: {
     handleNavDisplay () {
-      let stickBool = true
-      if (window.pageYOffset <= this.headerHeight()) { stickBool = false }
-      this.$store.dispatch('handleStickyState', { value: stickBool })
+      if (!this.$store.state.homeView) {
+        let stickBool = true
+        if (window.pageYOffset <= this.headerHeight()) { stickBool = false }
+        this.$store.dispatch('handleStickyState', { value: stickBool })
+      }
     },
     headerHeight () {
-      return document.querySelector('.header__wrapper').clientHeight
+      if (!this.$store.state.homeView) {
+        return document.querySelector('.header__wrapper').clientHeight
+      }
     },
     resizeHandler () {
-      this.headerHeight()
-      this.handleNavDisplay()
+      if (!this.$store.state.homeView) {
+        this.headerHeight()
+        this.handleNavDisplay()
+      }
       this.$store.commit('checkForShortNav')
     }
   }
@@ -119,10 +125,16 @@ export default {
   @include breakpoint(mobile) {
     &__name {
       font-size: 50px;
+      padding-top: 20px;
     }
     &__wrapper, &__type-wrapper {
       width: 80%;
       margin: 0 auto;
+    }
+  }
+  @include breakpoint(tiny-mobile) {
+    &__name {
+      font-size: 38px;
     }
   }
 }

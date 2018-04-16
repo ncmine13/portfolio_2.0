@@ -67,5 +67,13 @@ export default {
         }
       }
     }
+    @include breakpoint(tiny-mobile) {
+      &__contact {
+        svg {
+          margin-left: 10px;
+          width: 12px !important;
+        }
+      }
+    }
   }
 </style>

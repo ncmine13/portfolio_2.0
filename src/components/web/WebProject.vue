@@ -87,5 +87,13 @@ export default {
         width: 100%;
       }
     }
+    @include breakpoint(mobile) {
+      &__title, &__image-overlay .stack {
+        padding: 10px 0;
+      }
+      &__description {
+        font-size: 14px;
+      }
+    }
   }
 </style>
