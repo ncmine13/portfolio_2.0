@@ -1,6 +1,7 @@
 [
   {
     "name": "Work",
+    "id": 1,
     "experiences" : [
       {
         "name": "Multiple, Inc.",
@@ -12,79 +13,88 @@
         "name": "Karpowicz Studios",
         "date": "Sept. 2015 - Jan. 2017",
         "position": "Studio Assistant",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       },
       {
         "name": "Boys and Girls Club of San Francisco",
         "date": "June - Aug. 2015",
         "position": "Office Manager",
-        "location": "Mendocino County, CA"        
+        "location": "Mendocino County, CA"
       }
     ]
   },
   {
-    "name": "Volunteering",    
+    "name": "Volunteering",
+    "id": 2,
     "experiences": [
       {
         "name":"CodeNow Chicago",
         "date": "June, Nov. 2017",
         "position": "Instructor",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       },
       {
         "name": "Woman Made Gallery",
         "date": "June - Aug. 2016",
         "position": "Administrative Intern",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       },
       {
         "name":"Civic Knowledge Project's Winning Words",
         "date": "Sept. 2012 - Dec. 2014",
         "position": "Instructor",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       }
     ]
   },
   {
-    "name": "Education",    
+    "name": "Education",
+    "id": 3,
     "experiences": [
       {
         "name":"General Assembly",
         "position": "Web Development Immersive Student",
         "date": "Jan - Apr. 2017",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       },
       {
         "name": "The University of Chicago",
         "position": "Bachelor of Arts in Interdisciplinary Studies in the Humanities",
         "date": "Sept. 2011 - June 2015",
-        "location": "Chicago, IL"                
+        "location": "Chicago, IL"
       },
       {
         "name":"Loyola University Chicago",
         "position": "Student of Graphic Design and Painting",
         "date": "June - Aug. 2014",
-        "location": "Chicago, IL"        
+        "location": "Chicago, IL"
       },
       {
         "name":"Fundación de Ortega y Gasset",
         "position": "Spanish Language Immersion Student",
         "date": "Sept. - Dec. 2013",
-        "location": "Toledo, Spain"        
+        "location": "Toledo, Spain"
       }
     ]
   },
   {
-    "name": "Bragging",    
+    "name": "Miscellaneous bragging",
+    "id": 4,
     "experiences": [
       {
-        "name":"National Merit"
+        "name":"National Merit Scholarship Recipient",
+        "date": "2011",
+        "location": "Illinois"
       },
       {
-        "name":"Rogers Park Round Trip"
+        "name":"Artist in Rogers Park Round Trip Art Show",
+        "date": "September 2015",
+        "location": "Rogers Park neighborhood in Chicago, IL"
       },
       {
-        "name":"Graduated with special honors and Dean's List throughout college"
+        "name":"Graduated with special honors and Dean's List throughout college",
+        "date": "June 2015",
+        "location": "Chicago, IL"
       }
     ]
   }

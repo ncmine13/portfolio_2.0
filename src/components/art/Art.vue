@@ -81,7 +81,8 @@ export default {
     letter-spacing: 0.7px;
   }
   &__themes {
-    @include flexbox_standard;
+    @include flexbox(row, null, null);
+    flex-wrap: wrap;
   }
   &__theme-wrapper {
     position: relative;
@@ -106,7 +107,7 @@ export default {
     z-index: 4;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(187, 135, 39, 0.7);
+    background-color: rgba(187, 135, 39, 0.85);
     &.active {
       display: block;
     }

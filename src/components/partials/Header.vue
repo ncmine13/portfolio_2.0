@@ -35,8 +35,7 @@ export default {
 
   .header {
     &__wrapper {
-      display: flex;
-      justify-content: space-between;
+      @include flexbox(row, space-between, null);
       padding: 20px 0px 40px 0px;
     }
     &__logo {
@@ -47,16 +46,14 @@ export default {
       }
     }
     &__contact {
-      display: flex;
-      align-items: center;
+      @include flexbox(row, null, center);
       position: fixed;
       z-index: 4;
       svg {
         margin-left: 20px;
       }
       &--wrapper {
-        display: flex;
-        justify-content: flex-end;
+        @include flexbox(row, flex-end, null);
       }
     }
     @include breakpoint(mobile) {

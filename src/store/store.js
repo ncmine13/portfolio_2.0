@@ -23,7 +23,7 @@ export const store = new Vuex.Store({
     activateArtTheme (state, theme) {
       state.activeArtTheme = theme
     },
-    checkForShortNav(state) {
+    checkForShortNav (state) {
       state.showShortenedNav = window.innerWidth <= 500
     },
     alterColorScheme (state, route) {

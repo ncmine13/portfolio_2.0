@@ -93,11 +93,11 @@ export default {
     padding-bottom: 2px;
     display: inline;
     .name {
-      color: rgb(140, 211, 211);
+      color: #93c0c0;
     }
     &.active {
       .name {
-        border-bottom: 1px solid white;
+        border-bottom: 2px dashed white;
         color: white;
       }
     }

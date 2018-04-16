@@ -4,7 +4,9 @@
     <div v-for="entry in cv" :key="entry.id" class="resume__category site-width">
       <div class="resume__category-name h3-size">{{entry.name}}</div>
       <div class="resume__experiences-wrapper">
-        <div v-for="experience in entry.experiences" :key="experience.id"><span v-if="experience.position">{{ experience.position }}, </span> {{experience.name}}<span v-if="experience.date">, {{experience.date}} </span></div>
+        <div class="experience" v-for="experience in entry.experiences" :key="experience.id">
+          <span v-if="experience.position">{{ experience.position }}, </span><span v-bind:class="{bold: isBold(entry)}">{{experience.name}}</span><span v-if="experience.date">, {{experience.date}}</span><span>, {{experience.location}}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -22,6 +24,9 @@ export default {
   methods: {
     resumePdf () {
       return require('../../assets/Naomi_Mine_Resume.pdf')
+    },
+    isBold (entry) {
+      return entry.id !== 4
     }
   }
 }
@@ -29,7 +34,9 @@ export default {
 
 <style lang="sass-loader" scoped>
 @import '../../assets/styles/main.scss';
-
+.bold {
+  font-weight: 600;
+}
 .resume {
   &__wrapper {
     background-color: $gray;
@@ -37,6 +44,7 @@ export default {
     padding-bottom: 100px;
     .download {
       text-decoration: underline;
+      padding: 20px 0;
       a {
         color: white;
       }
@@ -49,10 +57,10 @@ export default {
     font-weight: 500;
   }
   &__experiences-wrapper {
+    font-size: 16px;
     padding-left: 40px;
-    span {
-      font-weight: 600;
-      font-size: 14px;
+    .experience {
+      padding-top: 5px;
     }
   }
 }

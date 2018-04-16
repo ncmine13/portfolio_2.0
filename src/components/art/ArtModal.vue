@@ -44,7 +44,6 @@ export default {
   methods: {
     centerModal () {
       let modalHeight = this.$refs.modalWrapperDOM.offsetHeight
-      console.log(modalHeight, 'height')
       this.$refs.modalWrapperDOM.style.marginTop = 'calc((100vh - ' + modalHeight + 'px) / 2)'
     },
     getBgImage () {
@@ -92,7 +91,6 @@ export default {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right top;
-      /* width: calc(100% / 2 - 40px); */
       margin: 0 20px;
       @include makeSquare;
     }
@@ -118,7 +116,7 @@ export default {
       &--thumbnails {
         overflow: scroll;
         width: 100%;
-        display: flex;
+        @include flexbox(null, null, null);
         flex-wrap: wrap;
         padding: 40px 0;
       }

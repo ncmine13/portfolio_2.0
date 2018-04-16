@@ -62,8 +62,7 @@ export default {
 
 .nav {
   &__wrapper {
-    display: flex;
-    justify-content: flex-start;
+    @include flexbox(row, flex-start, null);
     width: 100%;
     position: relative;
     &.home {
@@ -99,8 +98,7 @@ export default {
       font-size: 14px;
       &.home {
         nav {
-          display: flex;
-          justify-content: space-between;
+          @include flexbox(row, flex-center, null);
           a {
             padding-right: 15px;
           }

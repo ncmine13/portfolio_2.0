@@ -1,17 +1,6 @@
-// expand to pass in flex rules
-@mixin flexbox_standard() {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@mixin flexbox_aligned() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @mixin flexbox($direction, $justification, $alignment) {
   display: flex;
+  // flex-wrap: wrap;
   flex-direction: $direction;
   justify-content: $justification;
   align-items: $alignment;

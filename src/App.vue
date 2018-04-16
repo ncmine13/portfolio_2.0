@@ -28,16 +28,9 @@ export default {
     this.$store.commit('checkForShortNav')
   },
   name: 'App',
-  data () {
-    return {
-    }
-  },
   computed: {
     hpActive () {
       return this.$store.state.homeView
-    },
-    headerHeight () {
-      return document.querySelector('.header__wrapper').clientHeight
     }
   },
   components: {
@@ -49,11 +42,15 @@ export default {
   methods: {
     handleNavDisplay () {
       let stickBool = true
-      if (window.pageYOffset <= this.headerHeight) { stickBool = false }
-
+      if (window.pageYOffset <= this.headerHeight()) { stickBool = false }
       this.$store.dispatch('handleStickyState', { value: stickBool })
     },
+    headerHeight () {
+      return document.querySelector('.header__wrapper').clientHeight
+    },
     resizeHandler () {
+      this.headerHeight()
+      this.handleNavDisplay()
       this.$store.commit('checkForShortNav')
     }
   }
@@ -76,12 +73,8 @@ export default {
   .headers {
     height: 100%;
     @include flexbox(row, null, center);
-
     @include breakpoint(tablet-portrait) {
-      flex-direction: column;
-      justify-content: center;
-    }
-    @include breakpoint(mobile) {
+      @include flexbox(column, center, null);
     }
   }
   @include breakpoint(mobile) {
