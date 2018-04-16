@@ -1,6 +1,6 @@
 <template>
   <div class="header__wrapper site-width">
-    <router-link :to="'/'"><div class="header__logo"><img src="../../assets/topView.png" alt="logo"/></div></router-link>
+    <router-link :to="'/'"><div class="header__logo"><img src="../../assets/site_img.png" alt="logo"/></div></router-link>
     <div class="header__contact--wrapper">
       <div class="header__contact">
         <a href="mailto:naomi.mine@gmail.com"><svgicon icon="gmail" width="22" height="18" :color="getIconColor"></svgicon></a>

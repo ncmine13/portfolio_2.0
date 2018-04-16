@@ -103,6 +103,9 @@ export default {
     }
   }
   @include breakpoint(mobile) {
+    &__cover {
+      height: 35vh;
+    }
     &__overlay {
       .intro {
         font-size: 28px;
