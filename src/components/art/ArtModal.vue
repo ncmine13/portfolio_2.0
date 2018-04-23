@@ -73,25 +73,28 @@ export default {
     &__wrapper {
       position: fixed;
       top: 0;
-      max-height: 90vh;
-      overflow: scroll;
       left: 0;
+      overflow: hidden;
       width: 90vw;
+      height: 90vh;
       margin: 5vh 5vw;
-      padding: 5% 0;
       z-index: 4;
     }
     &__container {
       background-color: #2c2a2a;
       display: flex;
-      padding: 20px 0;
+      padding: 40px 0;
+      position: absolute;
+      overflow: scroll;
+      width: 100%;
+      height: calc(100% - 80px);
 
     }
     &__active-image {
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: right top;
-      margin: 0 20px;
+      background-position: left top;
+      margin: 0 40px;
       @include makeSquare;
     }
     &__close-modal {
@@ -110,7 +113,7 @@ export default {
       &--details {
         .title {
           font-size: 30px;
-          padding-bottom: 10px;
+          padding: 10px 0;
         }
       }
       &--thumbnails {
@@ -142,8 +145,7 @@ export default {
       }
       &__active-image {
         margin: 0 auto;
-        background-position: left;
-        margin-top: 20px;
+        margin-top: 25px;
       }
     }
   }

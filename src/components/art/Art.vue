@@ -86,8 +86,8 @@ export default {
   }
   &__theme-wrapper {
     position: relative;
-    margin: 10px 20px 30px 0;
-    width: calc(100% / 3 - 20px);
+    margin: 10px 30px 30px 0;
+    width: calc(100% / 3 - 30px);
     a {
       color: white;
     }
@@ -96,8 +96,9 @@ export default {
     background-size: cover;
     @include makeSquare;
     &--name {
-      font-size: 20px;
+      font-size: 18px;
       padding: 10px 0;
+      color: $dark-gray;
     }
   }
   &__modal-mask {

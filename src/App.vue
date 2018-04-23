@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-bind:class="{ homeView: hpActive }">
     <div class="headers">
-      <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner5.png'/></div>
+      <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner.png'/></div>
       <header-component v-else></header-component>
       <div v-if="hpActive" class="entry__type-wrapper">
         <div class="entry__name serif">Naomi Mine</div>

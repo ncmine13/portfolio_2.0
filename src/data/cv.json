@@ -6,7 +6,13 @@
       {
         "name": "Multiple, Inc.",
         "date": "July 2017 - Apr. 2018",
-        "position": "Web Developer",
+        "position": "Full Stack Developer",
+        "location": "Chicago, IL"
+      },
+      {
+        "name": "Freelance",
+        "date": "May 2017 - Dec. 2017",
+        "position": "Developer",
         "location": "Chicago, IL"
       },
       {
@@ -78,7 +84,7 @@
     ]
   },
   {
-    "name": "Miscellaneous bragging",
+    "name": "Accomplishments",
     "id": 4,
     "experiences": [
       {

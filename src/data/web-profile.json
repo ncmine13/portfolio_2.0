@@ -18,7 +18,7 @@
         "stack": [ "python", "javascript"],
         "img_path": "pythonImg.png",
         "link": "https://github.com/ncmine13/indelicate_scraping",
-        "description": "I've been harvesting the API of a (disappointly unimaginative) porn site for its fun word patterns in order to play with Python and to interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
+        "description": "I've been harvesting the API of a (disappointingly unimaginative) porn site for its fun word patterns in order to play with Python and to interact with an existing dataset. As of yet, I have not found anything that the average thirteen-year-old boy couldn't tell you, but I have some plans for examining and showcasing this trove of smut."
       }
 
     ],
