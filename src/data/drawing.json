@@ -1,0 +1,77 @@
+{
+    "header": "Collage",
+    "items": [
+        {
+            "img_path": "drawing_painting/couch/couch1.jpg",
+            "img_set_paths": [
+                "drawing_painting/couch/couch1.jpg",
+                "drawing_painting/couch/couch2.jpg",
+                "drawing_painting/couch/couch3.jpg"
+            ]
+        },
+        {
+            "title": "Cezanne",
+            "img_path" : "drawing_painting/Cezanne.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Drawing",
+            "img_path" : "drawing_painting/Drawing.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Fruit",
+            "img_path" : "drawing_painting/Fruit.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+
+        {
+            "title": "grey",
+            "img_path" : "drawing_painting/greypainting.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "compilation",
+            "img_path" : "drawing_painting/comp_paint1.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "red",
+            "img_path" : "drawing_painting/redpainting.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "jars",
+            "img_path" : "drawing_painting/Jars.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "paint",
+            "img_path" : "drawing_painting/Painting.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "psycho",
+            "img_path" : "drawing_painting/Psycho.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        }
+    ]
+}

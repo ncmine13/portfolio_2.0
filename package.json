@@ -22,6 +22,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "vue": "^2.5.2",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

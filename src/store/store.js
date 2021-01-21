@@ -9,14 +9,16 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state: {
     homeView: true,
-    navStuck: false,
     iconColor: '#232528',
     routeData: routeData,
     activeColorScheme: '',
     activeFooterCopy: '',
     internalLink: '',
     activeArtTheme: '',
-    showShortenedNav: false
+    showShortenedNav: false,
+    activeProjectCat: '',
+    modalOpen: false,
+    activeImages: [],
   },
   mutations: {
     toggleHomeView (state, active) {
@@ -39,26 +41,20 @@ export const store = new Vuex.Store({
     toggleIconColor (state, sticky) {
       state.iconColor = sticky ? '#fff' : '#232528'
     },
-    toggleNavStick (state, sticky) {
-      let navWrapper = document.querySelector('.nav__wrapper')
-      state.navStuck = sticky
-
-      if (sticky) {
-        navWrapper.classList.add('fixed')
-        navWrapper.parentNode.nextElementSibling.style.paddingTop = navWrapper.clientHeight + 'px'
-      } else {
-        navWrapper.classList.remove('fixed')
-        navWrapper.parentNode.nextElementSibling.style.paddingTop = '0px'
-      }
+    changeActiveProjectCat (state, category) {
+      state.activeProjectCat = category
+    },
+    toggleModalOpen (state) {
+      state.modalOpen = !state.modalOpen
+    },
+    activateImages (state, images) {
+      state.activeImages = images
+    },
+    deactivateImages (state) {
+      state.images = []
     }
   },
   actions: {
-    handleStickyState (context, sticky) {
-      if (context.state.navStuck !== sticky.value) {
-        context.commit('toggleNavStick', sticky.value)
-        context.commit('toggleIconColor', sticky.value)
-      }
-    },
     changePage (context, payload) {
       window.scrollTo(0, 0)
       context.commit('toggleHomeView', payload.showHomeView)

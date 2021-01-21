@@ -1,25 +1,15 @@
 <template>
-  <div id="app" v-bind:class="{ homeView: hpActive }">
+  <div id="app">
     <div class="headers">
-      <div v-if="hpActive" class='entry__wrapper'><img src='./assets/banner.png'/></div>
-      <header-component v-else></header-component>
-      <div v-if="hpActive" class="entry__type-wrapper">
-        <div class="entry__name serif">Naomi Mine</div>
-        <nav-component></nav-component>
-      </div>
-      <nav-component v-else></nav-component>
+      <div class="name"><a href="/">Naomi Mine</a></div>
+      <nav-component></nav-component>
     </div>
     <router-view/>
-    <footer-component v-if="!hpActive"></footer-component>
-    <contact-component v-if="!hpActive"></contact-component>
   </div>
 </template>
 
 <script>
 import navComponent from './components/partials/Nav'
-import headerComponent from './components/partials/Header'
-import footerComponent from './components/partials/Footer'
-import contactComponent from './components/partials/Email'
 
 export default {
   mounted () {
@@ -28,30 +18,10 @@ export default {
     this.$store.commit('checkForShortNav')
   },
   name: 'App',
-  computed: {
-    hpActive () {
-      return this.$store.state.homeView
-    }
-  },
   components: {
     navComponent,
-    headerComponent,
-    footerComponent,
-    contactComponent
   },
   methods: {
-    handleNavDisplay () {
-      if (!this.$store.state.homeView) {
-        let stickBool = true
-        if (window.pageYOffset <= this.headerHeight()) { stickBool = false }
-        this.$store.dispatch('handleStickyState', { value: stickBool })
-      }
-    },
-    headerHeight () {
-      if (!this.$store.state.homeView) {
-        return document.querySelector('.header__wrapper').clientHeight
-      }
-    },
     resizeHandler () {
       if (!this.$store.state.homeView) {
         this.headerHeight()
@@ -70,23 +40,14 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 20px;
+}
+.headers {
+  text-align: center;
 }
 
-.homeView {
-  padding: 40px;
-  background-color: rgb(253, 182, 50);
-  height: calc(100vh - 80px);
-  .headers {
-    height: 100%;
-    @include flexbox(row, null, center);
-    @include breakpoint(tablet-portrait) {
-      @include flexbox(column, center, null);
-    }
-  }
-  @include breakpoint(mobile) {
-    padding: 20px;
-    height: calc(100vh - 40px);
-  }
+.name {
+  font-size: 30px; 
 }
 
 .entry {

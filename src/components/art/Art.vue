@@ -8,7 +8,7 @@
     </div>
     <div class="art__themes double-wrapper-pad site-width">
       <div class="art__theme-wrapper" v-for="theme in themes" :key="theme.id" v-on:click="selectArtCategory(theme)">
-        <div class="art__theme" v-bind:style=" getBgImage(theme)"></div>
+        <div class="art__theme" v-bind:style="getBgImage(theme)"></div>
         <div class="art__theme--name">{{ theme.name }}</div>
       </div>
     </div>

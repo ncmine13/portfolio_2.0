@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Es6Promise from 'es6-promise'
 import Vue from 'vue'
+import VueCarousel from 'vue-carousel';
 import App from './App'
 import { router } from './router'
 import { store } from './store/store'
@@ -10,6 +11,7 @@ import VueSVGIcon from 'vue-svgicon'
 Es6Promise.polyfill()
 Vue.config.productionTip = false
 Vue.use(VueSVGIcon)
+Vue.use(VueCarousel);
 
 router.beforeEach((to, from, next) => {
   let path = to.fullPath

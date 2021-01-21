@@ -1,0 +1,73 @@
+{
+    "items": [
+        {
+            "title": "Beach",
+            "img_path": "collage/Beach.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Abyss",
+            "img_path": "collage/Abyss.jpg",
+            "dimensions": ""
+        },
+        {
+            "title": "Fabric",
+            "img_path": "collage/fabric_collage.jpg",
+            "dimensions": ""
+        },
+        {
+            "title": "",
+            "img_path": "collage/papercuts/princess.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Caterpillar",
+            "img_path": "collage/caterpillar.jpg",
+            "dimensions": ""
+        },
+        {
+            "title": "6",
+            "img_path": "collage/alterity/Alterity1.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Collage4",
+            "img_path": "collage/Collage4.jpg",
+            "dimensions": ""
+        },
+        {
+            "title": "collage 2",
+            "img_path": "collage/collage2.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "collage 3",
+            "img_path": "collage/collage3.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "collage 5",
+            "img_path": "collage/collage5.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "6",
+            "img_path": "collage/collage6.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        }
+    ]
+}

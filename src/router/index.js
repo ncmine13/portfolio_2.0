@@ -1,35 +1,40 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Art from '%/components/art/Art'
-import Web from '%/components/web/Web'
-import Insp from '%/components/inspiration/Insp'
-import CV from '%/components/cv/CV'
 
+import Contact from '%/components/Contact'
+import Home from '%/components/Home'
+import Project from '%/components/projects/Project'
+import Resume from '%/components/Resume'
+
+import { store } from '../store/store'
 Vue.use(Router)
 
-// add artwork child routes
 const router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/artwork',
-      component: Art
+      path: '/',
+      component: Home
     },
     {
-      path: '/development',
-      name: 'Web',
-      component: Web
+      path: '/projects',
+      component: Project,
     },
     {
-      path: '/inspiration',
-      name: 'Inspiration',
-      component: Insp
+      path: '/resume',
+      component: Resume,
     },
     {
-      path: '/cv',
-      component: CV
+      path: '/contact',
+      component: Contact,
     }
   ]
+})
+
+router.afterEach((to, from) => {
+  if (to.path === '/projects' && to.hash !== '#') {
+    store.commit('changeActiveProjectCat', to.hash.substring(1))
+  }
 })
 
 export { router }

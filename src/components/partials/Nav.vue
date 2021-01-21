@@ -1,5 +1,5 @@
 <template>
-  <div class="nav__wrapper wrapper-pad" v-bind:class="{home: home}" v-bind:style="{ backgroundColor: activeBgColor }">
+  <div class="nav__wrapper wrapper-pad">
     <nav class="site-width">
       <div :key="item.id" v-for="item in navElements" class="nav__elem">
         <router-link v-if="!showShortTitle(item)" :to="item.route">{{ item.title }}</router-link>
@@ -17,35 +17,22 @@ export default {
       name: 'Naomi Mine',
       navElements: [
         {
-          title: 'Development',
-          shortTitle: 'Dev',
-          route: '/development',
-          color: '#027878'
+          title: 'Projects',
+          route: '/projects',
         },
         {
-          title: 'Art',
-          route: '/artwork',
-          color: '#FDB632'
+          title: 'Contact',
+          route: '/contact',
         },
         {
-          title: 'CV',
-          route: '/cv',
-          color: 'black'
+          title: 'Resume',
+          route: '/resume',
         },
-        {
-          title: 'Inspiration',
-          route: '/inspiration',
-          color: '#801638'
-        }
+        // {
+        //   title: 'Links',
+        //   route: '/links'
+        // }
       ]
-    }
-  },
-  computed: {
-    activeBgColor () {
-      return this.$store.state.navStuck ? this.$store.state.activeColorScheme.navFixed : this.$store.state.activeColorScheme.background
-    },
-    home () {
-      return this.$store.state.homeView
     }
   },
   methods: {
@@ -59,7 +46,9 @@ export default {
 </script>
 <style lang='sass-loader'>
 @import '../../assets/styles/main.scss';
-
+a {
+  color: white;
+}
 .nav {
   &__wrapper {
     @include flexbox(row, flex-start, null);
@@ -84,12 +73,10 @@ export default {
     }
     nav {
       display: flex;
+      justify-content: center;
       width: 100%;
       a {
         padding-right: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: white;
         letter-spacing: 2px;
         text-decoration: none;
       }
