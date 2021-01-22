@@ -35,13 +35,13 @@
         >music</router-link
       >
     </div>
-    <div class="project-category">
+    <!-- <div class="project-category">
       <router-link
         :to="{ path: '#web' }"
         v-bind:class="{ activeCat: activeCat === 'web' }"
         >web</router-link
       >
-    </div>
+    </div> -->
   </div>
 </template>
 

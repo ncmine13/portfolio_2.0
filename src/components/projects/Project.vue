@@ -5,7 +5,7 @@
       <music v-if="isMusic"></music>
       <statement v-if="activeProjectCategory === ''"></statement>
       <visual-projects v-if="isArt" :imageData="activeDataSet"></visual-projects>
-      <web v-if="activeProjectCategory === 'web'"></web>
+      <!-- <web v-if="activeProjectCategory === 'web'"></web> -->
       <modal></modal>
     </div>
   </div>
