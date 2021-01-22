@@ -2,8 +2,10 @@
   <div class="project">
     <project-nav></project-nav>
     <div class="project-content">
+      <music v-if="isMusic"></music>
       <statement v-if="activeProjectCategory === ''"></statement>
-      <visual-projects v-else :imageData="activeDataSet"></visual-projects>
+      <visual-projects v-if="isArt" :imageData="activeDataSet"></visual-projects>
+      <web v-if="activeProjectCategory === 'web'"></web>
       <modal></modal>
     </div>
   </div>
@@ -13,9 +15,14 @@
 import projectNav from "./ProjectNav";
 import statement from "./Statement";
 import visualProjects from "./VisualProjects";
+import modal from "./Modal.vue";
+import music from "./Music.vue";
+import web from "./Web.vue";
+
 import collageData from "../../data/collage.json";
 import drawPaintData from "../../data/drawing.json";
-import modal from "./Modal.vue";
+import plantData from "../../data/plants.json"
+import threeData from "../../data/threeD.json"
 
 export default {
   name: 'Project',
@@ -24,16 +31,26 @@ export default {
     statement,
     visualProjects,
     modal,
+    music,
+    web
   },
   data() {
     return {
       collageData: collageData,
       drawPaintData: drawPaintData,
+      plantData: plantData
     };
   },
   computed: {
     activeProjectCategory() {
       return this.$store.state.activeProjectCat
+    },
+    isArt() {
+      const cat = this.$store.state.activeProjectCat
+      return cat === 'collage' || cat === 'drawings' || cat === 'plants' || cat === 'threeD'
+    },
+    isMusic() {
+      return this.$store.state.activeProjectCat === 'music'
     },
     activeDataSet() {
       if (this.$store.state.activeProjectCat === 'collage') {
@@ -41,6 +58,12 @@ export default {
       }
       if (this.$store.state.activeProjectCat === 'drawings') {
         return drawPaintData
+      }
+      if (this.$store.state.activeProjectCat === 'plants') {
+        return plantData
+      }
+      if (this.$store.state.activeProjectCat === 'threeD') {
+        return threeData
       }
     }
   }

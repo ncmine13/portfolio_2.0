@@ -24,19 +24,23 @@
             "materials": ""
         },
         {
-            "title": "Fruit",
-            "img_path" : "drawing_painting/Fruit.jpg",
+            "title": "fruitbra1",
+            "img_path" : "drawing_painting/fruitbra1.jpg",
             "dimensions": "",
             "year": "",
             "materials": ""
         },
-
         {
             "title": "grey",
             "img_path" : "drawing_painting/greypainting.jpg",
             "dimensions": "",
             "year": "",
             "materials": ""
+        },
+        {
+            "title": "rat",
+            "img_path" : "drawing_painting/rat.jpg",
+            "dimensions": ""
         },
         {
             "title": "compilation",
@@ -53,13 +57,6 @@
             "materials": ""
         },
         {
-            "title": "jars",
-            "img_path" : "drawing_painting/Jars.jpg",
-            "dimensions": "",
-            "year": "",
-            "materials": ""
-        },
-        {
             "title": "paint",
             "img_path" : "drawing_painting/Painting.jpg",
             "dimensions": "",
@@ -67,8 +64,29 @@
             "materials": ""
         },
         {
+            "title": "jars",
+            "img_path" : "drawing_painting/Jars.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "spools",
+            "img_path" : "drawing_painting/spools.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
             "title": "psycho",
             "img_path" : "drawing_painting/Psycho.jpg",
+            "dimensions": "",
+            "year": "",
+            "materials": ""
+        },
+        {
+            "title": "Fruit",
+            "img_path" : "drawing_painting/Fruit.jpg",
             "dimensions": "",
             "year": "",
             "materials": ""

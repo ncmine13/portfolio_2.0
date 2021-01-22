@@ -25,16 +25,16 @@
             "materials": ""
         },
         {
-            "title": "Caterpillar",
-            "img_path": "collage/caterpillar.jpg",
-            "dimensions": ""
-        },
-        {
-            "title": "6",
-            "img_path": "collage/alterity/Alterity1.jpg",
+            "title": "",
+            "img_path": "collage/ox.jpg",
             "dimensions": "",
             "year": "",
             "materials": ""
+        },
+        {
+            "title": "Caterpillar",
+            "img_path": "collage/caterpillar.jpg",
+            "dimensions": ""
         },
         {
             "title": "Collage4",

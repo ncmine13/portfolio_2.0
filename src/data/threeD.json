@@ -1,0 +1,23 @@
+{
+    "header": "Three",
+    "items": [
+        {
+            "img_path": "misc_3d/cocoon/Cocoon.jpg"
+        },
+        {
+            "img_path": "misc_3d/Viscous.jpg"
+        },
+        {
+            "img_path": "misc_3d/Candleballs3.jpg"
+        },
+        {
+            "img_path": "misc_3d/Wood.jpg"
+        },
+        {
+            "img_path": "misc_3d/alterity/Alterity1.jpg"
+        },
+        {
+            "img_path": "misc_3d/plant_wall/Assemblage1.jpg"
+        }
+    ]
+}

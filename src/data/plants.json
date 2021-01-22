@@ -1,11 +1,11 @@
 {
-    "header": "Collage",
+    "header": "Plants",
     "items": [
         {
             "img_path": "plants/bok/bok1.jpg"
         },
         {
-            "img_path": "plants/flowers/flower2.jpg"
+            "img_path": "plants/flowers/Flower2.jpg"
         },
         {
             "img_path": "plants/forest/Forest1.jpg"
@@ -14,7 +14,7 @@
             "img_path": "plants/sarg_1.jpg"
         },
         {
-            "img_path": "plants/sarg_1.jpg"
+            "img_path": "plants/sarg3.jpg"
         },
         {
             "img_path": "plants/sarg2.jpg"
