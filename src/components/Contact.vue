@@ -1,12 +1,8 @@
 <template>
-  <div class="contact-wrapper">
+  <div class="contact-wrapper site-width">
     <div class="contact-icons">
       <a href="https://www.linkedin.com/in/naomi-mine/" target="_blank"
-        ><svgicon
-          icon="linkedin"
-          width="30px"
-          height="34"
-        ></svgicon
+        ><svgicon icon="linkedin" width="30px" height="34"></svgicon
       ></a>
       <a href="#" target="_blank"
         ><svgicon icon="instagram" height="36"></svgicon
@@ -30,7 +26,6 @@ export default {
 @import "../assets/styles/main.scss";
 .contact {
   &-wrapper {
-    max-width: 1000px;
     margin: 20px auto;
   }
   &-icons {
@@ -38,11 +33,19 @@ export default {
     align-items: center;
     margin-bottom: 10px;
   }
+  @include breakpoint(tablet-landscape) {
+    &-wrapper {
+      text-align: center;
+    }
+    &-icons {
+      justify-content: center;
+    }
+  }
 }
 a {
   margin-right: 12px;
 }
 svg {
-    fill: white;
+  fill: white;
 }
 </style>

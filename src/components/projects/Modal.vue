@@ -23,8 +23,6 @@ export default {
       return this.$store.state.modalOpen
     },
     showCarousel() {
-      // todo: fix carousel configuration
-      // return this.$store.state.activeImages.length > 1
       return false
     }
   },

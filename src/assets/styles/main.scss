@@ -4,7 +4,7 @@
 
 .site-width {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .two-by-two {
@@ -41,7 +41,7 @@ body {
 
 @include breakpoint(site-width) {
   .site-width {
-    margin: 0 40px;
+    margin: 10px 20px;
   }
 }
 @include breakpoint(tablet-portrait) {
@@ -56,10 +56,16 @@ body {
   .h3-size {
     font-size: 16px;
   }
+  .wrapper-pad {
+    padding: 15px 0;
+  }
 }
 @include breakpoint(mobile) {
+  .wrapper-pad {
+    // padding: 10px 0;
+  }
   .site-width {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .double-wrapper-pad {
     padding: 20px 0;

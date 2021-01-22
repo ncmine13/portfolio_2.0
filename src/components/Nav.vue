@@ -1,9 +1,8 @@
 <template>
-  <div class="nav__wrapper wrapper-pad">
-    <nav class="site-width">
-      <div :key="item.id" v-for="item in navElements" class="nav__elem">
-        <router-link v-if="!showShortTitle(item)" :to="item.route">{{ item.title }}</router-link>
-        <router-link v-else :to="item.route">{{ item.shortTitle }}</router-link>
+  <div class="nav-wrapper wrapper-pad">
+    <nav>
+      <div :key="item.id" v-for="item in navElements" class="nav-elem">
+        <router-link class="nav-link" :to="item.route">{{ item.title }}</router-link>
       </div>
     </nav>
   </div>
@@ -14,7 +13,6 @@ export default {
   name: 'Nav',
   data () {
     return {
-      name: 'Naomi Mine',
       navElements: [
         {
           title: 'Projects',
@@ -28,49 +26,25 @@ export default {
           title: 'Resume',
           route: '/resume',
         },
-        // {
-        //   title: 'Links',
-        //   route: '/links'
-        // }
       ]
-    }
-  },
-  methods: {
-    showShortTitle (item) {
-      if (item.title === 'Development') {
-        return this.$store.state.showShortenedNav
-      }
     }
   }
 }
 </script>
+
 <style lang='sass-loader'>
 @import '../assets/styles/main.scss';
-a {
-  color: white;
-}
 .nav {
-  &__wrapper {
+  &-link {
+    font-size: 20px;
+  }
+  &-wrapper {
+    .router-link-active {
+      color: black;
+    }
     @include flexbox(row, flex-start, null);
     width: 100%;
     position: relative;
-    &.home {
-      nav {
-        display: block;
-        margin: 0;
-        .nav__elem {
-          padding: 10px 0;
-        }
-        a {
-          padding: 10px 0;
-        }
-      }
-    }
-    &.fixed {
-      position: fixed;
-      top: 0;
-      z-index: 3;
-    }
     nav {
       display: flex;
       justify-content: center;
@@ -81,27 +55,25 @@ a {
         text-decoration: none;
       }
     }
-    @include breakpoint(tablet-portrait) {
+  }
+  @include breakpoint(tablet-landscape) {
+    &-link {
+      font-size: 16px;
+    }
+  }
+  @include breakpoint(mobile) {
+    &-link {
       font-size: 14px;
-      &.home {
-        nav {
-          @include flexbox(row, flex-center, null);
-          a {
-            padding-right: 15px;
-          }
-        }
+    }
+    nav {
+      a {
+        padding-right: 10px;
       }
     }
-    @include breakpoint(mobile) {
-      font-size: 12px;
-      nav {
-        a {
-          padding-right: 10px;
-        }
-      }
-    }
-    @include breakpoint(tiny-mobile) {
-      font-size: 10px;
+  }
+  @include breakpoint(tiny-mobile) {
+    &-link {
+      /* font-size: 10px; */
     }
   }
 }

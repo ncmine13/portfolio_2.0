@@ -1,16 +1,11 @@
 <template>
   <div class="landing-wrapper">
-    <div class="flex-wrapper">
+    <div class="landing-flex-wrapper">
       <img class="landing-image" :src="getAltImage()" />
-      <div>
-        <div class="par">I am Naomi Mine and I live in Chicago.</div>
-        <div class="par">
-          I write software for the
-          <a class="direct-link" href="/projects">web</a> and create multimedia
-          <a class="direct-link" href="/projects">art</a>.
-        </div>
-        <div class="par">
-          If you're interested in collaborating on a project, email me at
+      <div class="landing-text-wrapper">
+        <div class="landing-par">I am Naomi Mine and I live in Chicago.</div>
+        <div class="landing-par">
+          If you're interested in collaborating, email me at
           <a class="direct-link"> naomi.mine@gmail.com</a>.
         </div>
       </div>
@@ -39,23 +34,42 @@ export default {
     margin: 0px auto;
     font-size: 20px;
   }
+  &-flex-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
   &-image {
     width: 500px;
     margin-right: 20px;
   }
-}
-.par {
-  margin-bottom: 20px;
+  &-par {
+    margin-bottom: 20px;
+  }
+  @include breakpoint(tablet-landscape) {
+    &-flex-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-text-wrapper {
+      max-width: 500px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    &-image {
+      margin-right: 0;
+    }
+  }
+  @include breakpoint(mobile) {
+    &-image {
+      width: 300px;
+    }
+    &-text-wrapper {
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
 }
 .direct-link {
   font-weight: bold;
-}
-.image-wrapper {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.flex-wrapper {
-  display: flex;
-  align-items: flex-end;
 }
 </style>

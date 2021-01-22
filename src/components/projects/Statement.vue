@@ -1,18 +1,21 @@
 <template>
-    <div class="statement-wrapper">
-        <div>I make a lot of things.</div>
-    </div>
+  <div class="statement-wrapper">
+    <div>{{statement}}</div>
+  </div>
 </template>
 
 <script>
-
 export default {
-    name: 'Statement',
-}
+  name: "Statement",
+  data() {
+    return {
+      statement: ""
+    };
+  },
+};
 </script>
 
 <style lang="sass-loader">
-    .statement-wrapper {
-
-    }
+.statement-wrapper {
+}
 </style>

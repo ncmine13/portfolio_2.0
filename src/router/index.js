@@ -32,6 +32,10 @@ const router = new Router({
 })
 
 router.afterEach((to, from) => {
+  if (to.fullPath === '/projects') {
+    router.push('/projects#collage')
+    window.location.reload()
+  }
   if (to.path === '/projects' && to.hash !== '#') {
     store.commit('changeActiveProjectCat', to.hash.substring(1))
   }

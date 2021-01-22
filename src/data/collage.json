@@ -4,70 +4,73 @@
             "title": "Beach",
             "img_path": "collage/Beach.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2017,
+            "materials": "Magazine clippings, photographs"
         },
         {
-            "title": "Abyss",
+            "title": "",
             "img_path": "collage/Abyss.jpg",
-            "dimensions": ""
+            "year": 2016,
+            "materials": "Magazine clippings"
         },
         {
-            "title": "Fabric",
+            "title": "",
             "img_path": "collage/fabric_collage.jpg",
-            "dimensions": ""
+            "material": "Upholstery swatch, shells, beads",
+            "year": 2018
         },
         {
             "title": "",
             "img_path": "collage/papercuts/princess.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2018,
+            "materials": "Magazine clippings, gift wrap"
         },
         {
-            "title": "",
+            "title": "Year of the ox",
             "img_path": "collage/ox.jpg",
+            "description": "",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2020,
+            "materials": "Magazine clippings, pen"
         },
         {
             "title": "Caterpillar",
             "img_path": "collage/caterpillar.jpg",
-            "dimensions": ""
+            "year": 2017
         },
         {
-            "title": "Collage4",
-            "img_path": "collage/Collage4.jpg",
-            "dimensions": ""
+            "title": "",
+            "img_path": "collage/mickey.jpg",
+            "year": 2017
         },
         {
-            "title": "collage 2",
-            "img_path": "collage/collage2.jpg",
+            "title": "",
+            "img_path": "collage/royalty.jpg",
             "dimensions": "",
-            "year": "",
+            "year": 2020,
             "materials": ""
         },
         {
-            "title": "collage 3",
-            "img_path": "collage/collage3.jpg",
+            "title": "",
+            "img_path": "collage/fruit_collage.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2020,
+            "materials": "Catalog clippings, ink, colored pencil"
         },
         {
-            "title": "collage 5",
-            "img_path": "collage/collage5.jpg",
+            "title": "",
+            "img_path": "collage/whole_world.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2019,
+            "materials": "Magazine clippings, ink"
         },
         {
-            "title": "6",
-            "img_path": "collage/collage6.jpg",
+            "title": "",
+            "img_path": "collage/fan.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2020,
+            "materials": "Magazine clippings"
         }
     ]
 }

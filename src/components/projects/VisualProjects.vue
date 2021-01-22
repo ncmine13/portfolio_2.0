@@ -28,6 +28,12 @@ export default {
   name: "VisualProjects",
   componentName: "visual-projects",
   methods: {
+    getGutter() {
+      if (window.innerWidth <= 900) {
+        return 10
+      }
+      return 20
+    },
     getBgImage(item) {
       let path = require("../../assets/images/art/" + item["img_path"]);
       return path;
@@ -39,9 +45,10 @@ export default {
       this.$store.commit("toggleModalOpen")
     },
     packeryObj(imgContainer) {
+      const gutter = this.getGutter();
       return new Packery(imgContainer, {
         itemSelector: ".images-item",
-        gutter: 20,
+        gutter: this.getGutter(),
       });
     },
     initPackery(container) {
@@ -56,6 +63,7 @@ export default {
 </script>
 
 <style lang="sass-loader">
+@import '../../assets/styles/main.scss';
 .images {
   &-wrapper {
     max-width: 800px;
@@ -64,11 +72,23 @@ export default {
     width: calc(100% / 3 - 20px);
     height: auto;
     img {
+      display: block;
       width: 100%;
     }
   }
   &-image {
     cursor: pointer;
+  }
+  @include breakpoint(tablet-landscape) {
+    &-item {
+      width: calc(100% / 3 - 10px);
+    }
+  }
+  @include breakpoint(tablet-portrait) {
+    &-item {
+      /* width: calc(100% / 3 - 15px); */
+      /* width: calc(100% / 3 - 10px); */
+    }
   }
 }
 </style>

@@ -7,89 +7,92 @@
                 "drawing_painting/couch/couch1.jpg",
                 "drawing_painting/couch/couch2.jpg",
                 "drawing_painting/couch/couch3.jpg"
-            ]
-        },
-        {
-            "title": "Cezanne",
-            "img_path" : "drawing_painting/Cezanne.jpg",
-            "dimensions": "",
-            "year": "",
-            "materials": ""
+            ],
+            "year": 2020,
+            "materials": "Colored pencil"
         },
         {
             "title": "Drawing",
             "img_path" : "drawing_painting/Drawing.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2015,
+            "materials": "Powdered graphite, ink, oil pastel"
         },
         {
             "title": "fruitbra1",
             "img_path" : "drawing_painting/fruitbra1.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2016,
+            "materials": "Chalk pastel"
         },
         {
             "title": "grey",
             "img_path" : "drawing_painting/greypainting.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2019,
+            "materials": "Oil paint"
         },
         {
             "title": "rat",
             "img_path" : "drawing_painting/rat.jpg",
-            "dimensions": ""
+            "year": 2019,
+            "materials": "Chalk pastel"
         },
         {
             "title": "compilation",
             "img_path" : "drawing_painting/comp_paint1.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2020,
+            "materials": "Oil paint"
         },
         {
             "title": "red",
             "img_path" : "drawing_painting/redpainting.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2019,
+            "materials": "Oil paint, paper"
         },
         {
             "title": "paint",
             "img_path" : "drawing_painting/Painting.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2014,
+            "materials": "Oil paint"
         },
         {
-            "title": "jars",
+            "title": "Still life",
             "img_path" : "drawing_painting/Jars.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2016,
+            "materials": "Oil paint"
         },
         {
             "title": "spools",
             "img_path" : "drawing_painting/spools.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2016,
+            "materials": "Oil paint"
+        },
+        {
+            "title": "Cezanne",
+            "img_path" : "drawing_painting/Cezanne.jpg",
+            "dimensions": "",
+            "year": 2016,
+            "materials": "Oil paint"
         },
         {
             "title": "psycho",
             "img_path" : "drawing_painting/Psycho.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2014,
+            "materials": "Oil paint"
         },
         {
             "title": "Fruit",
             "img_path" : "drawing_painting/Fruit.jpg",
             "dimensions": "",
-            "year": "",
-            "materials": ""
+            "year": 2016,
+            "materials": "Chalk pastel"
         }
     ]
 }

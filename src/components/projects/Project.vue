@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="site-width project">
     <project-nav></project-nav>
     <div class="project-content">
       <music v-if="isMusic"></music>
@@ -71,13 +71,18 @@ export default {
 </script>
 
 <style lang="sass-loader">
+@import '../../assets/styles/main.scss';
     .project {
-      max-width: 1000px;
-      margin: 0 auto;
       display: flex;
       margin-top: 20px;
       &-content {
           width: 75%;
+      }
+      @include breakpoint(tablet-landscape) {
+        flex-direction: column;
+        &-content {
+          width: 100%;
+        }
       }
     }
 </style>
