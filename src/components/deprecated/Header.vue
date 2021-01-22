@@ -16,11 +16,6 @@ export default {
       name: 'Naomi Mine'
     }
   },
-  computed: {
-    getIconColor () {
-      return this.$store.state.iconColor
-    }
-  },
   components: {
     navComponent
   }

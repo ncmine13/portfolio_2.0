@@ -23,10 +23,10 @@ export default {
   name: 'ArtModal',
   mounted () {
     this.centerModal()
-    window.addEventListener('resize', this.centerModal)
+    // window.addEventListener('resize', this.centerModal)
   },
   destroyed () {
-    window.removeEventListener('resize', this.centerModal)
+    // window.removeEventListener('resize', this.centerModal)
   },
   data () {
     return {

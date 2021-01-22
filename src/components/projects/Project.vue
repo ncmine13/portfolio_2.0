@@ -72,12 +72,12 @@ export default {
 
 <style lang="sass-loader">
     .project {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 20px;
-    &-content {
-        width: 75%;
-    }
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      margin-top: 20px;
+      &-content {
+          width: 75%;
+      }
     }
 </style>

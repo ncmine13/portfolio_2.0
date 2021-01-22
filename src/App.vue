@@ -9,26 +9,26 @@
 </template>
 
 <script>
-import navComponent from './components/partials/Nav'
+import navComponent from './components/Nav'
 
 export default {
   mounted () {
     window.addEventListener('scroll', this.handleNavDisplay, false)
-    window.addEventListener('resize', this.resizeHandler, false)
-    this.$store.commit('checkForShortNav')
+    // window.addEventListener('resize', this.resizeHandler, false)
+    // this.$store.commit('checkForShortNav')
   },
   name: 'App',
   components: {
     navComponent,
   },
   methods: {
-    resizeHandler () {
-      if (!this.$store.state.homeView) {
-        this.headerHeight()
-        this.handleNavDisplay()
-      }
-      this.$store.commit('checkForShortNav')
-    }
+    // resizeHandler () {
+    //   if (!this.$store.state.homeView) {
+    //     this.headerHeight()
+    //     this.handleNavDisplay()
+    //   }
+    //   this.$store.commit('checkForShortNav')
+    // }
   }
 }
 </script>

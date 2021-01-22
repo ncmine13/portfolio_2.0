@@ -16,8 +16,8 @@ Vue.use(VueCarousel);
 router.beforeEach((to, from, next) => {
   let path = to.fullPath
   let showHomeView = true
-  if (path !== '/') { showHomeView = false }
-  store.dispatch('changePage', {showHomeView: showHomeView, path: path})
+  // if (path !== '/') { showHomeView = false }
+  // store.dispatch('changePage', {showHomeView: showHomeView, path: path})
   next()
 })
 

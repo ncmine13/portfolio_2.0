@@ -45,7 +45,7 @@ export default {
 }
 </script>
 <style lang='sass-loader'>
-@import '../../assets/styles/main.scss';
+@import '../assets/styles/main.scss';
 a {
   color: white;
 }

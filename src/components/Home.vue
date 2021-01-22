@@ -1,7 +1,7 @@
 <template>
   <div class="landing-wrapper">
     <div class="flex-wrapper">
-      <img :src="getAltImage()" />
+      <img class="landing-image" :src="getAltImage()" />
       <div>
         <div class="par">I am Naomi Mine and I live in Chicago.</div>
         <div class="par">
@@ -33,20 +33,22 @@ export default {
 <style lang="sass-loader">
 @import "../assets/styles/main.scss";
 
-.landing-wrapper {
-  max-width: 1000px;
-  margin: 0px auto;
-  font-size: 20px;
+.landing {
+  &-wrapper {
+    max-width: 1000px;
+    margin: 0px auto;
+    font-size: 20px;
+  }
+  &-image {
+    width: 500px;
+    margin-right: 20px;
+  }
 }
 .par {
   margin-bottom: 20px;
 }
 .direct-link {
   font-weight: bold;
-}
-img {
-  width: 500px;
-  margin-right: 20px;
 }
 .image-wrapper {
   text-align: center;
