@@ -35,7 +35,7 @@ export default {
       return 20
     },
     getBgImage(item) {
-      let path = require("../../assets/images/art/" + item["img_path"]);
+      let path = require("../../assets/images/art/compressed/" + item["img_path"]);
       return path;
     },
     toggleModal(item) {

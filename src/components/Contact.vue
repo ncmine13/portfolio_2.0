@@ -4,10 +4,10 @@
       <a href="https://www.linkedin.com/in/naomi-mine/" target="_blank"
         ><svgicon icon="linkedin" width="30px" height="34"></svgicon
       ></a>
-      <a href="#" target="_blank"
+      <a href="https://www.instagram.com/naomi.mine/" target="_blank"
         ><svgicon icon="instagram" height="36"></svgicon
       ></a>
-      <a href="#" target="_blank"
+      <a href="mailto:naomi.mine@gmail.com" target="_blank"
         ><svgicon icon="gmail" height="36"></svgicon
       ></a>
     </div>
