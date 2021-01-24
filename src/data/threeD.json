@@ -2,22 +2,40 @@
     "header": "Three",
     "items": [
         {
-            "img_path": "misc_3d/cocoon/Cocoon.jpg"
+            "title": "Cocoon",
+            "img_path": "misc_3d/cocoon/Cocoon.jpg",
+            "year": "2016",
+            "materials": "Wood, lace, tulle, paper mache"
         },
         {
-            "img_path": "misc_3d/Viscous.jpg"
+            "title": "",
+            "img_path": "misc_3d/Viscous.jpg",
+            "year": "2015",
+            "materials": "Wood scraps and shavings from Terry Karpowicz's studio, fabric, glitter, glue"
         },
         {
-            "img_path": "misc_3d/Candleballs3.jpg"
+            "title": "Candles",
+            "img_path": "misc_3d/Candleballs3.jpg",
+            "year": "2016",
+            "materials": "Candle holder, paper mache, tulle"
         },
         {
-            "img_path": "misc_3d/Wood.jpg"
+            "title": "A Meeting in the Wood",
+            "img_path": "misc_3d/Wood.jpg",
+            "year": "2014",
+            "materials": "Plywood, galvanized steel"
         },
         {
-            "img_path": "misc_3d/alterity/Alterity1.jpg"
+            "title": "Alterity",
+            "img_path": "misc_3d/alterity/Alterity1.jpg",
+            "year": "2016",
+            "materials": "Cardboard, objects from my parents' basement, fabric, other bits and bobs"
         },
         {
-            "img_path": "misc_3d/plant_wall/Assemblage1.jpg"
+            "title": "Planted",
+            "img_path": "misc_3d/plant_wall/Assemblage1.jpg",
+            "year": "2016",
+            "materials": "Fabric, synthetic and real plants, fabric, paper mache, wood shavings"
         }
     ]
 }

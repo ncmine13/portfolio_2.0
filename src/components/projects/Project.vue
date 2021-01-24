@@ -5,8 +5,7 @@
       <music v-if="isMusic"></music>
       <statement v-if="activeProjectCategory === ''"></statement>
       <visual-projects v-if="isArt" :imageData="activeDataSet"></visual-projects>
-      <!-- <web v-if="activeProjectCategory === 'web'"></web> -->
-      <modal></modal>
+      <modal v-if="isModalOpen"></modal>
     </div>
   </div>
 </template>
@@ -44,6 +43,9 @@ export default {
   computed: {
     activeProjectCategory() {
       return this.$store.state.activeProjectCat
+    },
+    isModalOpen(){
+      return this.$store.state.modalOpen
     },
     isArt() {
       const cat = this.$store.state.activeProjectCat

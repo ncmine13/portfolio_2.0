@@ -1,74 +1,96 @@
 <template>
-  <div class="modal-overlay" v-bind:class="{ active: isActive }">
+  <div class="modal-overlay">
     <div class="modal-close" v-on:click="closeModal">
       <img src="../../assets/close.svg" />
     </div>
     <div class="modal-content" v-on:click="closeModal">
       <carousel-wrapper v-if="showCarousel"></carousel-wrapper>
-      <img v-else class="modal-image" alt="" :src="getImg()" />
+      <div class="modal-content-item" v-else>
+        <img class="modal-image" alt="" :src="getImageSource()" />
+        <div class="modal-image-details">
+          <div class="modal-image-title">
+            {{ getImageInfo.title !== "" ? getImageInfo.title : untitled }}
+            <span>({{ getImageInfo.year }})</span>
+          </div>
+          <div class="modal-image-materials" v-if="'materials' in getImageInfo">
+            {{ getImageInfo.materials }}
+          </div>
+          <div
+            class="modal-image-dimensions"
+            v-if="'dimensions' in getImageInfo"
+          >
+            {{ getImageInfo.dimensions }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import carouselWrapper from './CarouselWrapper.vue'
+import carouselWrapper from "./CarouselWrapper.vue";
 
 export default {
-  name: 'Modal',
+  name: "Modal",
   components: {
-    carouselWrapper
+    carouselWrapper,
+  },
+  data() {
+    return {
+      untitled: "Untitled",
+    };
   },
   computed: {
     isActive() {
-      return this.$store.state.modalOpen
+      return this.$store.state.modalOpen;
     },
     showCarousel() {
-      return false
-    }
+      return false;
+    },
+    getImageInfo() {
+      if (this.$store.state.activeImages.length > 0) {
+        return this.$store.state.activeImages[0];
+      }
+    },
   },
   methods: {
-    getImg() {
+    getImageSource() {
       if (this.$store.state.activeImages.length > 0) {
-        let img = require('../../assets/images/art/' +
-          this.$store.state.activeImages[0])
-        return img
+        let img = require("../../assets/images/art/" +
+          this.$store.state.activeImages[0].img_path);
+        return img;
       }
     },
     closeModal(e) {
       if (
         e.target !== e.currentTarget &&
-        e.currentTarget !== document.querySelector('.modal-close')
+        e.currentTarget !== document.querySelector(".modal-close")
       ) {
-        return
+        return;
       }
-      document.querySelector('body').style.overflow = 'auto'
-      this.$store.commit('deactivateImages')
-      this.$store.commit('toggleModalOpen')
-    }
-  }
+      document.querySelector("body").style.overflow = "auto";
+      this.$store.commit("deactivateImages");
+      this.$store.commit("toggleModalOpen");
+    },
+  },
 };
 </script>
 
 <style lang="sass-loader">
-/*  
-    - add x
-    */
+@import '../../assets/styles/main.scss';
 .modal {
   &-overlay {
-    display: none;
-    &.active {
-      cursor: pointer;
-      display: block;
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0); /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
-    }
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   &-content {
     display: flex;
@@ -76,10 +98,36 @@ export default {
     height: 100%;
     justify-content: center;
   }
-  &-image {
+  &-content-item {
     cursor: auto;
     max-height: 80vh;
     max-width: 85vw;
+  }
+  &-image {
+    display: block;
+    max-width: 83vw;
+    max-height: 75vh;
+    &-details {
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+    &-title {
+      font-size: 24px;
+      span {
+        font-size: 16px;
+      }
+    }
+    @include breakpoint(tablet-portrait) {
+      &-details {
+        font-size: 14px;
+      }
+      &-title {
+        font-size: 20px;
+        span {
+          font-size: 14px;
+        }
+      }
+    }
   }
   &-close {
     height: 15px;

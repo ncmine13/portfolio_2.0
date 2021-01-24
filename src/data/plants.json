@@ -2,41 +2,49 @@
     "header": "Plants",
     "items": [
         {
+            "title": "Bouquet",
             "img_path": "plants/bok/bok1.jpg",
             "year": 2019,
             "materials": "Ink, bok choy"
         },
         {
+            "title": "",
             "img_path": "plants/flowers/Flower2.jpg",
             "year": 2015,
             "materials": "Plant material, synthetic flower petals, wire"
         },
         {
+            "title": "Forest",
             "img_path": "plants/forest/Forest1.jpg",
             "year": 2016,
             "materials": "Packaging material, plant material, synthetic flowers"
         },
         {
+            "title": "Californian Kelp Shower",
             "img_path": "plants/kelp1.jpg",
             "year": 2019,
             "materials": "Giant kelp, ink, oil paint, colored pencil"
         },
         {
+            "title": "Californian Kelp with Bouquet",
             "img_path": "plants/kelp3.jpg",
             "year": 2019,
             "materials": "Giant kelp, ink, colored pencil"
         },
         {
+            "title": "Alaskan Kelp",
             "img_path": "plants/kelp2.jpg",
             "year": 2019,
             "materials": "Giant kelp, face paint, pen"
         },
         {
+            "title": "",
             "img_path": "plants/tulle_collage.jpg",
             "year": 2018,
-            "materials": "Tulle, synthetic flowers and leaves, leaf, magazine clippings, colored pencil"
+            "materials": "Tulle, synthetic flowers and leaves, leaf, magazine clippings, paper and colored pencil"
         },
         {
+            "title": "",
             "img_path": "plants/Wood1.jpg",
             "year": 2014,
             "materials": "Wood, leaf"

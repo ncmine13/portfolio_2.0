@@ -3,12 +3,11 @@
         {
             "title": "Beach",
             "img_path": "collage/Beach.jpg",
-            "dimensions": "",
             "year": 2017,
             "materials": "Magazine clippings, photographs"
         },
         {
-            "title": "",
+            "title": "Abyss",
             "img_path": "collage/Abyss.jpg",
             "year": 2016,
             "materials": "Magazine clippings"
@@ -16,18 +15,18 @@
         {
             "title": "",
             "img_path": "collage/fabric_collage.jpg",
-            "material": "Upholstery swatch, shells, beads",
+            "materials": "Upholstery swatch, shells, beads",
             "year": 2018
         },
         {
-            "title": "",
+            "title": "Papercuts",
             "img_path": "collage/papercuts/princess.jpg",
             "dimensions": "",
             "year": 2018,
             "materials": "Magazine clippings, gift wrap"
         },
         {
-            "title": "Year of the ox",
+            "title": "Year of the Ox",
             "img_path": "collage/ox.jpg",
             "description": "",
             "dimensions": "",
@@ -37,22 +36,24 @@
         {
             "title": "Caterpillar",
             "img_path": "collage/caterpillar.jpg",
-            "year": 2017
+            "year": 2017,
+            "materials": "Magazine clippings"
         },
         {
             "title": "",
             "img_path": "collage/mickey.jpg",
-            "year": 2017
+            "year": 2017,
+            "materials": "Magazine clippings"
         },
         {
             "title": "",
             "img_path": "collage/royalty.jpg",
             "dimensions": "",
             "year": 2020,
-            "materials": ""
+            "materials": "Magazine clippings, fabric"
         },
         {
-            "title": "",
+            "title": "Cornucopia",
             "img_path": "collage/fruit_collage.jpg",
             "dimensions": "",
             "year": 2020,
@@ -66,7 +67,7 @@
             "materials": "Magazine clippings, ink"
         },
         {
-            "title": "",
+            "title": "Fan",
             "img_path": "collage/fan.jpg",
             "dimensions": "",
             "year": 2020,

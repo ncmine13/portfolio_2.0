@@ -40,8 +40,8 @@ export default {
     },
     toggleModal(item) {
       document.querySelector("body").style.overflow = "hidden"
-      const activeImgs = 'img_set_paths' in item ? item.img_set_paths : [item.img_path]
-      this.$store.commit("activateImages", activeImgs)
+      // todo: handle for carousel images
+      this.$store.commit("activateImages", [item])
       this.$store.commit("toggleModalOpen")
     },
     packeryObj(imgContainer) {
@@ -82,12 +82,6 @@ export default {
   @include breakpoint(tablet-landscape) {
     &-item {
       width: calc(100% / 3 - 10px);
-    }
-  }
-  @include breakpoint(tablet-portrait) {
-    &-item {
-      /* width: calc(100% / 3 - 15px); */
-      /* width: calc(100% / 3 - 10px); */
     }
   }
 }
