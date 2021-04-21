@@ -4,8 +4,18 @@
         {
             "title": "Cocoon",
             "img_path": "misc_3d/cocoon/Cocoon.jpg",
-            "year": "2016",
-            "materials": "Wood, lace, tulle, paper mache"
+            "img_set": [
+                {
+                    "img_path": "misc_3d/cocoon/Cocoon.jpg",
+                    "materials": "Wood, lace, tulle, paper mache",
+                    "year": "2016"
+                },
+                {
+                    "img_path": "misc_3d/cocoon/Cocoon2.jpg",
+                    "materials": "Wood, lace, tulle, paper mache",
+                    "year": "2016"
+                }
+            ]
         },
         {
             "title": "",
@@ -27,15 +37,47 @@
         },
         {
             "title": "Alterity",
-            "img_path": "misc_3d/alterity/Alterity1.jpg",
-            "year": "2016",
-            "materials": "Cardboard, objects from my parents' basement, fabric, other bits and bobs"
+            "img_set": [
+                {
+                    "img_path": "misc_3d/alterity/Alterity1.jpg",
+                    "title": "Alterity",
+                    "year": "2016",
+                    "materials": "Cardboard, objects from my parents' basement, fabric, other bits and bobs"
+                },
+                {
+                    "img_path": "misc_3d/alterity/alterity2.jpg",
+                    "title": "Alterity",
+                    "year": "2016",
+                    "materials": "Cardboard, objects from my parents' basement, fabric, other bits and bobs"
+                },
+                {
+                    "img_path": "misc_3d/alterity/Alterity3.jpg",
+                    "title": "Alterity",
+                    "year": "2016",
+                    "materials": "Cardboard, objects from my parents' basement, fabric, other bits and bobs"
+                }
+            ],
+            "img_path": "misc_3d/alterity/Alterity1.jpg"
         },
         {
             "title": "Planted",
             "img_path": "misc_3d/plant_wall/Assemblage1.jpg",
             "year": "2016",
-            "materials": "Fabric, synthetic and real plants, fabric, paper mache, wood shavings"
+            "materials": "Fabric, synthetic and real plants, fabric, paper mache, wood shavings",
+            "img_set": [
+                {
+                    "title": "Planted",
+                    "img_path": "misc_3d/plant_wall/Assemblage1.jpg",
+                    "year": "2016",
+                    "materials": "Fabric, synthetic and real plants, fabric, paper mache, wood shavings"
+                },
+                {
+                    "title": "Planted",
+                    "img_path": "misc_3d/plant_wall/planted2.jpg",
+                    "year": "2016",
+                    "materials": "Fabric, synthetic and real plants, fabric, paper mache, wood shavings"
+                }
+            ]
         }
     ]
 }

@@ -21,9 +21,50 @@
         {
             "title": "Papercuts",
             "img_path": "collage/papercuts/princess.jpg",
-            "dimensions": "",
-            "year": 2018,
-            "materials": "Magazine clippings, gift wrap"
+            "img_set": [
+                {
+                    "img_path": "collage/papercuts/princess.jpg",
+                    "title": "Papercuts: Princess",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                },
+                {
+                    "img_path": "collage/papercuts/seahorse.jpg",
+                    "title": "Papercuts: Seahorse",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                },
+                {
+                    "img_path": "collage/papercuts/sushi.jpg",
+                    "title": "Papercuts: Snack",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                },
+                {
+                    "img_path": "collage/papercuts/downtown.jpg",
+                    "title": "Papercuts: Downtown",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                },
+                {
+                    "img_path": "collage/papercuts/potato_head.jpg",
+                    "title": "Papercuts: Potato Head",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                },
+                {
+                    "img_path": "collage/papercuts/beauty_regimen.jpg",
+                    "title": "Papercuts: Beauty Regimen",
+                    "materials": "Magazine clippings, gift wrap",
+                    "year": 2018,
+                    "dimensions": ""
+                }
+            ]
         },
         {
             "title": "Year of the Ox",

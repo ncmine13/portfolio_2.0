@@ -45,6 +45,10 @@ export default {
       return this.$store.state.modalOpen;
     },
     showCarousel() {
+      if (this.$store.state.activeImages.length > 1) {
+        // console.log(this.$store.state.activeImages)
+        return true
+      }
       return false;
     },
     getImageInfo() {
@@ -90,7 +94,7 @@ export default {
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
   }
   &-content {
     display: flex;

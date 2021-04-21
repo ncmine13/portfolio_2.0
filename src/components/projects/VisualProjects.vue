@@ -40,8 +40,8 @@ export default {
     },
     toggleModal(item) {
       document.querySelector("body").style.overflow = "hidden"
-      // todo: handle for carousel images
-      this.$store.commit("activateImages", [item])
+      const images = 'img_set' in item ? item.img_set : [item]
+      this.$store.commit("activateImages", images)
       this.$store.commit("toggleModalOpen")
     },
     packeryObj(imgContainer) {

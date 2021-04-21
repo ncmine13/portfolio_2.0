@@ -2,16 +2,46 @@
     "header": "Plants",
     "items": [
         {
-            "title": "Bouquet",
             "img_path": "plants/bok/bok1.jpg",
-            "year": 2019,
-            "materials": "Ink, bok choy"
+            "img_set": [
+                {
+                    "img_path": "plants/bok/bok1.jpg",
+                    "title": "Bouquet #1",
+                    "materials": "Ink, bok choy",
+                    "year": 2019
+                },
+                {
+                    "img_path": "plants/bok/bok2.jpg",
+                    "title": "Bouquet #2",
+                    "materials": "Ink, bok choy",
+                    "year": 2019
+                }
+            ]
         },
         {
-            "title": "",
-            "img_path": "plants/flowers/Flower2.jpg",
-            "year": 2015,
-            "materials": "Plant material, synthetic flower petals, wire"
+            "img_path": "plants/flowers/Flower1.jpg",
+            "img_set": [
+                {
+                    "img_path": "plants/flowers/Flower1.jpg",
+                    "materials": "Plant material, synthetic flower petals, wire",
+                    "year": 2015
+                },
+                {
+                    "img_path": "plants/flowers/Flower2.jpg",
+                    "materials": "Plant material, synthetic flower petals, wire",
+                    "year": 2015
+                },
+                {
+                    "img_path": "plants/flowers/Flower3.jpg",
+                    "materials": "Plant material, synthetic flower petals, wire",
+                    "year": 2015
+                },
+                {
+                    "img_path": "plants/flowers/Flower4.jpg",
+                    "materials": "Plant material, synthetic flower petals, wire",
+                    "year": 2015
+                }
+            ]
         },
         {
             "title": "Forest",
